@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <title>My first BootstrapVue app</title>
+
+    <!-- Required Stylesheets -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/style.css"
+    />
+
+    <!-- Load polyfills to support older browsers -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es2015%2CIntersectionObserver"></script>
+
+    <!-- Required scripts -->
+    <script src="https://unpkg.com/vue@latest/dist/vue.js"></script>
+    <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
+    <script src="js/data.json"></script>
+  </head>
+  <body>
+    <!-- Our application root element -->
+    <div id="app" class="w-100">
+      <div class="text-center cover-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+          <b-navbar sticky toggleable class="nav nav-masthead justify-content-center ">
+            <a class="nav-link active" href="#projects">Projects</a>
+            <a class="nav-link" href="#gallery">Gallery</a>
+            <a class="nav-link" href="#resume">Resume</a>
+            <a class="nav-link" href="#contact">Contact</a>
+          </b-navbar>
+      </header>
+      <main role="main" class="inner cover mb-auto">
+        <h1 class="cover-heading">Portfolio</h1>
+        <p class="lead">Ahmad Saleem Z</p>
+      </main>
+    </div>
+   <!-- Projcect content -->
+    <b-container fluid id="projects" class="m-0 p-1">
+    <div v-for="project in allprojects" v-bind:key="project.projectName" id="projectContent">
+      <b-button block v-b-toggle="project.projectid" class="m-1 collapse-btn text-left pl-3" variant="outline-dark" >{{project.projectid}}
+      </b-button>
+      <b-collapse :id="project.projectid" >
+          <b-card :title="project.projectName" :sub-title="project.projectContext" text-variant="#ababab" >
+          <b-card-text>
+            {{project.Description}}
+          </b-card-text>
+          <b-card-text>A second paragraph of text in the card.</b-card-text>
+          <b-link href="#" class="card-link text-primary">Link</b-link>
+        </b-card>
+       <b-img-lazy center fluid v-for="image in project.images" :src="image"  class="m-1 "/>
+    </b-collapse>
+  </div>
+  </b-container>
+  <!-- gallery content -->
+   <!-- <div fluid ><h2 class="text-center m-5">Gallery</h2></div> -->
+   <!-- <div id="separator" class="my-3"></div> -->
+  <b-container fluid id="gallery" class="row mx-0 mb-1 py-3 bg-dark"><b-col v-for="image in allimages" lg="4" md="4" sm="6" class="gallery-img">
+    <b-img fluid center :src="image.url" class="p-2"/>
+  </b-col></b-container>
+  <!-- data content -->
+  <!-- <div id="separator" class="my-3"></div> -->
+  <h2 class="w-100 font-italic text-center py-2 text-light bg-dark" >Resume</h2>
+  <b-container id="resume" class="p-lg-5 p-2">
+
+    <div v-for="headdata in resumedata" class="mb-3">
+      <h4 class="font-italic text-primary p-4 pl-lg-1  pl-xl-0 pl-md-1">{{headdata.heading}}</h4>
+      <b-card v-for="subdata in headdata.content" :sub-title="subdata.subheading" class="my-2">
+              <b-card-text>
+            {{subdata.content}}
+          </b-card-text>
+  </b-card>
+</b-container>
+  </div>
+
+    <!-- Start running your app -->
+    
+    <script>
+      window.app = new Vue({
+        el: '#app',
+        data: {
+          name: '',
+          allprojects: projects,
+          allimages:images,
+          resumedata: mydata
+        },
+
+      })
+    </script>
+  </body>
+</html>

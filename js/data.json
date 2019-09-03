@@ -1,0 +1,128 @@
+var projects =[
+	{
+		"projectid": "arch-villa",
+		"projectName":"Villa ",
+		"Description":"The brief was to design a residence for a joint family of 6 on a linear piece of land along the banks of river Kaveri",
+		"projectContext":"Studio Project // Semester III",
+		"images":["img/bg-img/1.jpg","img/bg-img/2.jpg","img/bg-img/3.jpg"]
+	},
+	{
+		"projectid": "arch-restaurant",
+		"projectName":" Highway Restaurant ",
+		"Description":"The design brief dictated the design of a highway restaurant cum rest area along the Trichy - Thanjavur highway. The main requirements included-restaurant,supermarket,pharmacy,souvenier shops and food joints.",
+		"projectContext":"Studio Project // Semester IV",
+		"images":["img/bg-img/1.jpg","img/bg-img/2.jpg","img/bg-img/3.jpg"]
+	},
+	{
+		"projectid": "arch-rtf",
+		"projectName":"Rethinking The Future Awards 2017",
+		"Description":"The design brief dictated the design of a highway restaurant cum rest area along the Trichy - Thanjavur highway. The main requirements included-restaurant,supermarket,pharmacy,souvenier shops and food joints.",
+		"projectContext":"Competition // @NUDES //2nd Position",
+		"images":[]
+	},
+	{
+		"projectid": "arch-retail-regal",
+		"projectName":"Regal Stores // Mumbai",
+		"Description":"Fabrication drawings, parametric modelling with precision",
+		"projectContext":"Retail Interior, Facade // @NUDES //2nd Position",
+		"images":[]
+	},
+	{
+		"projectid": "arch-hudco",
+		"projectName":"Housing & Urban Development Corp.",
+		"Description":"",
+		"projectContext":"Competition // NASA India //2nd Position",
+		"images":[]
+	},
+
+	]
+
+var images=[ {"url":"img/bg-img/1.jpg"},
+	{"url":"img/bg-img/2.jpg"},
+	{"url":"img/bg-img/3.jpg"},
+	{"url":"img/bg-img/4.jpg"},
+	{"url":"img/bg-img/5.jpg"},
+	{"url":"img/bg-img/6.jpg"},
+	{"url":"img/bg-img/7.jpg"},
+	{"url":"img/bg-img/8.jpg"},
+]
+
+var mydata = [
+	{"heading":"Experience",
+	"content":[
+		{"subheading":"WeWork // Internship // June 2019 - Present",
+		"content":"//BIM Coordination and content management.// Understanding Wework product development process and workflow improvements.// Working on various Revit based automation projects using Python/Revit API."},
+		{"subheading":"Larsen & Toubro // June - July 2018",
+		"content":"// Sightline Analysis and optimisation  for a large scale auditorium.// Modularisation and design strategy development for a  freeform structure."},
+		{"subheading":"NUDES",
+		"content":"// Gained experience in architectural design, working drawing, parametric modeling, computational workflows digital fabrication.//explored workflow automations in a studio firm setup"},
+		{"subheading":"Freelance Computational Designer // May 2018 - May 2019",
+		"content":"- Worked on 30+ computational design, fabrication,projects for a variety of clients."}
+			]},
+	{"heading":"Education",
+	"content":[
+		{"subheading":"National Institute Of Techology, Tiruchirappalli",
+		"content":"B.Arch 2014-2019"},
+		{"subheading":"Narayana Junior College",
+		"content":"Junior College 2012-2014"},
+		{"subheading":"Bikaner Boys' School, Bikaner",
+		"content":"High School -2012"}
+			]},
+	{"heading":"Leadership",
+	"content":[
+		{"subheading":"President // Association of Students of Architecture NIT-T",
+		"content":"Association"},
+		{"subheading":"Design Head // NITTFEST 2017",
+		"content":"lorem ipsum"},
+		{"subheading":"Team Leader // HUDCO Trophy 2017",
+		"content":"lorem ipsum"}
+			]},
+	{"heading":"Achievements & Awards",
+	"content":[
+		{"subheading":"Sub Heading 1",
+		"content":"lorem ipsum"},
+		{"subheading":"Sub Heading 2",
+		"content":"lorem ipsum"},
+		{"subheading":"Sub Heading 3",
+		"content":"lorem ipsum"}
+			]},
+	{"heading":"Activities",
+	"content":[
+		{"subheading":"Sub Heading 1",
+		"content":"lorem ipsum"},
+		{"subheading":"Sub Heading 2",
+		"content":"lorem ipsum"},
+		{"subheading":"Sub Heading 3",
+		"content":"lorem ipsum"}
+			]},
+	{"heading":"Software Skills",
+	"content":[
+		{"subheading":"Sub Heading 1",
+		"content":"lorem ipsum"},
+		{"subheading":"Sub Heading 2",
+		"content":"lorem ipsum"},
+		{"subheading":"Sub Heading 3",
+		"content":"lorem ipsum"}
+			]},
+		{"heading":"Programming Skills",
+	"content":[
+		{"subheading":"Sub Heading 1",
+		"content":"lorem ipsum"},
+		{"subheading":"Sub Heading 2",
+		"content":"lorem ipsum"},
+		{"subheading":"Sub Heading 3",
+		"content":"lorem ipsum"}
+			]},
+		{"heading":"General Skills",
+	"content":[
+		{"subheading":"Sub Heading 1",
+		"content":"lorem ipsum"},
+		{"subheading":"Sub Heading 2",
+		"content":"lorem ipsum"},
+		{"subheading":"Sub Heading 3",
+		"content":"lorem ipsum"}
+			]},
+
+
+
+]
