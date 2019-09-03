@@ -34,6 +34,55 @@ var projects =[
 		"projectContext":"Competition // NASA India //2nd Position",
 		"images":[]
 	},
+	{
+		"projectid": "computational-sightline-analysis",
+		"projectName":"Sightline Analysis",
+		"Description":"",
+		"projectContext":"Larsen & Toubro // Internship Project",
+		"images":[]
+	},
+	{
+		"projectid": "computational-auto-joinery",
+		"projectName":"Generative Joinery System",
+		"Description":"Joinery system tested on a voronoi 3d cube. Generated the system and drawings for laser cut.",
+		"projectContext":" Geometry Exploration // @NUDES",
+		"images":[]
+	},
+	{
+		"projectid": "arch-facade",
+		"projectName":"Undulating Facade",
+		"Description":"Parametric wooden facade for a residence in hyderabad. Scripted for design and drawings for CNC  milling.",
+		"projectContext":" Scripting /Fabrication Drawing // @NUDES",
+		"images":[]
+	},
+	{
+		"projectid": "code-consolegame",
+		"projectName":"Bull Cow Croc",
+		"Description":"First python project.",
+		"projectContext":" Python // Fun",
+		"images":[]
+	},
+	{
+		"projectid": "code-browserhistory1",
+		"projectName":"Facebook Usage Visualisation",
+		"Description":"First python project.",
+		"projectContext":" Data Visualisation // Fun",
+		"images":[]
+	},
+	{
+		"projectid": "code-browserhistory2",
+		"projectName":"Search Keyword Visualisation",
+		"Description":"First python project.",
+		"projectContext":" Data Visualisation // Fun",
+		"images":[]
+	},
+	{
+		"projectid": "computational-armprint",
+		"projectName":"Arm Support Cast",
+		"Description":"First python project.",
+		"projectContext":" Data Visualisation // Fun",
+		"images":[]
+	},
 
 	]
 
@@ -57,7 +106,7 @@ var mydata = [
 		{"subheading":"NUDES",
 		"content":"// Gained experience in architectural design, working drawing, parametric modeling, computational workflows digital fabrication.//explored workflow automations in a studio firm setup"},
 		{"subheading":"Freelance Computational Designer // May 2018 - May 2019",
-		"content":"- Worked on 30+ computational design, fabrication,projects for a variety of clients."}
+		"content":"// Worked on 30+ computational design, fabrication,projects for a variety of clients."}
 			]},
 	{"heading":"Education",
 	"content":[
@@ -68,15 +117,16 @@ var mydata = [
 		{"subheading":"Bikaner Boys' School, Bikaner",
 		"content":"High School -2012"}
 			]},
-	{"heading":"Leadership",
+		{"heading":"Skills",
 	"content":[
-		{"subheading":"President // Association of Students of Architecture NIT-T",
-		"content":"Association"},
-		{"subheading":"Design Head // NITTFEST 2017",
-		"content":"lorem ipsum"},
-		{"subheading":"Team Leader // HUDCO Trophy 2017",
-		"content":"lorem ipsum"}
+		{"subheading":"Software Skills",
+		"content":"//Revit //AutoCAD //Rhinoceros //Grasshopper3D //Photoshop //InDesign //Illustrator //PowerBI "},
+		{"subheading":"Programming Skills",
+		"content":"//Python //C#(Beginner)/WPF/IronPython //RevitAPI/pyRevit/RPW //RhinoAPI/GHPython //WebAPIs( extensively worked with Airtable API) //Vue.js //Flask //HTML/CSS  "},
+		{"subheading":"General",
+		"content":"//Architectural-Design/Modelling/Drawings //BIM-Management //Computational-Design //Fabrication-Drawings //Team-Building/Leading //Graphic-Design"}
 			]},
+
 	{"heading":"Achievements & Awards",
 	"content":[
 		{"subheading":"Sub Heading 1",
@@ -86,43 +136,13 @@ var mydata = [
 		{"subheading":"Sub Heading 3",
 		"content":"lorem ipsum"}
 			]},
-	{"heading":"Activities",
+		{"heading":"Leadership & Activities",
 	"content":[
-		{"subheading":"Sub Heading 1",
+		{"subheading":"President // Association of Students of Architecture NIT-T",
+		"content":"Association"},
+		{"subheading":"Design Head // NITTFEST 2017",
 		"content":"lorem ipsum"},
-		{"subheading":"Sub Heading 2",
-		"content":"lorem ipsum"},
-		{"subheading":"Sub Heading 3",
+		{"subheading":"Team Leader // HUDCO Trophy 2017",
 		"content":"lorem ipsum"}
-			]},
-	{"heading":"Software Skills",
-	"content":[
-		{"subheading":"Sub Heading 1",
-		"content":"lorem ipsum"},
-		{"subheading":"Sub Heading 2",
-		"content":"lorem ipsum"},
-		{"subheading":"Sub Heading 3",
-		"content":"lorem ipsum"}
-			]},
-		{"heading":"Programming Skills",
-	"content":[
-		{"subheading":"Sub Heading 1",
-		"content":"lorem ipsum"},
-		{"subheading":"Sub Heading 2",
-		"content":"lorem ipsum"},
-		{"subheading":"Sub Heading 3",
-		"content":"lorem ipsum"}
-			]},
-		{"heading":"General Skills",
-	"content":[
-		{"subheading":"Sub Heading 1",
-		"content":"lorem ipsum"},
-		{"subheading":"Sub Heading 2",
-		"content":"lorem ipsum"},
-		{"subheading":"Sub Heading 3",
-		"content":"lorem ipsum"}
-			]},
-
-
-
+			]}
 ]
