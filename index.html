@@ -67,15 +67,12 @@
   </div>
   </b-container>
   <!-- gallery content -->
-   <!-- <div fluid ><h2 class="text-center m-5">Gallery</h2></div> -->
-   <!-- <div id="separator" class="my-3"></div> -->
   <b-container fluid id="gallery" class="row mx-0 mb-1 py-3 bg-dark"><b-col v-for="image in allimages" lg="4" md="4" sm="6" class="gallery-img">
     <b-img fluid center :src="image.url" class="p-2"/>
   </b-col></b-container>
   <!-- data content -->
-  <!-- <div id="separator" class="my-3"></div> -->
-  <h2 class="w-100 font-italic text-center py-2 text-light bg-dark" >Resume</h2>
-  <b-container id="resume" class="p-lg-5 p-2">
+  <h2 id="resume" class="w-100 font-italic font-heavy py-2 text-light bg-dark pl-3 pl-lg-5 pl-xl-5 col-8 ml-3 mt-5" >Resume</h2>
+  <b-container id="resumecontent" class="p-lg-5 p-2">
 
     <div v-for="headdata in resumedata" class="mb-3">
       <h4 class="font-italic text-primary p-4 pl-lg-1  pl-xl-0 pl-md-1">{{headdata.heading}}</h4>
