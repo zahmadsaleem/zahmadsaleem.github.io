@@ -1,87 +1,107 @@
 var projects =[
 	{
 		"projectid": "arch-villa",
-		"projectName":"Villa ",
-		"Description":"The brief was to design a residence for a joint family of 6 on a linear piece of land along the banks of river Kaveri",
+		"projectName":"Villa // Srirangam",
+		"Description":"The brief was to design a residence for a family of 4 on a linear piece of land along the banks of river Kaveri",
 		"projectContext":"Studio Project // Semester III",
-		"images":["img/bg-img/1.jpg","img/bg-img/2.jpg","img/bg-img/3.jpg"]
+		"images":[],
+		"links" :[]
 	},
 	{
 		"projectid": "arch-restaurant",
-		"projectName":" Highway Restaurant ",
-		"Description":"The design brief dictated the design of a highway restaurant cum rest area along the Trichy - Thanjavur highway. The main requirements included-restaurant,supermarket,pharmacy,souvenier shops and food joints.",
+		"projectName":" Highway Restaurant // Trichy",
+		"Description":"The design brief dictated the design of a highway restaurant cum rest area along the Trichy - Thanjavur highway. The main requirements included: restaurant, supermarket, pharmacy, souvenier shops and food joints //Concept : Swirl-Motion, relating to the primary activity on highway. The structure is visually and funtionally linear connecting different functions.",
 		"projectContext":"Studio Project // Semester IV",
-		"images":["img/bg-img/1.jpg","img/bg-img/2.jpg","img/bg-img/3.jpg"]
+		"images":[],
+		"links" :[]
 	},
 	{
 		"projectid": "arch-rtf",
 		"projectName":"ECO Machine",
-		"Description":"Rethinking The Future Awards 2017",
+		"Description":"Concept visualising multi storey farming, mass conservation of energy, resource optimisation for housing on a large scale. Project presented for Rethinking The Future Awards 2017",
 		"projectContext":"Competition // @NUDES //2nd Position",
-		"images":[]
+		"images":[],
+		"links" :["https://www.re-thinkingthefuture.com/rtfa2017-housing-concept/out-of-the-box-nudes/"]
 	},
 	{
 		"projectid": "arch-retail-regal",
 		"projectName":"Regal Stores // Mumbai",
 		"Description":"Fabrication drawings, parametric modelling with precision",
-		"projectContext":"Retail Interior, Facade // @NUDES //2nd Position",
-		"images":[]
+		"projectContext":"Retail Interior, Facade // @NUDES",
+		"images":[],
+		"links" :["https://www.westendmallpune.com/regal-shoes-pune-aundh/"]
 	},
 	{
 		"projectid": "arch-hudco",
 		"projectName":"Housing & Urban Development Corp.",
-		"Description":"",
+		"Description":"Proposal for a slum redevelompment plan undetaken by HUDCO. Presented as a part of Annual NASA Convention, India 2017. HUDCO trophy aims at designing for the informal sector and give design alternatives for the issues pertaining to the solutions to Sustainable Urban Development. //Click on [Z603] in the link",
 		"projectContext":"Competition // NASA India //2nd Position",
-		"images":[]
+		"images":[],
+		"links" :["https://nasaindia.co/index.php/winningentry?type=annual&trophyId=2&groupId=2&year=2016"]
 	},
 	{
 		"projectid": "computational-sightline-analysis",
 		"projectName":"Sightline Analysis",
-		"Description":"",
+		"Description":"Analysed visibility for a multi storey auditorium using c-value and a-value methods, suggested design improvisations for maximum visibility.",
 		"projectContext":"Larsen & Toubro // Internship Project",
-		"images":[]
+		"images":[],
+		"links" :[]
 	},
 	{
 		"projectid": "computational-auto-joinery",
 		"projectName":"Generative Joinery System",
-		"Description":"Joinery system tested on a voronoi 3d cube. Generated the system and drawings for laser cut.",
+		"Description":"Generated a fabrication system and drawings for arbitarily  intersecting planes, tested on a voronoi cube.",
 		"projectContext":" Geometry Exploration // @NUDES",
-		"images":[]
+		"images":[],
+		"links" :[]
 	},
 	{
 		"projectid": "arch-facade",
-		"projectName":"Undulating Facade",
-		"Description":"Parametric wooden facade for a residence in hyderabad. Scripted for design and drawings for CNC  milling.",
+		"projectName":"Undulating Facade //Hyderabad",
+		"Description":"Parametric wooden facade for a residence in Hyderabad. Scripted for design and drawings for CNC milling.",
 		"projectContext":" Scripting /Fabrication Drawing // @NUDES",
-		"images":[]
+		"images":[],
+		"links" :[]
 	},
 	{
 		"projectid": "code-consolegame",
-		"projectName":"Bull Cow Croc",
-		"Description":"First python project.",
+		"projectName":"Bulls & Cows",
+		"Description":"My first python project! Bulls & Cows game word version build with added features like scores, time and hints. The game guesses a word from list of isogram words scraped and pickled, the user inputs the number of chances he'd need and tries to guess the word.",
 		"projectContext":" Python // Fun",
-		"images":[]
+		"images":[],
+		"links" :["https://en.wikipedia.org/wiki/Bulls_and_Cows#The_word_version"]
 	},
 	{
 		"projectid": "code-browserhistory1",
 		"projectName":"Facebook Usage Visualisation",
 		"Description":"",
 		"projectContext":" Data Visualisation // Fun",
-		"images":[]
+		"images":[],
+		"links" :[]
 	},
 	{
 		"projectid": "code-browserhistory2",
 		"projectName":"Search Keyword Visualisation",
-		"Description":".",
+		"Description":"",
 		"projectContext":" Data Visualisation // Fun",
-		"images":[]
+		"images":[],
+		"links" :[]
 	},
 	{
 		"projectid": "computational-armprint",
 		"projectName":"Arm Support Cast",
-		"Description":"3D printable arm mesh generation for injured arm support.",
+		"Description":"3D printable arm mesh generation for injured arm support, 3d scan of the injured arm is used as input. Factors like bone positions, screw positions considered while generating the cast",
 		"projectContext":" Data Visualisation // Fun",
-		"images":[]
+		"images":[],
+		"links" :[]
+	},
+	{
+		"projectid": "code-pyrevit",
+		"projectName":"Revit-pyRevit-RPW Snippets",
+		"Description":"Series of code snippets used to automate minor/major daily tasks",
+		"projectContext":"RevitAPI Exploration // Part of my initiatives @WeWork",
+		"images":[],
+		"links" :[]
 	},
 
 	]
@@ -100,39 +120,39 @@ var mydata = [
 	{"heading":"Experience",
 	"content":[
 		{"subheading":"WeWork // Internship // June 2019 - Present",
-		"content":"//BIM Coordination and content management.// Understanding Wework product development process and workflow improvements.// Working on various Revit based automation projects using Python/Revit API."},
+		"content":"//BIM Coordination and content management //Understanding Wework product development process and workflow improvements //Working on various Revit based automation projects using Python-pyRevit-RevitAPI //Revit-Airtable data workflow"},
 		{"subheading":"Larsen & Toubro // June - July 2018",
 		"content":"// Sightline Analysis and optimisation  for a large scale auditorium.// Modularisation and design strategy development for a  freeform structure."},
 		{"subheading":"NUDES",
-		"content":"// Gained experience in architectural design, working drawing, parametric modeling, computational workflows digital fabrication.//explored workflow automations in a studio firm setup"},
+		"content":"// Gained experience in architectural design, working drawing, parametric modeling, computational workflows digital fabrication //Explored workflow automations in a studio firm setup"},
 		{"subheading":"Freelance Computational Designer // May 2018 - May 2019",
 		"content":"// Worked on 30+ computational design, fabrication,projects for a variety of clients."}
 			]},
 	{"heading":"Education",
 	"content":[
 		{"subheading":"National Institute Of Techology, Tiruchirappalli",
-		"content":"B.Arch 2014-2019"},
-		{"subheading":"Narayana Junior College",
-		"content":"Junior College 2012-2014"},
+		"content":"B.Arch 2014 - 2019"},
+		{"subheading":"Narayana Junior College, Vijayawada",
+		"content":"Junior College 2012 - 2014"},
 		{"subheading":"Bikaner Boys' School, Bikaner",
-		"content":"High School -2012"}
+		"content":"High School 2010 - 2012"}
 			]},
 		{"heading":"Skills",
 	"content":[
 		{"subheading":"Software Skills",
-		"content":"//Revit //Dynamo //AutoCAD //Rhinoceros //Grasshopper3D //Photoshop //InDesign //Illustrator //PowerBI "},
+		"content":"//Revit-Dynamo //AutoCAD //Rhinoceros-Grasshopper3D //Photoshop //InDesign //Illustrator //PowerBI "},
 		{"subheading":"Programming Skills",
-		"content":"//Python //C#(Beginner)/WPF/IronPython //RevitAPI/pyRevit/RPW //RhinoAPI/GHPython //WebAPIs( extensively worked with Airtable API) //Vue.js //Flask //HTML/CSS  "},
+		"content":"//Python //C#(Beginner) //RevitAPI-pyRevit-RPW-WPF-IronPython //RhinoAPI-GHPython  //WebAPIs(Extensively worked with Airtable API) //D3.js //Vue.js //Flask //HTML-CSS  "},
 		{"subheading":"General",
 		"content":"//Architectural-Design/Modelling/Drawings //BIM-Management //Computational-Design //Fabrication-Drawings //Team-Building/Leading //Graphic-Design"}
 			]},
 
 	{"heading":"Achievements & Awards",
 	"content":[
-		{"subheading":"Design Challenge/Pragyan-15",
-		"content":""},
+		{"subheading":"Design Challenge/Pragyan-15 // Runner - UP",
+		"content":"PDC is a core engineering event which is exclusively designed to cater to the students who are interested and prolific in CAD skills, involving various designing softwares and modelling packages."},
 		{"subheading":"Aakriti/Pragyan-16",
-		"content":""},
+		"content":"Aakriti is an architectural design competition meant for Civil Engineering and Architecture Students."},
 		{"subheading":"NASA HUDCO 2016",
 		"content":""},
 		{"subheading":"NASA HUDCO 2017",
@@ -142,12 +162,12 @@ var mydata = [
 	"content":[
 		{"subheading":"President // Association of Students of Architecture NIT-T",
 		"content":""},
-		{"subheading":"Design Head // NITTFEST 2017",
-		"content":""},
+		{"subheading":"Design & Media Head // NITTFEST 2017",
+		"content":"Produced and managed design and media content for inter department cultural fest of NIT Trichy - NITTFEST. Also volunteered to manage events during NITTFEST."},
 		{"subheading":"Team Leader // HUDCO Trophy 2017",
 		"content":""},
-		{"subheading":"Flight Cadet",
-		"content":""},
+		{"subheading":"B-Certificate// National Cadet Corps(NCC)",
+		"content":"Obtained NCC B-Certificate with A grade under 3TN Air Squadron NCC. Participated in CATC Camp - volunteered for various group activities and responsibilities. "},
 		{"subheading":"Volunteer // Nostartch",
 		"content":""}
 			]}
