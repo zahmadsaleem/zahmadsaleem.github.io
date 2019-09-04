@@ -1,10 +1,18 @@
 var projects =[
+		{
+		"projectid": "arch-thesis",
+		"projectName":"Media Square // Amaravati",
+		"Description":"The brief was to design a residence for a family of 4 on a linear piece of land along the banks of river Kaveri",
+		"projectContext":"Thesis Project // Semester X",
+		"images":[],
+		"links" :[]
+	},
 	{
 		"projectid": "arch-villa",
 		"projectName":"Villa // Srirangam",
 		"Description":"The brief was to design a residence for a family of 4 on a linear piece of land along the banks of river Kaveri",
 		"projectContext":"Studio Project // Semester III",
-		"images":[],
+		"images":["img/arch-villa-1.jpg","img/arch-villa-2.jpg","img/arch-villa-3.jpg"],
 		"links" :[]
 	},
 	{
@@ -12,7 +20,7 @@ var projects =[
 		"projectName":" Highway Restaurant // Trichy",
 		"Description":"The design brief dictated the design of a highway restaurant cum rest area along the Trichy - Thanjavur highway. The main requirements included: restaurant, supermarket, pharmacy, souvenier shops and food joints //Concept : Swirl-Motion, relating to the primary activity on highway. The structure is visually and funtionally linear connecting different functions.",
 		"projectContext":"Studio Project // Semester IV",
-		"images":[],
+		"images":["img/arch-restaurant-1.jpg","img/arch-restaurant-2.jpg","img/arch-restaurant-3.jpg"],
 		"links" :[]
 	},
 	{

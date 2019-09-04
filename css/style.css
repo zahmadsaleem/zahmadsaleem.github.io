@@ -128,15 +128,6 @@ body {
 }
 }
 
-#separator{
-  height: 20px;
-  background:#ababab;
-  width: 100%;
-
-}
-
-#resume h1{
-  font-weight: 700;
-  height: 80px;
-  background-color: #ababab;
+.btn.focus, .btn:focus {
+    box-shadow: none;
 }

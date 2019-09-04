@@ -35,7 +35,7 @@
   </head>
   <body>
     <!-- Our application root element -->
-    <div id="app" class="w-100">
+    <div id="app" class="w-100 col-lg-8 col-xl-8 mx-lg-auto mx-xl-auto px-0">
       <div class="text-center cover-container d-flex h-100 p-3 mx-auto flex-column">
       <header class="masthead mb-auto">
           <b-navbar sticky toggleable class="nav nav-masthead justify-content-center ">
@@ -51,7 +51,7 @@
       </main>
     </div>
    <!-- Projcect content -->
-    <b-container fluid id="projects" class="m-0 p-2 p-2 col-lg-8 col-xl-8 mx-auto">
+    <b-container fluid id="projects" class="m-0 p-2 mx-auto">
     <div v-for="project in allprojects" v-bind:key="project.projectName" id="projectContent" class="pr-2">
       <b-button block v-b-toggle="project.projectid" class="m-1 collapse-btn text-left pl-3" variant="outline-dark" >{{project.projectid}}
       </b-button>
@@ -74,7 +74,7 @@
     <p class="my-4">Vertically centered modal!</p>
     </b-modal>
   <!-- data content -->
-  <h2 id="resume" class="w-100 font-italic font-heavy py-2 text-light bg-dark pl-3 pl-lg-5 pl-xl-5 col-8 ml-3 mt-5" >Resume</h2>
+  <h2 id="resume" class="w-100 font-italic font-heavy py-2 text-light bg-dark pl-3 pl-lg-5 pl-xl-5 col-4 ml-0 mt-5" >Resume</h2>
   <b-container id="resumecontent" class="p-lg-5 p-2">
     <div v-for="headdata in resumedata" class="mb-3">
       <h4 class="font-italic text-primary p-4 pl-lg-1  pl-xl-0 pl-md-1">{{headdata.heading}}</h4>
