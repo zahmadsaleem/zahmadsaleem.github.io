@@ -67,9 +67,12 @@
   </div>
   </b-container>
   <!-- gallery content -->
-  <b-container fluid id="gallery" class="row mx-0 mb-1 py-3 bg-dark"><b-col v-for="image in allimages" lg="4" md="4" sm="6" class="gallery-img">
-    <b-img fluid center :src="image.url" class="p-2"/>
+  <b-container fluid id="gallery" class="row mx-0 mb-1 py-3 bg-dark"><b-col v-for="image in allimages" lg="4" md="4" sm="6" class="gallery-img">  
+    <b-img fluid center @click="showMsgBox(image.url)" :src="image.url" class="p-2"/>
   </b-col></b-container>
+  <b-modal id="modal-center" centered title="BootstrapVue">
+    <p class="my-4">Vertically centered modal!</p>
+    </b-modal>
   <!-- data content -->
   <h2 id="resume" class="w-100 font-italic font-heavy py-2 text-light bg-dark pl-3 pl-lg-5 pl-xl-5 col-8 ml-3 mt-5" >Resume</h2>
   <b-container id="resumecontent" class="p-lg-5 p-2">
@@ -80,9 +83,13 @@
     </b-card>
     </div>
   </b-container>
-  <footer class="col-lg-3 col-xl-3 col-md-6 col-10 mx-auto mb-2">
-      <b-card border-variant="dark" header="Ahmad Saleem Z" align="center">
-        <b-card-text><b-link href="mailto:azsaleem11@gmail.com" class="text-dark">azsaleem11@gmail.com</b-link><br>+91 9944405317<br><b-link href="http://linkedin.com/in/ahmadsaleemz" class="text-primary">LinkedIn</b-link></b-card-text>
+  <footer id="contact" class="w-100 mx-auto m-0 p-5 bg-dark text-light text-center">
+    <h2 class="font-heavy p-2 ">AHMAD SALEEM Z</h2>
+        <b-card-text><b-link href="mailto:azsaleem11@gmail.com">azsaleem11@gmail.com</b-link><br>+91 9944405317<br>
+          <b-link href="http://linkedin.com/in/ahmadsaleemz" class="text-secondary">LinkedIn -</b-link>
+          <b-link href="http://instagram.com/ah.mad.so.lame" class="text-secondary">Instagram -</b-link>
+          <b-link href="http://www.facebook.com/ahmadsaleemz" class="text-secondary">Facebook</b-link>
+        </b-card-text>
   </footer>
   </div>
 
