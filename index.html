@@ -62,13 +62,13 @@
           </b-card-text>
           <b-link v-for="link in project.links" :href="link" class="card-link text-primary">Link</b-link>
         </b-card>
-       <b-img-lazy center fluid v-for="image in project.images" :src="image"  class="m-1 "/>
+       <b-img-lazy center fluid v-for="image in project.images" :src="image" alt="project image" class="m-1 "/>
     </b-collapse>
   </div>
   </b-container>
   <!-- gallery content -->
   <b-container fluid id="gallery" class="row mx-0 mb-1 py-3 bg-dark"><b-col v-for="image in allimages" lg="4" md="4" sm="6" class="gallery-img">  
-    <b-img fluid center @click="showMsgBox(image.url)" :src="image.url" class="p-2"/>
+    <b-img fluid center @click="showMsgBox(image.url)" :src="image.url" class="p-2" alt="gallery image"/>
   </b-col></b-container>
   <b-modal id="modal-center" centered title="BootstrapVue">
     <p class="my-4">Vertically centered modal!</p>

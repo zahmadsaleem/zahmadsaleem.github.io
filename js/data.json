@@ -60,7 +60,7 @@ var projects =[
 		"projectName":"Generative Joinery System",
 		"Description":"Generated a fabrication system and drawings for arbitarily  intersecting planes, tested on a voronoi cube.",
 		"projectContext":" Geometry Exploration // @NUDES",
-		"images":[],
+		"images":["img/computational-auto-joinery-1.jpg","img/computational-auto-joinery-2.jpg","img/computational-auto-joinery-3.jpg"],
 		"links" :[]
 	},
 	{
@@ -114,15 +114,7 @@ var projects =[
 
 	]
 
-var images=[ {"url":"img/bg-img/1.jpg"},
-	{"url":"img/bg-img/2.jpg"},
-	{"url":"img/bg-img/3.jpg"},
-	{"url":"img/bg-img/4.jpg"},
-	{"url":"img/bg-img/5.jpg"},
-	{"url":"img/bg-img/6.jpg"},
-	{"url":"img/bg-img/7.jpg"},
-	{"url":"img/bg-img/8.jpg"},
-]
+var images=[{"url": "img/bg-img/1.jpg"}, {"url": "img/bg-img/10.jpg"}, {"url": "img/bg-img/11.jpg"}, {"url": "img/bg-img/12.gif"}, {"url": "img/bg-img/13.jpg"}, {"url": "img/bg-img/14.jpg"}, {"url": "img/bg-img/15.jpg"}, {"url": "img/bg-img/16.gif"}, {"url": "img/bg-img/2.jpg"}, {"url": "img/bg-img/3.jpg"}, {"url": "img/bg-img/4.jpg"}, {"url": "img/bg-img/5.jpg"}, {"url": "img/bg-img/6.jpg"}, {"url": "img/bg-img/7.jpg"}, {"url": "img/bg-img/8.jpg"}, {"url": "img/bg-img/9.jpg"}]
 
 var mydata = [
 	{"heading":"Experience",
