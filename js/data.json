@@ -2,7 +2,7 @@ var projects =[
 		{
 		"projectid": "arch-thesis",
 		"projectName":"Media Square // Amaravati",
-		"Description":"The brief was to design a residence for a family of 4 on a linear piece of land along the banks of river Kaveri",
+		"Description":"Proposal for a space entitled to produce, manage, broadcast vareity of media content and fulfill the architectural challenges faced by Television media production and broadcasting centers.",
 		"projectContext":"Thesis Project // Semester X",
 		"images":["img/arch-thesis-1.jpg", "img/arch-thesis-2.jpg", "img/arch-thesis-3.jpg", "img/arch-thesis-4.jpg", "img/arch-thesis-5.jpg", "img/arch-thesis-6.jpg", "img/arch-thesis-7.jpg", "img/arch-thesis-8.jpg"],
 		"links" :[]
