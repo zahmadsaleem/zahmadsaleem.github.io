@@ -4,7 +4,7 @@ var projects =[
 		"projectName":"Media Square // Amaravati",
 		"Description":"The brief was to design a residence for a family of 4 on a linear piece of land along the banks of river Kaveri",
 		"projectContext":"Thesis Project // Semester X",
-		"images":[],
+		"images":["img/arch-thesis-1.jpg", "img/arch-thesis-2.jpg", "img/arch-thesis-3.jpg", "img/arch-thesis-4.jpg", "img/arch-thesis-5.jpg", "img/arch-thesis-6.jpg", "img/arch-thesis-7.jpg", "img/arch-thesis-8.jpg"],
 		"links" :[]
 	},
 	{
@@ -28,7 +28,7 @@ var projects =[
 		"projectName":"ECO Machine",
 		"Description":"Concept visualising multi storey farming, mass conservation of energy, resource optimisation for housing on a large scale. Project presented for Rethinking The Future Awards 2017",
 		"projectContext":"Competition // @NUDES //2nd Position",
-		"images":[],
+		"images":["img/arch-rtf-1.jpg","img/arch-rtf-2.jpg","img/arch-rtf-3.jpg"],
 		"links" :["https://www.re-thinkingthefuture.com/rtfa2017-housing-concept/out-of-the-box-nudes/"]
 	},
 	{
@@ -76,23 +76,23 @@ var projects =[
 		"projectName":"Bulls & Cows",
 		"Description":"My first python project! Bulls & Cows game word version build with added features like scores, time and hints. The game guesses a word from list of isogram words scraped and pickled, the user inputs the number of chances he'd need and tries to guess the word.",
 		"projectContext":" Python // Fun",
-		"images":[],
+		"images":["img/code-consolegame-1.gif"],
 		"links" :["https://en.wikipedia.org/wiki/Bulls_and_Cows#The_word_version"]
 	},
 	{
 		"projectid": "code-browserhistory1",
-		"projectName":"Facebook Usage Visualisation",
-		"Description":"",
+		"projectName":"Website Usage Visualisation",
+		"Description":"Browser history of a short period extracted using chrome API and visualised using native grasshopper",
 		"projectContext":" Data Visualisation // Fun",
-		"images":[],
+		"images":["img/code-browserhistory1-1.jpg","img/code-browserhistory1-2.gif"],
 		"links" :[]
 	},
 	{
 		"projectid": "code-browserhistory2",
 		"projectName":"Search Keyword Visualisation",
-		"Description":"",
+		"Description":"Browser history of a short period extracted using chrome API, search keywords extracted and visualised using native grasshopper",
 		"projectContext":" Data Visualisation // Fun",
-		"images":[],
+		"images":["img/code-browserhistory2-1.jpg"],
 		"links" :[]
 	},
 	{
@@ -100,7 +100,7 @@ var projects =[
 		"projectName":"Arm Support Cast",
 		"Description":"3D printable arm mesh generation for injured arm support, 3d scan of the injured arm is used as input. Factors like bone positions, screw positions considered while generating the cast",
 		"projectContext":" Data Visualisation // Fun",
-		"images":[],
+		"images":["img/computational-armprint-1.jpg"],
 		"links" :[]
 	},
 	{
@@ -109,7 +109,7 @@ var projects =[
 		"Description":"Series of code snippets used to automate minor/major daily tasks",
 		"projectContext":"RevitAPI Exploration // Part of my initiatives @WeWork",
 		"images":[],
-		"links" :[]
+		"links" :["https://github.com/zahmadsaleem/py-revit"]
 	},
 
 	]
@@ -169,7 +169,7 @@ var mydata = [
 		{"heading":"Leadership & Activities",
 	"content":[
 		{"subheading":"President // Association of Students of Architecture NIT-T",
-		"content":""},
+		"content":"The Association of Students of Architecture(ASA) is a Non-Profit Student council of the Department of Architecture of NIT Trichy. Conducted variety of events ranging from workshops for skill sharing and skill development, to organizing guest lectures of well known professionals."},
 		{"subheading":"Design & Media Head // NITTFEST 2017",
 		"content":"Produced and managed design and media content for inter department cultural fest of NIT Trichy - NITTFEST. Also volunteered to manage events during NITTFEST."},
 		{"subheading":"Team Leader // NASA HUDCO Trophy 2017",
