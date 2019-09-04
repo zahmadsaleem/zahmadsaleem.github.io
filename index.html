@@ -51,7 +51,7 @@
       </main>
     </div>
    <!-- Projcect content -->
-    <b-container fluid id="projects" class="m-0 p-2">
+    <b-container fluid id="projects" class="m-0 p-2 p-2 col-lg-8 col-xl-8 mx-auto">
     <div v-for="project in allprojects" v-bind:key="project.projectName" id="projectContent" class="pr-2">
       <b-button block v-b-toggle="project.projectid" class="m-1 collapse-btn text-left pl-3" variant="outline-dark" >{{project.projectid}}
       </b-button>
@@ -60,28 +60,37 @@
           <b-card-text>
             {{project.Description}}
           </b-card-text>
-          <b-link href="#" class="card-link text-primary">Link</b-link>
+          <b-link v-for="link in project.links" :href="link" class="card-link text-primary">Link</b-link>
         </b-card>
        <b-img-lazy center fluid v-for="image in project.images" :src="image"  class="m-1 "/>
     </b-collapse>
   </div>
   </b-container>
   <!-- gallery content -->
-  <b-container fluid id="gallery" class="row mx-0 mb-1 py-3 bg-dark"><b-col v-for="image in allimages" lg="4" md="4" sm="6" class="gallery-img">
-    <b-img fluid center :src="image.url" class="p-2"/>
+  <b-container fluid id="gallery" class="row mx-0 mb-1 py-3 bg-dark"><b-col v-for="image in allimages" lg="4" md="4" sm="6" class="gallery-img">  
+    <b-img fluid center @click="showMsgBox(image.url)" :src="image.url" class="p-2"/>
   </b-col></b-container>
+  <b-modal id="modal-center" centered title="BootstrapVue">
+    <p class="my-4">Vertically centered modal!</p>
+    </b-modal>
   <!-- data content -->
   <h2 id="resume" class="w-100 font-italic font-heavy py-2 text-light bg-dark pl-3 pl-lg-5 pl-xl-5 col-8 ml-3 mt-5" >Resume</h2>
   <b-container id="resumecontent" class="p-lg-5 p-2">
-
     <div v-for="headdata in resumedata" class="mb-3">
       <h4 class="font-italic text-primary p-4 pl-lg-1  pl-xl-0 pl-md-1">{{headdata.heading}}</h4>
       <b-card v-for="subdata in headdata.content" :sub-title="subdata.subheading" class="my-2">
-              <b-card-text>
-            {{subdata.content}}
-          </b-card-text>
-  </b-card>
-</b-container>
+              <b-card-text>{{subdata.content}}</b-card-text>
+    </b-card>
+    </div>
+  </b-container>
+  <footer id="contact" class="w-100 mx-auto m-0 p-5 bg-dark text-light text-center">
+    <h2 class="font-heavy p-2 ">AHMAD SALEEM Z</h2>
+        <b-card-text><b-link href="mailto:azsaleem11@gmail.com">azsaleem11@gmail.com</b-link><br>+91 9944405317<br>
+          <b-link href="http://linkedin.com/in/ahmadsaleemz" class="text-secondary">LinkedIn -</b-link>
+          <b-link href="http://instagram.com/ah.mad.so.lame" class="text-secondary">Instagram -</b-link>
+          <b-link href="http://www.facebook.com/ahmadsaleemz" class="text-secondary">Facebook</b-link>
+        </b-card-text>
+  </footer>
   </div>
 
     <!-- Start running your app -->
