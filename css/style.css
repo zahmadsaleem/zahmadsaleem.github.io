@@ -131,3 +131,7 @@ body {
 .btn.focus, .btn:focus {
     box-shadow: none;
 }
+
+.modal-body {
+    padding: 0px!important;
+}

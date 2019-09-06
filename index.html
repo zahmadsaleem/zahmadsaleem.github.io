@@ -70,8 +70,8 @@
   <b-container fluid id="gallery" class="row mx-0 mb-1 py-3 bg-dark"><b-col v-for="image in allimages" lg="4" md="4" sm="6" class="gallery-img">  
     <b-img fluid center @click="showMsgBox(image.url)" :src="image.url" class="p-2" alt="gallery image"/>
   </b-col></b-container>
-  <b-modal id="modal-center" centered title="BootstrapVue">
-    <p class="my-4">Vertically centered modal!</p>
+  <b-modal id="modal-center" hide-footer hide-header ref="mm-modal" centered class="bg-dark w-100">
+    <b-img-lazy fluid :src="imgurl"/>
     </b-modal>
   <!-- data content -->
   <h2 id="resume" class="w-100 font-italic font-heavy py-2 text-light bg-dark pl-3 pl-lg-5 pl-xl-5 col-4 ml-0 mt-5" >Resume</h2>
@@ -102,8 +102,16 @@
           name: '',
           allprojects: projects,
           allimages:images,
-          resumedata: mydata
+          resumedata: mydata,
+          imgurl:''
         },
+        methods:{
+          showMsgBox:function(imgurl){
+            this.imgurl = imgurl
+            this.$refs['mm-modal'].show()
+
+          }
+        }
 
       })
     </script>
