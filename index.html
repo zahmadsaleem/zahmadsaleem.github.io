@@ -70,7 +70,7 @@
   <b-container fluid id="gallery" class="row mx-0 mb-1 py-3 bg-dark"><b-col v-for="image in allimages" lg="4" md="4" sm="6" class="gallery-img">  
     <b-img fluid center @click="showMsgBox(image.url)" :src="image.url" class="p-2" alt="gallery image"/>
   </b-col></b-container>
-  <b-modal id="modal-center" hide-footer hide-header ref="mm-modal" centered class="bg-dark w-100">
+  <b-modal id="modal-center" hide-footer hide-header ref="mm-modal" centered class="bg-dark w-100 m-0">
     <b-img-lazy fluid :src="imgurl"/>
     </b-modal>
   <!-- data content -->
