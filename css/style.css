@@ -96,7 +96,7 @@ body {
 }
 
 
-#projectContent{
+#projects{
 
 }
 
@@ -112,7 +112,9 @@ body {
   border:0px;
   border-radius:0px;
 }
-
+#projects .card-body{
+  padding-bottom: 0px;
+}
 
 .gallery{
 
@@ -120,13 +122,26 @@ body {
 .gallery-img{
   padding: 0px;
 }
-@media(max-width: 576px){
+@media(max-width: 480px){
 .gallery-img {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
 }
+.card-text{
+  font-size: 0.85rem;
 }
+h3{
+  font-size: 1.5rem;
+}
+h2{
+  font-size: 1.7rem;
+}
+h4{
+  font-size:1.25rem;
+}
+}
+
 
 .btn.focus, .btn:focus {
     box-shadow: none;

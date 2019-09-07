@@ -4,7 +4,8 @@ var projects =[
 		"projectName":"Media Square // Amaravati",
 		"Description":"Proposal for a space entitled to produce, manage, broadcast vareity of media content and fulfill the architectural challenges faced by Television media production and broadcasting centers.",
 		"projectContext":"Thesis Project // Semester X",
-		"images":["img/arch-thesis-1.jpg", "img/arch-thesis-2.jpg", "img/arch-thesis-3.jpg", "img/arch-thesis-4.jpg", "img/arch-thesis-5.jpg", "img/arch-thesis-6.jpg", "img/arch-thesis-7.jpg", "img/arch-thesis-8.jpg"],
+		"cover":"arch-thesis-0.jpg",
+		"images":["arch-thesis-0.jpg", "arch-thesis-2.jpg", "arch-thesis-3.jpg", "arch-thesis-4.jpg", "arch-thesis-5.jpg", "arch-thesis-6.jpg", "arch-thesis-7.jpg", "arch-thesis-8.jpg"],
 		"links" :[]
 	},
 	{
@@ -12,7 +13,8 @@ var projects =[
 		"projectName":"Villa // Srirangam",
 		"Description":"The brief was to design a residence for a family of 4 on a linear piece of land along the banks of river Kaveri",
 		"projectContext":"Studio Project // Semester III",
-		"images":["img/arch-villa-1.jpg","img/arch-villa-2.jpg","img/arch-villa-3.jpg"],
+		"cover":"arch-villa-1.jpg",
+		"images":["arch-villa-1.jpg","arch-villa-2.jpg","arch-villa-3.jpg"],
 		"links" :[]
 	},
 	{
@@ -20,7 +22,8 @@ var projects =[
 		"projectName":" Highway Restaurant // Trichy",
 		"Description":"The design brief dictated the design of a highway restaurant cum rest area along the Trichy - Thanjavur highway. The main requirements included: restaurant, supermarket, pharmacy, souvenier shops and food joints //Concept : Swirl-Motion, relating to the primary activity on highway. The structure is visually and funtionally linear connecting different functions.",
 		"projectContext":"Studio Project // Semester IV",
-		"images":["img/arch-restaurant-1.jpg","img/arch-restaurant-2.jpg","img/arch-restaurant-3.jpg"],
+		"cover":"arch-restaurant-1.jpg",
+		"images":["arch-restaurant-1.jpg","arch-restaurant-2.jpg","arch-restaurant-3.jpg"],
 		"links" :[]
 	},
 	{
@@ -28,7 +31,8 @@ var projects =[
 		"projectName":"ECO Machine",
 		"Description":"Concept visualising multi storey farming, mass conservation of energy, resource optimisation for housing on a large scale. Project presented for Rethinking The Future Awards 2017",
 		"projectContext":"Competition // @NUDES //2nd Position",
-		"images":["img/arch-rtf-1.jpg","img/arch-rtf-2.jpg","img/arch-rtf-3.jpg"],
+		"cover":"arch-rtf-1.jpg",
+		"images":["arch-rtf-1.jpg","arch-rtf-2.jpg","arch-rtf-3.jpg"],
 		"links" :["https://www.re-thinkingthefuture.com/rtfa2017-housing-concept/out-of-the-box-nudes/"]
 	},
 	{
@@ -36,14 +40,16 @@ var projects =[
 		"projectName":"Regal Stores // Mumbai",
 		"Description":"Fabrication drawings, parametric modelling with precision",
 		"projectContext":"Retail Interior, Facade // @NUDES",
-		"images":[],
-		"links" :["https://www.westendmallpune.com/regal-shoes-pune-aundh/"]
+		"cover":"arch-regal-3.jpg",
+		"images":["arch-regal-1.jpg","arch-regal-2.jpg"],
+		"links" :[]
 	},
 	{
 		"projectid": "arch-hudco",
 		"projectName":"Housing & Urban Development Corp.",
 		"Description":"Proposal for a slum redevelompment plan undetaken by HUDCO. Presented as a part of Annual NASA Convention, India 2017. HUDCO trophy aims at designing for the informal sector and give design alternatives for the issues pertaining to the solutions to Sustainable Urban Development. //Click on [Z603] in the link",
 		"projectContext":"Competition // NASA India //2nd Position",
+		"cover":"arch-hudco-1.jpg",
 		"images":[],
 		"links" :["https://nasaindia.co/index.php/winningentry?type=annual&trophyId=2&groupId=2&year=2016"]
 	},
@@ -52,6 +58,7 @@ var projects =[
 		"projectName":"Sightline Analysis",
 		"Description":"Analysed visibility for a multi storey auditorium using c-value and a-value methods, suggested design improvisations for maximum visibility.",
 		"projectContext":"Larsen & Toubro // Internship Project",
+		"cover":"computational-sightline-analysis-1.jpg",
 		"images":[],
 		"links" :[]
 	},
@@ -60,14 +67,16 @@ var projects =[
 		"projectName":"Generative Joinery System",
 		"Description":"Generated a fabrication system and drawings for arbitarily  intersecting planes, tested on a voronoi cube.",
 		"projectContext":" Geometry Exploration // @NUDES",
-		"images":["img/computational-auto-joinery-1.jpg","img/computational-auto-joinery-2.jpg","img/computational-auto-joinery-3.jpg"],
-		"links" :[]
+		"cover":"computational-auto-joinery-1.jpg",
+		"images":["computational-auto-joinery-1.jpg","computational-auto-joinery-2.jpg","computational-auto-joinery-3.jpg"],
+		"links" :["https://issuu.com/_a52/docs/ghissuu"]
 	},
 	{
 		"projectid": "arch-facade",
 		"projectName":"Undulating Facade //Hyderabad",
 		"Description":"Parametric wooden facade for a residence in Hyderabad. Scripted for design and drawings for CNC milling.",
 		"projectContext":" Scripting /Fabrication Drawing // @NUDES",
+		"cover":"arch-facade-1.jpg",
 		"images":[],
 		"links" :[]
 	},
@@ -76,23 +85,26 @@ var projects =[
 		"projectName":"Bulls & Cows",
 		"Description":"My first python project! Bulls & Cows game word version build with added features like scores, time and hints. The game guesses a word from list of isogram words scraped and pickled, the user inputs the number of chances he'd need and tries to guess the word.",
 		"projectContext":" Python // Fun",
-		"images":["img/code-consolegame-1.gif"],
+		"images":[],
+		"cover":"code-consolegame-1.gif",
 		"links" :["https://en.wikipedia.org/wiki/Bulls_and_Cows#The_word_version"]
 	},
 	{
 		"projectid": "code-browserhistory1",
 		"projectName":"Website Usage Visualisation",
-		"Description":"Browser history of a short period extracted using chrome API and visualised using native grasshopper",
+		"Description":"Browser history of a short period extracted using chrome API and visualised using grasshopper. X-axis is hour of the day, Y-axis is day of the week.",
 		"projectContext":" Data Visualisation // Fun",
-		"images":["img/code-browserhistory1-1.jpg","img/code-browserhistory1-2.gif"],
+		"cover":"code-browserhistory1-2.gif",
+		"images":[],
 		"links" :[]
 	},
 	{
 		"projectid": "code-browserhistory2",
 		"projectName":"Search Keyword Visualisation",
-		"Description":"Browser history of a short period extracted using chrome API, search keywords extracted and visualised using native grasshopper",
+		"Description":"Browser history of a short period extracted using chrome API, search keywords extracted and visualised using grasshopper.",
 		"projectContext":" Data Visualisation // Fun",
-		"images":["img/code-browserhistory2-1.jpg"],
+		"cover":"code-browserhistory2-1.jpg",
+		"images":[],
 		"links" :[]
 	},
 	{
@@ -100,7 +112,8 @@ var projects =[
 		"projectName":"Arm Support Cast",
 		"Description":"3D printable arm mesh generation for injured arm support, 3d scan of the injured arm is used as input. Factors like bone positions, screw positions considered while generating the cast",
 		"projectContext":" Data Visualisation // Fun",
-		"images":["img/computational-armprint-1.jpg"],
+		"cover":"computational-armprint-1.jpg",
+		"images":[],
 		"links" :[]
 	},
 	{
@@ -108,13 +121,32 @@ var projects =[
 		"projectName":"Revit-pyRevit-RPW Snippets",
 		"Description":"Series of code snippets used to automate minor/major daily tasks",
 		"projectContext":"RevitAPI Exploration // Part of my initiatives @WeWork",
+		"cover":"code-pyrevit-1.gif",
 		"images":[],
 		"links" :["https://github.com/zahmadsaleem/py-revit"]
+	},	
+	{
+		"projectid": "arch-models",
+		"projectName":"Model Making",
+		"Description":"Collection of models made during the course of my academic period",
+		"projectContext":"Physical Models",
+		"cover":"",
+		"images":[],
+		"links" :[]
 	},
+	// {
+	// 	"projectid": "graphic-nittfest",
+	// 	"projectName":"NITTFEST Design",
+	// 	"Description":"Collection of graphics made as Design Head for Nittfest 2017",
+	// 	"projectContext":"Intra College Fest // Design & Media Team",
+	// 	"cover":"",
+	// 	"images":[],
+	// 	"links" :[]
+	// }
 
 	]
 
-var images=[{"url": "img/bg-img/1.jpg"}, {"url": "img/bg-img/10.jpg"}, {"url": "img/bg-img/11.jpg"}, {"url": "img/bg-img/12.gif"}, {"url": "img/bg-img/13.jpg"}, {"url": "img/bg-img/14.jpg"}, {"url": "img/bg-img/15.jpg"}, {"url": "img/bg-img/16.gif"}, {"url": "img/bg-img/2.jpg"}, {"url": "img/bg-img/3.jpg"}, {"url": "img/bg-img/4.jpg"}, {"url": "img/bg-img/5.jpg"}, {"url": "img/bg-img/6.jpg"}, {"url": "img/bg-img/7.jpg"}, {"url": "img/bg-img/8.jpg"}, {"url": "img/bg-img/9.jpg"}]
+var images=[{"url": "1.jpg"}, {"url": "10.jpg"}, {"url": "11.jpg"}, {"url": "12.gif"}, {"url": "13.jpg"}, {"url": "14.jpg"}, {"url": "15.jpg"}, {"url": "16.gif"}, {"url": "2.jpg"}, {"url": "3.jpg"}, {"url": "4.jpg"}, {"url": "5.jpg"}, {"url": "6.jpg"}, {"url": "7.jpg"}, {"url": "8.jpg"}, {"url": "9.jpg"},{"url": "17.gif"},{"url": "18.jpg"}]
 
 var mydata = [
 	{"heading":"Experience",
@@ -142,7 +174,7 @@ var mydata = [
 		{"subheading":"Software Skills",
 		"content":"//Revit-Dynamo //AutoCAD //Rhinoceros-Grasshopper3D //Photoshop //InDesign //Illustrator //PowerBI "},
 		{"subheading":"Programming Skills",
-		"content":"//Python //C#(Beginner) //RevitAPI-pyRevit-RPW-WPF-IronPython //RhinoAPI-GHPython  //WebAPIs(Extensively worked with Airtable API) //D3.js //Vue.js //Flask //HTML-CSS  "},
+		"content":"//Python //C#(Beginner) //RevitAPI-pyRevit-RPW-WPF-IronPython //RhinoAPI-GHPython  //WebAPIs(Extensively worked with Airtable API) //GIT //D3.js //Vue.js //Flask //HTML-CSS  "},
 		{"subheading":"General",
 		"content":"//Architectural-Design/Modelling/Drawings //BIM-Management //Computational-Design //Fabrication-Drawings //Team-Building/Leading //Graphic-Design"}
 			]},
@@ -167,7 +199,7 @@ var mydata = [
 		{"subheading":"Team Leader // NASA HUDCO Trophy 2017",
 		"content":"Lead a team of 15 to win the trophy. Conducted team building activities."},
 		{"subheading":"B-Certificate// National Cadet Corps(NCC)",
-		"content":"Obtained NCC B-Certificate with A grade under 3TN Air Squadron NCC.  "},
+		"content":"Obtained NCC B-Certificate with A grade under 3TN Air Squadron NCC."},
 		{"subheading":"NCC Camp CATC-2  // December 2014",
 		"content":"Participated in 10 day Camp - volunteered for various group activities and responsibilities."}
 			]}
