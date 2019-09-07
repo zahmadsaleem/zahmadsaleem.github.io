@@ -63,8 +63,8 @@
           <b-link v-for="link in project.links" :href="link" class="card-link text-primary">Link</b-link>
           <b-img-lazy center fluid :src="'img/bg-img/' + project.cover" alt="project cover" class="m-1"/>
         </b-card>
-        <b-row class="mx-3">
-       <b-img fluid-grow v-for="image in project.images" @click="showMsgBox(image)" :src="'img/thumb-img/' +image" alt="project image" class="m-0 p-1 col-2"/></b-row>
+        <div class="mx-3">
+       <b-img fluid-grow v-for="image in project.images" @click="showMsgBox(image)" :src="'img/bg-img/' +image" alt="project image" class="m-0 p-1 "/></div>
     </b-collapse>
   </div>
   </b-container>
