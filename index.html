@@ -64,7 +64,7 @@
           <b-img-lazy center fluid :src="'img/bg-img/' + project.cover" alt="project cover" class="m-1"/>
         </b-card>
         <b-row class="mx-3">
-       <img v-for="image in project.images" @click="showMsgBox(image)" :src="'img/thumb-img/' +image" alt="project image" class="m-0 p-1 col-xl-3 col-lg-3 col-4" style="height: auto;"/></b-row>
+       <b-img fluid-grow v-for="image in project.images" @click="showMsgBox(image)" :src="'img/thumb-img/' +image" alt="project image" class="m-0 p-1 col-2"/></b-row>
     </b-collapse>
   </div>
   </b-container>
