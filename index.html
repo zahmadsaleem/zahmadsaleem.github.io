@@ -47,12 +47,12 @@
                             {{project.Description}}
                         </b-card-text>
                         <b-link v-for="link in project.links" :href="link" class="card-link text-primary">Link</b-link>
-                        <b-img-lazy center fluid :src="'img/bg-img/' + project.cover" alt="project cover" class="m-1" />
+                        <b-img-lazy center fluid :src="'img/bg-img/' + project.cover" alt="project cover" class="m-1" :ref="project.projectid +'-cover'"/>
                     </b-card>
-                    <b-container center fluid class="row m-0 p-0 bg-dark">
-                      <b-col v-for="image in project.images" class="p-0 m-0">
-                        <b-img fluid @click="showMsgBox(image)" :src="'img/thumb-img/' +image" alt="project image" class="m-0 p-1" />
-                      </b-col>
+                    <b-container center fluid class="row m-0 p-0 bg-dark ">
+                        <b-col v-for="image in project.images" class="p-0 m-0">
+                            <b-img fluid @click="changeCover(project.projectid,image,$event)" :src="'img/thumb-img/' +image" alt="project image" class="m-0 p-1" />
+                        </b-col>
                     </b-container>
                 </b-collapse>
             </div>
@@ -88,25 +88,7 @@
         </footer>
     </div>
     <!-- Start running your app -->
-    <script>
-    window.app = new Vue({
-        el: '#app',
-        data: {
-            name: '',
-            allprojects: projects,
-            allimages: images,
-            resumedata: mydata,
-            imgurl: ''
-        },
-        methods: {
-            showMsgBox: function(imgurl) {
-                this.imgurl = imgurl
-                this.$refs['mm-modal'].show()
-            }
-        }
-
-    })
-    </script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>

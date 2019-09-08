@@ -156,13 +156,3 @@ body {
 .modal-body {
     padding: 0px !important;
 }
-
-.project-images{
-		max-width: 100%;
-
-}
-
-.project-img{
-		height: auto;
-		max-width: 100%;
-}
