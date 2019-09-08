@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <title>Ahmad Saleem Z - Portfolio</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <!-- Required Stylesheets -->
     <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
     <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css" />
@@ -47,11 +49,11 @@
                             {{project.Description}}
                         </b-card-text>
                         <b-link v-for="link in project.links" :href="link" class="card-link text-primary">Link</b-link>
-                        <b-img-lazy center fluid :src="'img/bg-img/' + project.cover" alt="project cover" class="m-1" :ref="project.projectid +'-cover'"/>
+                        <b-img-lazy center fluid :src="'img/bg-img/' + project.cover" alt="project cover" class="m-1" :ref="project.projectid +'-cover'" />
                     </b-card>
                     <b-container center fluid class="row m-0 p-0 bg-dark ">
                         <b-col v-for="image in project.images" class="p-0 m-0">
-                            <b-img fluid @click="changeCover(project.projectid,image,$event)" :src="'img/thumb-img/' +image" alt="project image" class="m-0 p-1" />
+                            <b-img fluid @click="showMsgBox(image)" :src="'img/thumb-img/' +image" alt="project image" class="m-0 p-1" />
                         </b-col>
                     </b-container>
                 </b-collapse>
