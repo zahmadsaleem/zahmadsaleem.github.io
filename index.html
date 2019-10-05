@@ -23,25 +23,32 @@
 
 <body>
     <!-- Vue application root element -->
+
     <div id="app" class="w-100 col-lg-8 col-xl-8 mx-lg-auto mx-xl-auto px-0">
-        <div class="text-center cover-container d-flex h-100 p-3 mx-auto flex-column">
-            <header class="masthead mb-auto">
-                <b-navbar sticky toggleable class="nav nav-masthead justify-content-center ">
-                    <a class="nav-link active" href="#projects">Projects</a>
-                    <a class="nav-link" href="#gallery">Gallery</a>
-                    <a class="nav-link" href="#resume">Resume</a>
-                    <a class="nav-link" href="#contact">Contact</a>
-                </b-navbar>
-            </header>
-            <main role="main" class="inner cover mb-auto">
+        <header class="w-100 p-2 center">
+            <b-navbar fixed="top" toggleable="lg" type="dark" variant="dark">
+                <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+                <b-collapse id="nav-collapse" is-nav>
+                    <b-navbar-nav v-b-scrollspy>
+                        <b-nav-item href="#projects">Projects</b-nav-item>
+                        <b-nav-item href="#gallery">Gallery</b-nav-item>
+                        <b-nav-item href="#resume">Resume</b-nav-item>
+                        <b-nav-item href="#contact">Contact</b-nav-item>
+                    </b-navbar-nav>
+                </b-collapse>
+            </b-navbar>
+        </header>
+        <div class="text-center cover-container d-flex p-3 mx-auto flex-column">
+            <main role="main" class="inner cover my-auto">
                 <h1 class="cover-heading">Portfolio</h1>
                 <p class="lead">Ahmad Saleem Z</p>
             </main>
         </div>
         <!-- Projcect content -->
-        <b-container fluid id="projects" class="m-0 p-2">
+        <b-container fluid id="projects" class="m-0 pt-5 p-2">
             <div v-for="project in allprojects" v-bind:key="project.projectName">
-                <b-button block v-b-toggle="project.projectid" class="my-1 collapse-btn text-left pl-3" variant="outline-dark">{{project.projectid}}
+                <b-button block v-b-toggle="project.projectid" class="my-1 collapse-btn text-left pl-3"
+                    variant="outline-dark">{{project.projectid}}
                 </b-button>
                 <b-collapse :id="project.projectid">
                     <b-card :title="project.projectName" :sub-title="project.projectContext" text-variant="#ababab">
@@ -49,11 +56,13 @@
                             {{project.Description}}
                         </b-card-text>
                         <b-link v-for="link in project.links" :href="link" class="card-link text-primary">Link</b-link>
-                        <b-img-lazy center fluid :src="'img/bg-img/' + project.cover" alt="project cover" class="m-1" :ref="project.projectid +'-cover'" />
+                        <b-img-lazy center fluid :src="'img/bg-img/' + project.cover" alt="project cover" class="m-1"
+                            :ref="project.projectid +'-cover'" />
                     </b-card>
                     <b-container center fluid class="row m-0 p-0 bg-dark ">
                         <b-col v-for="image in project.images" class="p-0 m-0">
-                            <b-img fluid @click="showMsgBox(image)" :src="'img/thumb-img/' +image" alt="project image" class="m-0 p-1" />
+                            <b-img fluid @click="showMsgBox(image)" :src="'img/thumb-img/' +image" alt="project image"
+                                class="m-0 p-1" />
                         </b-col>
                     </b-container>
                 </b-collapse>
@@ -62,14 +71,17 @@
         <!-- gallery content -->
         <b-container fluid id="gallery" class="row mx-0 mb-1 py-3 bg-dark">
             <b-col v-for="image in allimages" lg="4" md="4" sm="6" class="gallery-img">
-                <b-img fluid center @click="showMsgBox(image.url)" :src="'img/thumb-img/' + image.url" class="p-2" alt="gallery image" />
+                <b-img fluid center @click="showMsgBox(image.url)" :src="'img/thumb-img/' + image.url" class="p-2"
+                    alt="gallery image" />
             </b-col>
         </b-container>
         <b-modal id="modal-center" hide-footer hide-header ref="mm-modal" centered class="bg-dark w-100 m-0">
             <b-img-lazy fluid :src="'img/bg-img/' + imgurl" />
         </b-modal>
         <!-- resume content -->
-        <h2 id="resume" class="w-100 font-heavy py-2 mb-4 text-light bg-dark pl-3 pl-lg-5 pl-xl-5 col-6 col-lg-4 col-md-4 col-xl-3 ml-0 mt-5">RESUME</h2>
+        <h2 id="resume"
+            class="w-100 font-heavy py-2 mb-4 text-light bg-dark pl-3 pl-lg-5 pl-xl-5 col-6 col-lg-4 col-md-4 col-xl-3 ml-0 mt-5">
+            RESUME</h2>
         <b-container id="resumecontent" class="p-lg-5 p-2">
             <div v-for="headdata in resumedata" class="mb-4">
                 <h4 class="font-italic text-primary pb-2 pl-4">{{headdata.heading}}</h4>
