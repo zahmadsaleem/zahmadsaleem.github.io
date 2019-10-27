@@ -20,7 +20,7 @@ var projects = [
     {
         "projectid": "arch-restaurant",
         "projectName": " Highway Restaurant // Trichy",
-        "Description": "The design brief dictated the design of a highway restaurant cum rest area along the Trichy - Thanjavur highway. The main requirements included: restaurant, supermarket, pharmacy, souvenier shops and food joints //Concept : Swirl-Motion, relating to the primary activity on highway. The structure is visually and funtionally linear connecting different functions.",
+        "Description": "The design brief dictated the design of a highway restaurant which includes: restaurant, supermarket, pharmacy, souvenier shops and food joints //Concept : Swirl-Motion, relating to the primary activity on highway. The structure is visually and funtionally linear connecting different functions.",
         "projectContext": "Studio Project // Semester IV",
         "cover": "arch-restaurant-1.jpg",
         "images": ["arch-restaurant-1.jpg", "arch-restaurant-2.jpg", "arch-restaurant-3.jpg"],
@@ -130,7 +130,7 @@ var projects = [
         "projectName": "Model Making",
         "Description": "Collection of models made during the course of my academic period",
         "projectContext": "Physical Models",
-        "cover": "",
+        "cover": "arch-models-1.jpg",
         "images": [],
         "links": []
     },
