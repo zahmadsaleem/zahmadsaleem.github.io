@@ -46,16 +46,16 @@
         </div>
         <!-- project drawer -->
         <a class="anchor" id="projects"></a>
-        <b-container class="w-100 m-0 mb-5 p-0 mx-auto bg-dark" id="project-drawer">
+        <b-container class="w-100 m-0 mb-5 pt-2 p-0 mx-auto" id="project-drawer">
             <!-- project browser -->
             <div class="row my-auto m-0">
                 <b-card no-body class="px-1 col-lg-4 m-0">
                     <b-button block href="#" v-b-toggle.accordion-1 class="collapse-btn text-left pl-3"
                         variant="outline-dark">Architecture</b-button>
-                    <b-collapse :visible="projectCollapse" id="accordion-1" class="mx-0 p-0 row">
+                    <b-collapse :visible="projectCollapse" id="accordion-1" class="mx-0 mt-2 p-0 row">
                         <div class="col-4 m-0 p-0" v-for="project in filterProjects('arch')">
                             <b-img fluid @click="showProject(project)"
-                                :src="'img/thumb-img/' + function(){if(project.images.length>0){return project.images[0]}else{return 'dummy.jpg'}}()"
+                                :src="'img/thumb-img/' + getThumb(project)"
                                 :alt="project.projectName" class="p-1">
                             </b-img>
                         </div>
@@ -64,10 +64,10 @@
                 <b-card no-body class="px-1  col-lg-4 m-0">
                     <b-button block href="#" v-b-toggle.accordion-2 class="collapse-btn text-left pl-3"
                         variant="outline-dark">Computational Design</b-button>
-                    <b-collapse :visible="projectCollapse" id="accordion-2" class="m-0 p-0 row">
+                    <b-collapse :visible="projectCollapse" id="accordion-2" class="m-0 mt-2 p-0 row">
                         <div class="col-4 m-0 p-0" v-for="project in filterProjects('computational')">
                             <b-img fluid @click="showProject(project)"
-                                :src="'img/thumb-img/' + function(){if(project.images.length>0){return project.images[0]}else{return 'dummy.jpg'}}()"
+                                :src="'img/thumb-img/' + getThumb(project)"
                                 :alt="project.projectName" class="p-1">
                             </b-img>
                         </div>
@@ -76,15 +76,16 @@
                 <b-card no-body class="px-1  col-lg-4 m-0">
                     <b-button block href="#" v-b-toggle.accordion-3 class="collapse-btn text-left pl-3"
                         variant="outline-dark">Code</b-button>
-                    <b-collapse :visible="projectCollapse" id="accordion-3" class="m-0 p-0 row">
+                    <b-collapse :visible="projectCollapse" id="accordion-3" class="m-0 mt-2 p-0 row">
                         <div class="col-4 m-0 p-0" v-for="project in filterProjects('code')">
                             <b-img fluid @click="showProject(project)"
-                                :src="'img/thumb-img/' + function(){if(project.images.length>0){return project.images[0]}else{return 'dummy.jpg'}}()"
+                                :src="'img/thumb-img/' + getThumb(project)"
                                 :alt="project.projectName" class="p-1">
                             </b-img>
                         </div>
                     </b-collapse>
                 </b-card>
+                <drawer projectcategory="computational"></drawer>
             </div>
         </b-container>
         <!-- modal project viewer -->

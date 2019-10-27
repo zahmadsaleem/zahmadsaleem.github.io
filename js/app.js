@@ -36,6 +36,13 @@
                     this.activeproject = filteredProjects[currentIndex - 1]
                 }
             },
+            getThumb: function (project) {
+                if (project.thumb) {
+                    return project.thumb
+                } else {
+                    return project.projectid + '-thumb.jpg'
+                }
+            },
             nextImage: function () {
                 var currentIndex = this.allimages.indexOf(this.imgurl)
                 if (currentIndex < this.allimages.length - 1) {
@@ -48,16 +55,39 @@
                     this.imgurl = this.allimages[currentIndex - 1]
                 }
             },
-            
+
         },
         computed: {
-            projectCollapse: function(){
-                if(window.innerWidth >= 768){
+            projectCollapse: function () {
+                if (window.innerWidth >= 768) {
                     return true
-                }else{
+                } else {
                     return false
                 }
             }
+        },
+        components: {
+            drawer: Vue.component('drawer', {
+                data: function () {
+                    return {
+
+                    }
+                },
+                props: ['projectcategory'],
+                template: `<b-card no-body class="px-1  col-lg-4 m-0">
+                <b-button block href="#" v-b-toggle.accordion-2 class="collapse-btn text-left pl-3"
+                    variant="outline-dark">Computational Design</b-button>
+                <b-collapse :visible="this.$parent.projectCollapse" id="accordion-2" class="m-0 mt-2 p-0 row">
+                    <div class="col-4 m-0 p-0" v-for="project in this.$parent.filterProjects(projectcategory)">
+                        <b-img fluid @click="showProject(project)"
+                            :src="'img/thumb-img/' + this.$parent.getThumb(project)"
+                            :alt="projectName" class="p-1">
+                        </b-img>
+                    </div>
+                </b-collapse>
+            </b-card>`
+            })
+
         }
     })
 })();
