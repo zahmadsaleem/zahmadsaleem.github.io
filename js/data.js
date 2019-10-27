@@ -87,7 +87,8 @@ var projects = [
         "projectContext": " Python // Fun",
         "images": [],
         "cover": "code-consolegame-1.gif",
-        "links": ["https://en.wikipedia.org/wiki/Bulls_and_Cows#The_word_version"]
+        "links": ["https://en.wikipedia.org/wiki/Bulls_and_Cows#The_word_version"],
+        "thumb":"code-consolegame-thumb.gif"
     },
     {
         "projectid": "code-browserhistory1",
@@ -96,7 +97,8 @@ var projects = [
         "projectContext": " Data Visualisation // Fun",
         "cover": "code-browserhistory1-2.gif",
         "images": [],
-        "links": []
+        "links": [],
+        "thumb": "code-browserhistory1-thumb.gif"
     },
     {
         "projectid": "code-browserhistory2",
