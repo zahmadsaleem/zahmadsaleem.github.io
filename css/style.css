@@ -47,9 +47,7 @@ a.anchor {
 
 #project-drawer{
     min-height:calc(100vh - 120px) !important;
-    display:block;
-    background-color: black;
-    
+    display:block;  
 }
 
 #project-browser{
@@ -60,8 +58,25 @@ a.anchor {
     background: #333;
 }
 
-#project-drawer img:hover{
-    opacity: 0.8;
+.proj-thumb{
+    overflow: hidden;
+}
+
+.proj-thumb img:hover{
+    /* opacity: 0; */
+    
+}
+
+.proj-thumb:hover .proj-name{
+    top: 10px;
+}
+
+.proj-name{
+    position: absolute;
+    top: 400px;
+    background-color: white;
+    font-size: smaller;
+    margin-bottom: auto;
 }
 
 #project-drawer  .card {
@@ -80,8 +95,7 @@ a.anchor {
 
 .collapse-btn {
     border-radius: 0px !important;
-    height: 75px;
-    background-color: #303030;
+    height: 60px;
 }
 
 #projects{
@@ -93,7 +107,6 @@ a.anchor {
     padding-bottom: 0px;
 }
 
-.gallery {}
 
 .gallery-img {
     padding: 0px;

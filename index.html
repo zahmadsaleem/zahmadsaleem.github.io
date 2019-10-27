@@ -31,7 +31,7 @@
                 <b-collapse id="nav-collapse" is-nav>
                     <b-navbar-nav v-b-scrollspy class="mx-lg-auto pt-2 pt-lg-1">
                         <b-nav-item href="#projects">Projects</b-nav-item>
-                        <b-nav-item href="#galleryi">Gallery</b-nav-item>
+                        <b-nav-item href="#gallery">Gallery</b-nav-item>
                         <b-nav-item href="#resumecontent">Resume</b-nav-item>
                         <b-nav-item href="#contact">Contact</b-nav-item>
                     </b-navbar-nav>
@@ -87,7 +87,6 @@
         </b-modal>
 
         <!-- gallery content -->
-        <a class="anchor" id="galleryi"></a>
         <b-container fluid id="gallery" class="col-lg-8 row mx-auto mb-1 py-3 bg-dark">
             <b-col v-for="image in allimages" class="gallery-img col-4">
                 <b-img fluid center @click="showMsgBox(image)" :src="'img/thumb-img/' + image.url" class="p-2"
