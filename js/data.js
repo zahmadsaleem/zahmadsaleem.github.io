@@ -121,7 +121,7 @@ var projects = [
     {
         "projectid": "code-pyrevit",
         "projectName": "Revit-pyRevit-RPW Snippets",
-        "Description": "Series of code snippets used to automate minor/major daily tasks",
+        "Description": "Collection of code snippets used to automate/customize minor/major tasks in revit using python scripting.",
         "projectContext": "RevitAPI Exploration // Part of my initiatives @WeWork",
         "cover": "code-pyrevit-1.gif",
         "images": [],
@@ -177,9 +177,6 @@ var images = [
     "url": "2.jpg"
 },
 {
-    "url": "3.jpg"
-},
-{
     "url": "4.jpg"
 },
 {
@@ -190,12 +187,6 @@ var images = [
 },
 {
     "url": "7.jpg"
-},
-{
-    "url": "8.jpg"
-},
-{
-    "url": "9.jpg"
 },
 {
     "url": "17.gif"

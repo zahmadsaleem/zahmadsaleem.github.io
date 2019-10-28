@@ -2,15 +2,15 @@
     "use strict";
     Vue.component('drawer', {
         props: ['categoryfilter', 'projectcategory'],
-        template: `<div class="px-1  col-lg-3 mb-1">
-                    <p class="h6 text-light text-lg-center pl-lg-0 pl-4 p-3">{{projectcategory}}</p>
+        template: `<div class="px-3  col-lg-8 mb-1">
+                    <p class="h5 text-light pl-lg-4 pl-2 py-3 proj-section-head">{{projectcategory}}</p>
                     <div :id="categoryfilter" class="m-0 mt-2 p-0 row mb-5">
                         <div class="col-4 m-0 p-0 proj-thumb" @click="vueRoot.showProject(project)" v-for="project in vueRoot.filterProjects(categoryfilter)">
                             <b-img fluid 
                                 :src="'img/thumb-img/' + vueRoot.getThumb(project)"
-                                :alt="project.projectName" class="p-1">
+                                :alt="project.projectName" class="p-2">
                             </b-img>
-                            <p class="text-center text-wrap proj-name text-dark mx-auto">{{project.projectName}}</p>
+                            <p class="text-center text-wrap proj-name text-dark mx-auto mx-2">{{project.projectName}}</p>
                         </div>
                     </div>
                 </div>`,

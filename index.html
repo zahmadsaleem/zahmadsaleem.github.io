@@ -36,7 +36,7 @@
 
     <div id="app" class="w-100 mx-auto px-0">
         <header class="w-100 p-2 center" id="main-nav">
-            <b-navbar fixed="top" toggleable="lg" type="light" variant="light" >
+            <b-navbar fixed="top" toggleable="lg" type="light" variant="light">
                 <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
                 <b-collapse id="nav-collapse" is-nav>
                     <b-navbar-nav v-b-scrollspy class="mx-lg-auto pt-2 pt-lg-1">
@@ -48,7 +48,7 @@
                 </b-collapse>
             </b-navbar>
         </header>
-        
+
         <!-- cover -->
         <div class="text-center cover-container d-flex p-3 mx-auto flex-column">
             <main role="main" class="inner cover my-auto">
@@ -60,7 +60,7 @@
         <!-- project drawer -->
         <a class="anchor" id="projects"></a>
         <div class="w-100 m-0 p-0 bg-dark pt-3" id="project-drawer">
-            <div class="row justify-content-lg-center">
+            <div class="row m-0 justify-content-lg-center">
                 <drawer projectcategory="Architecture" categoryfilter="arch"></drawer>
                 <drawer projectcategory="Computational Design" categoryfilter="computational"></drawer>
                 <drawer projectcategory="Code" categoryfilter="code"></drawer>
@@ -106,11 +106,12 @@
         <!-- gallery content -->
         <b-container fluid id="gallery" class="w-100 px-0 m-0 bg-dark">
             <div class="col-lg-8 row mx-auto mb-1 py-3">
+                <p class="w-100 h5 text-light pl-lg-4 pl-2 pb-3 pt-4 proj-section-head">Generative Art / Graphic Design</p>
                 <b-col v-for="image in allimages" class="gallery-img col-4">
                     <b-img fluid center @click="showMsgBox(image)" :src="'img/thumb-img/' + image.url" class="p-2"
                         alt="gallery image" />
                 </b-col>
-          </div>
+            </div>
         </b-container>
 
         <!-- image popup -->
@@ -126,13 +127,12 @@
 
         <!-- resume content -->
         <b-container id="resumecontent" class="col-xl-8 col-lg-10 px-lg-5">
-            <h2
-                class="w-100 font-heavy mb-5 py-2 text-light bg-dark pl-3 col-4 ml-0">
+            <h2 class="w-100 font-heavy mb-5 py-2 text-light bg-dark pl-3 col-5  col-md-3 ml-0">
                 RESUME</h2>
             <div v-for="headdata in resumedata" class="mb-4">
-                <h4 class="font-italic text-primary pb-2 pl-4">{{headdata.heading}}</h4>
+                <p class="h5 text-primary pb-2 pl-4">{{headdata.heading}}</p>
                 <b-card v-for="subdata in headdata.content" :sub-title="subdata.subheading" class="my-2">
-                    <b-card-text>{{subdata.content}}</b-card-text>
+                    <b-card-text v-html="subdata.content"></b-card-text>
                 </b-card>
             </div>
         </b-container>
@@ -141,7 +141,8 @@
         <footer id="contact" class="w-100 mx-auto m-0 p-5 bg-dark text-light text-center">
             <h3 class="font-heavy py-2">AHMAD SALEEM Z</h3>
             <b-card-text>
-                <b-link href="mailto:azsaleem11@gmail.com">azsaleem11@gmail.com</b-link><br>+91 9944405317<br>
+                <b-link href="mailto:azsaleem11@gmail.com">azsaleem11@gmail.com</b-link>
+                <br>+91 9944405317<br>
                 <b-link href="http://linkedin.com/in/ahmadsaleemz" class="text-secondary">LinkedIn </b-link>
                 <span class="text-secondary">-</span>
                 <b-link href="http://instagram.com/ah.mad.so.lame" class="text-secondary">Instagram</b-link>
