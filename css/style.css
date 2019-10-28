@@ -70,7 +70,6 @@ a.anchor {
 .proj-thumb:hover .proj-name{
     top: 10px;
 }
-
 .proj-name{
     position: absolute;
     top: 400px;
@@ -111,6 +110,7 @@ a.anchor {
 
 #gallery{
     padding-top: 40px;
+  
 }
 .gallery-img {
     padding: 0px;
