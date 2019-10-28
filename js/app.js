@@ -2,19 +2,18 @@
     "use strict";
     Vue.component('drawer', {
         props: ['categoryfilter', 'projectcategory'],
-        template: `<b-card no-body class="px-1  col-lg-4 m-0">
-                    <b-button block href="#" v-b-toggle="categoryfilter" class="collapse-btn text-center pl-3"
-                        variant="outline-dark">{{projectcategory}}</b-button>
-                    <b-collapse :visible="vueRoot.projectCollapse()" :id="categoryfilter" class="m-0 mt-2 p-0 row">
-                        <div class="col-4 m-0 p-0 proj-thumb" v-for="project in vueRoot.filterProjects(categoryfilter)">
-                            <b-img fluid  @click="vueRoot.showProject(project)"
+        template: `<div class="px-1  col-lg-3 mb-1">
+                    <p class="h6 text-light text-lg-center pl-lg-0 pl-4 p-3">{{projectcategory}}</p>
+                    <div :id="categoryfilter" class="m-0 mt-2 p-0 row mb-5">
+                        <div class="col-4 m-0 p-0 proj-thumb" @click="vueRoot.showProject(project)" v-for="project in vueRoot.filterProjects(categoryfilter)">
+                            <b-img fluid 
                                 :src="'img/thumb-img/' + vueRoot.getThumb(project)"
                                 :alt="project.projectName" class="p-1">
                             </b-img>
-                            <p class="text-center proj-name text-dark mx-auto">{{project.projectName}}</p>
+                            <p class="text-center text-wrap proj-name text-dark mx-auto">{{project.projectName}}</p>
                         </div>
-                    </b-collapse>
-                </b-card>`,
+                    </div>
+                </div>`,
         computed: {
             vueRoot: function () {
                 return this.$root;
