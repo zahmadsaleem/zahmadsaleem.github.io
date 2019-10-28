@@ -5,7 +5,7 @@ var projects = [
         "Description": "Proposal for a space entitled to produce, manage, broadcast vareity of media content and fulfill the architectural challenges faced by Television media production and broadcasting centers.",
         "projectContext": "Thesis Project // Semester X",
         "cover": "arch-thesis-0.jpg",
-        "images": ["arch-thesis-2.jpg", "arch-thesis-3.jpg", "arch-thesis-4.jpg", "arch-thesis-5.jpg", "arch-thesis-6.jpg", "arch-thesis-7.jpg", "arch-thesis-8.jpg"],
+        "images": ["arch-thesis-0.jpg","arch-thesis-1.jpg","arch-thesis-2.jpg", "arch-thesis-3.jpg", "arch-thesis-4.jpg", "arch-thesis-5.jpg", "arch-thesis-6.jpg", "arch-thesis-7.jpg", "arch-thesis-8.jpg","arch-thesis-9.jpg","arch-thesis-10.jpg","arch-thesis-11.jpg"],
         "links": []
     },
     {
@@ -41,7 +41,7 @@ var projects = [
         "Description": "Fabrication drawings, parametric modelling with precision",
         "projectContext": "Retail Interior, Facade // @NUDES",
         "cover": "arch-regal-3.jpg",
-        "images": ["arch-regal-1.jpg", "arch-regal-2.jpg"],
+        "images": ["arch-regal-3.jpg", "arch-regal-1.jpg", "arch-regal-2.jpg"],
         "links": []
     },
     {
@@ -88,7 +88,7 @@ var projects = [
         "images": [],
         "cover": "code-consolegame-1.gif",
         "links": ["https://en.wikipedia.org/wiki/Bulls_and_Cows#The_word_version"],
-        "thumb":"code-consolegame-thumb.gif"
+        "thumb": "code-consolegame-thumb.gif"
     },
     {
         "projectid": "code-browserhistory1",
@@ -133,7 +133,7 @@ var projects = [
         "Description": "Collection of models made during the course of my academic period",
         "projectContext": "Physical Models",
         "cover": "arch-models-1.jpg",
-        "images": [],
+        "images": ["arch-models-1.jpg","arch-models-2.jpg","arch-models-4.jpg","arch-models-5.jpg","arch-models-6.jpg","arch-models-7.jpg" ],
         "links": []
     },
     // {
@@ -149,148 +149,148 @@ var projects = [
 ]
 
 var images = [
-{
-    "url": "1.jpg"
-},
-{
-    "url": "10.jpg"
-},
-{
-    "url": "11.jpg"
-},
-{
-    "url": "12.gif"
-},
-{
-    "url": "13.jpg"
-},
-{
-    "url": "14.jpg"
-},
-{
-    "url": "15.jpg"
-},
-{
-    "url": "16.gif"
-},
-{
-    "url": "2.jpg"
-},
-{
-    "url": "4.jpg"
-},
-{
-    "url": "5.jpg"
-},
-{
-    "url": "6.jpg"
-},
-{
-    "url": "7.jpg"
-},
-{
-    "url": "17.gif"
-},
-{
-    "url": "18.jpg"
-}]
+    {
+        "url": "1.jpg"
+    },
+    {
+        "url": "10.jpg"
+    },
+    {
+        "url": "11.jpg"
+    },
+    {
+        "url": "12.gif"
+    },
+    {
+        "url": "13.jpg"
+    },
+    {
+        "url": "14.jpg"
+    },
+    {
+        "url": "15.jpg"
+    },
+    {
+        "url": "16.gif"
+    },
+    {
+        "url": "2.jpg"
+    },
+    {
+        "url": "4.jpg"
+    },
+    {
+        "url": "5.jpg"
+    },
+    {
+        "url": "6.jpg"
+    },
+    {
+        "url": "7.jpg"
+    },
+    {
+        "url": "17.gif"
+    },
+    {
+        "url": "18.jpg"
+    }]
 
 var mydata = [
     {
         "heading": "Experience",
         "content": [
-        {
-            "subheading": "WeWork // Internship // June 2019 - Present",
-            "content": "//BIM Coordination and content management //Understanding Wework product development process and workflow improvements //Working on various Revit based automation projects using Python-pyRevit-RevitAPI //Revit-Airtable data workflow"
-        },
-        {
-            "subheading": "Larsen & Toubro // June - July 2018",
-            "content": "// Sightline Analysis and optimisation  for a large scale auditorium.// Modularisation and design strategy development for a  freeform structure."
-        },
-        {
-            "subheading": "NUDES",
-            "content": "// Gained experience in architectural design, working drawing, parametric modeling, computational workflows digital fabrication //Explored workflow automations in a studio firm setup"
-        },
-        {
-            "subheading": "Freelance Computational Designer // May 2018 - May 2019",
-            "content": "// Worked on 30+ computational design, fabrication,projects for a variety of clients."
-        }]
+            {
+                "subheading": "WeWork // Internship // June 2019 - Present",
+                "content": "//BIM Coordination and content management //Understanding Wework product development process and workflow improvements //Working on various Revit based automation projects using Python-pyRevit-RevitAPI //Revit-Airtable data workflow"
+            },
+            {
+                "subheading": "Larsen & Toubro // Internship // June - July 2018",
+                "content": "// Sightline Analysis and optimisation  for a large scale auditorium.// Modularisation and design strategy development for a  freeform structure."
+            },
+            {
+                "subheading": "NUDES // Internship // June - Nov 2017",
+                "content": "// Gained experience in architectural design, working drawing, parametric modeling, computational workflows digital fabrication //Explored workflow automations in a studio firm setup"
+            },
+            {
+                "subheading": "Freelance Computational Designer // May 2018 - May 2019",
+                "content": "// Worked on 30+ computational design, fabrication,projects for a variety of clients."
+            }]
     },
     {
         "heading": "Education",
         "content": [
-        {
-            "subheading": "National Institute Of Techology, Tiruchirappalli",
-            "content": "B.Arch 2014 - 2019"
-        },
-        {
-            "subheading": "Narayana Junior College, Vijayawada",
-            "content": "Junior College 2012 - 2014"
-        },
-        {
-            "subheading": "Bikaner Boys' School, Bikaner",
-            "content": "High School 2010 - 2012"
-        }]
+            {
+                "subheading": "National Institute Of Techology, Tiruchirappalli",
+                "content": "B.Arch 2014 - 2019"
+            },
+            {
+                "subheading": "Narayana Junior College, Vijayawada",
+                "content": "Junior College 2012 - 2014"
+            },
+            {
+                "subheading": "Bikaner Boys' School, Bikaner",
+                "content": "High School 2010 - 2012"
+            }]
     },
     {
         "heading": "Skills",
         "content": [
-        {
-            "subheading": "Software Skills",
-            "content": "//Revit-Dynamo //AutoCAD //Rhinoceros-Grasshopper3D //Photoshop //InDesign //Illustrator //PowerBI "
-        },
-        {
-            "subheading": "Programming Skills",
-            "content": "//Python //C#(Beginner) //RevitAPI-pyRevit-RPW-WPF-IronPython //RhinoAPI-GHPython  //WebAPIs(Extensively worked with Airtable API) //GIT //D3.js //Vue.js //Flask //HTML-CSS  "
-        },
-        {
-            "subheading": "General",
-            "content": "//Architectural-Design/Modelling/Drawings //BIM-Management //Computational-Design //Fabrication-Drawings //Team-Building/Leading //Graphic-Design"
-        }]
+            {
+                "subheading": "Software Skills",
+                "content": "//Revit-Dynamo //AutoCAD //Rhinoceros-Grasshopper3D //Photoshop //InDesign //Illustrator //PowerBI "
+            },
+            {
+                "subheading": "Programming Skills",
+                "content": "//Python //C#(Beginner) //RevitAPI-pyRevit-RPW-WPF-IronPython //RhinoAPI-GHPython  //WebAPIs(Extensively worked with Airtable API) //GIT //D3.js //Vue.js //Flask //HTML-CSS  "
+            },
+            {
+                "subheading": "General",
+                "content": "//Architectural-Design/Modelling/Drawings //BIM-Management //Computational-Design //Fabrication-Drawings //Team-Building/Leading //Graphic-Design"
+            }]
     },
 
     {
         "heading": "Achievements & Awards",
         "content": [
-        {
-            "subheading": "Design Challenge/Pragyan-15 // Runner - UP",
-            "content": "PDC is a core engineering event which is exclusively designed to cater to the students who are interested and prolific in CAD skills, involving various designing softwares and modelling packages."
-        },
-        {
-            "subheading": "Aakriti/Pragyan-16 // Runner - UP",
-            "content": "Aakriti is an architectural design competition meant for Civil Engineering and Architecture Students."
-        },
-        {
-            "subheading": "NASA HUDCO 2016 // Citation",
-            "content": "Slum Redevelopment proposal for HUDCO trophy."
-        },
-        {
-            "subheading": "NASA HUDCO 2017 // Special Mention",
-            "content": "Urban Revival- 'Elphinstone Esplanande' proposal for HUDCO trophy."
-        }]
+            {
+                "subheading": "NASA HUDCO 2017 // Special Mention",
+                "content": "Urban Revival- 'Elphinstone Esplanande' proposal for HUDCO trophy."
+            },
+            {
+                "subheading": "NASA HUDCO 2016 // Citation",
+                "content": "Slum Redevelopment proposal for HUDCO trophy."
+            },
+            {
+                "subheading": "Aakriti/Pragyan-16 // Runner - UP",
+                "content": "Aakriti is an architectural design competition meant for Civil Engineering and Architecture Students."
+            },
+            {
+                "subheading": "Design Challenge/Pragyan-15 // Runner - UP",
+                "content": "PDC is a core engineering event which is exclusively designed to cater to the students who are interested and prolific in CAD skills, involving various designing softwares and modelling packages."
+            }]
     },
     {
         "heading": "Leadership & Activities",
         "content": [
-        {
-            "subheading": "President // Association of Students of Architecture NIT-T",
-            "content": "The Association of Students of Architecture(ASA) is a Non-Profit Student council of the Department of Architecture of NIT Trichy. Conducted variety of events ranging from workshops for skill sharing and skill development, to organizing guest lectures of well known professionals."
-        },
-        {
-            "subheading": "Design & Media Head // NITTFEST 2017",
-            "content": "Produced and managed design and media content for inter department cultural fest of NIT Trichy - NITTFEST. Also volunteered to manage events during NITTFEST."
-        },
-        {
-            "subheading": "Team Leader // NASA HUDCO Trophy 2017",
-            "content": "Lead a team of 15 to win the trophy. Conducted team building activities."
-        },
-        {
-            "subheading": "B-Certificate// National Cadet Corps(NCC)",
-            "content": "Obtained NCC B-Certificate with A grade under 3TN Air Squadron NCC."
-        },
-        {
-            "subheading": "NCC Camp CATC-2  // December 2014",
-            "content": "Participated in 10 day Camp - volunteered for various group activities and responsibilities."
-        }]
+            {
+                "subheading": "President // Association of Students of Architecture NIT-T",
+                "content": "The Association of Students of Architecture(ASA) is a Non-Profit Student council of the Department of Architecture of NIT Trichy. Conducted variety of events ranging from workshops for skill sharing and skill development, to organizing guest lectures of well known professionals."
+            },
+            {
+                "subheading": "Design & Media Head // NITTFEST 2017",
+                "content": "Produced and managed design and media content for inter department cultural fest of NIT Trichy - NITTFEST. Also volunteered to manage events during NITTFEST."
+            },
+            {
+                "subheading": "Team Leader // NASA HUDCO Trophy 2017",
+                "content": "Lead a team of 15 to win the trophy. Conducted team building activities."
+            },
+            {
+                "subheading": "B-Certificate// National Cadet Corps(NCC) // 2014 - 2016",
+                "content": "Obtained NCC B-Certificate with A grade under 3TN Air Squadron NCC."
+            },
+            {
+                "subheading": "NCC Camp CATC-2  // December 2014",
+                "content": "Participated in 10 day Camp - volunteered for various group activities and responsibilities."
+            }]
     }
 ]
