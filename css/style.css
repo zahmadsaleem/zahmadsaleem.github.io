@@ -41,21 +41,21 @@ a:hover {
 a.anchor {
     display: block;
     position: relative;
-    top: -25px;
+    top: 20px;
     visibility: hidden;
 }
 
+#main-nav{
+    border-bottom-color: #fff !important;
+    border-bottom-width: 2px !important;
+}
+
 #project-drawer{
-    min-height:calc(100vh - 120px) !important;
-    display:block;  
+    min-height:calc(100vh - 90px) !important;
 }
 
 #project-browser{
     overflow-y: scroll;
-}
-
-#project-drawer b-collapse{
-    background: #333;
 }
 
 .proj-thumb{
@@ -63,20 +63,20 @@ a.anchor {
 }
 
 .proj-thumb img:hover{
-    /* opacity: 0; */
-    
+    opacity: 0.4;
+    transition: 0.1s;    
 }
 
 .proj-thumb:hover .proj-name{
     top: 10px;
 }
-
 .proj-name{
     position: absolute;
     top: 400px;
     background-color: white;
     font-size: smaller;
     margin-bottom: auto;
+    min-width: 100%;
 }
 
 #project-drawer  .card {
@@ -85,6 +85,7 @@ a.anchor {
     border-radius: 0px;
     background-color: transparent;
 }
+
 
 #resumecontent {
     padding-top: 75px;
@@ -107,7 +108,10 @@ a.anchor {
     padding-bottom: 0px;
 }
 
-
+#gallery{
+    padding-top: 40px;
+  
+}
 .gallery-img {
     padding: 0px;
 }
@@ -136,6 +140,8 @@ a.anchor {
     box-shadow: none;
 }
 
+
+/* modal dialog */
 .modal-body {
     padding: 0px !important;
 }
@@ -150,8 +156,6 @@ a.anchor {
     
 }
 
-@media(min-width: 480px) {
-    .modal-dialog {
-        max-width: calc(100vh - 20px) !important;
-    }
+.modal-dialog {
+    max-width: calc(100vw - 20px) !important;
 }
