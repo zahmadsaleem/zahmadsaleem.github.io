@@ -136,6 +136,15 @@ var projects = [
         "images": ["arch-models-1.jpg","arch-models-2.jpg","arch-models-4.jpg","arch-models-5.jpg","arch-models-6.jpg","arch-models-7.jpg" ],
         "links": []
     },
+    {
+        "projectid": "code-website",
+        "projectName": "Portfolio Website",
+        "Description": "(This) Website built dynamically using Vue.js and bootstrap-Vue. Follow the link for source code. ",
+        "projectContext": "Web Development",
+        "cover": "code-website-1.jpg",
+        "images": [],
+        "links": ["https://github.com/zahmadsaleem/zahmadsaleem.github.io"]
+    },
     // {
     // 	"projectid": "graphic-nittfest",
     // 	"projectName":"NITTFEST Design",
@@ -145,6 +154,15 @@ var projects = [
     // 	"images":[],
     // 	"links" :[]
     // }
+    {
+        "projectid": "computational-stadiumseating",
+        "projectName": "Stadium Seating Generator",
+        "Description": "Stadium seating arrangement around a rectangular field, with aisles and sight angles considered",
+        "projectContext": "Academic // 5th Semester",
+        "cover": "computational-stadiumseating-1.jpg",
+        "images": [],
+        "links": []
+    },
 
 ]
 
