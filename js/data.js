@@ -10,7 +10,7 @@ var projects = [
     },
     {
         "projectid": "arch-villa",
-        "projectName": "Villa // Srirangam",
+        "projectName": "Lakeside Villa",
         "Description": "The brief was to design a residence for a family of 4 on a linear piece of land along the banks of river Kaveri",
         "projectContext": "Studio Project // Semester III",
         "cover": "arch-villa-1.jpg",
@@ -19,7 +19,7 @@ var projects = [
     },
     {
         "projectid": "arch-restaurant",
-        "projectName": " Highway Restaurant // Trichy",
+        "projectName": " Highway Restaurant",
         "Description": "The design brief dictated the design of a highway restaurant which includes: restaurant, supermarket, pharmacy, souvenier shops and food joints //Concept : Swirl-Motion, relating to the primary activity on highway. The structure is visually and funtionally linear connecting different functions.",
         "projectContext": "Studio Project // Semester IV",
         "cover": "arch-restaurant-1.jpg",
@@ -46,7 +46,7 @@ var projects = [
     },
     {
         "projectid": "arch-hudco",
-        "projectName": "Housing & Urban Development Corp.",
+        "projectName": "NASA HUDCO",
         "Description": "Proposal for a slum redevelompment plan undetaken by HUDCO. Presented as a part of Annual NASA Convention, India 2017. HUDCO trophy aims at designing for the informal sector and give design alternatives for the issues pertaining to the solutions to Sustainable Urban Development. //Click on [Z603] in the link",
         "projectContext": "Competition // NASA India //2nd Position",
         "cover": "arch-hudco-1.jpg",
@@ -73,7 +73,7 @@ var projects = [
     },
     {
         "projectid": "arch-facade",
-        "projectName": "Undulating Facade //Hyderabad",
+        "projectName": "Undulating Facade // Hyderabad",
         "Description": "Parametric wooden facade for a residence in Hyderabad. Scripted for design and drawings for CNC milling.",
         "projectContext": " Scripting /Fabrication Drawing // @NUDES",
         "cover": "arch-facade-1.jpg",
@@ -82,7 +82,7 @@ var projects = [
     },
     {
         "projectid": "code-consolegame",
-        "projectName": "Bulls & Cows",
+        "projectName": "Console Game // Bulls & Cows",
         "Description": "My first python project! Bulls & Cows game word version build with added features like scores, time and hints. The game guesses a word from list of isogram words scraped and pickled, the user inputs the number of chances he'd need and tries to guess the word.",
         "projectContext": " Python // Fun",
         "images": [],
@@ -120,7 +120,7 @@ var projects = [
     },
     {
         "projectid": "code-pyrevit",
-        "projectName": "Revit-pyRevit-RPW Snippets",
+        "projectName": "Revit Python Snippets",
         "Description": "Collection of code snippets used to automate/customize minor/major tasks in revit using python scripting.",
         "projectContext": "RevitAPI Exploration // Part of my initiatives @WeWork",
         "cover": "code-pyrevit-1.gif",

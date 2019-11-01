@@ -16,9 +16,12 @@
     <!-- Load polyfills to support older browsers -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es2015%2CIntersectionObserver"></script>
     <!-- Required scripts -->
-    <script src="https://unpkg.com/vue@latest/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue@latest/dist/vue.min.js"></script>
     <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
     <script src="js/data.js"></script>
+    <script src="js/cover.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151024569-1"></script>
@@ -50,10 +53,10 @@
         </header>
 
         <!-- cover -->
-        <div class="text-center cover-container d-flex p-3 mx-auto flex-column">
+        <div id="cover-main" class="text-center cover-container d-flex mx-auto flex-column">
             <main role="main" class="inner cover my-auto">
-                <h1 class="cover-heading">Portfolio</h1>
-                <p class="lead">Ahmad Saleem Z</p>
+                <div class="justified-content-center mb-3"><p class="h1 d-inline px-5 py-1 bg-light">Portfolio</p></div>
+                <div class="justified-content-center"><p class="lead d-inline px-3 py-1 bg-light">Ahmad Saleem Z</p></div>
             </main>
         </div>
 

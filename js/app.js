@@ -5,12 +5,12 @@
         template: `<div class="px-3  col-lg-8 mb-1">
                     <p class="h5 text-light pl-lg-4 pl-2 py-3 proj-section-head">{{projectcategory}}</p>
                     <div :id="categoryfilter" class="m-0 mt-2 p-0 row mb-5">
-                        <div class="col-4 m-0 p-0 proj-thumb" @click="vueRoot.showProject(project)" v-for="project in vueRoot.filterProjects(categoryfilter)">
+                        <div class="col-4 m-0 p-2 proj-thumb text-center" @click="vueRoot.showProject(project)" v-for="project in vueRoot.filterProjects(categoryfilter)">
                             <b-img fluid 
                                 :src="'img/thumb-img/' + vueRoot.getThumb(project)"
-                                :alt="project.projectName" class="p-2">
+                                :alt="project.projectName">
                             </b-img>
-                            <p class="text-center text-wrap proj-name text-dark mx-auto mx-2">{{project.projectName}}</p>
+                            <span class=" proj-name text-light bg-dark">{{project.projectName}}</span>
                         </div>
                     </div>
                 </div>`,

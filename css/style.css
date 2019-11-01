@@ -62,21 +62,26 @@ a.anchor {
     overflow: hidden;
 }
 
-.proj-thumb img:hover{
+.proj-thumb:hover img{
     opacity: 0.4;
-    transition: 0.1s;    
+    transition: 0.3s;
 }
 
 .proj-thumb:hover .proj-name{
-    top: 5%;
+    top: 40%;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
 }
+
 .proj-name{
     position: absolute;
     top: 750px;
-    background-color: white;
-    font-size: smaller;
-    margin-bottom: auto;
-    min-width: 100%;
+    left: 20px;
+    right: 20px;
+    font-size: larger;
+    word-wrap: normal;
+    border-radius: 0.25rem;
+    padding: 2px;
 }
 
 #project-drawer  .card {
@@ -86,6 +91,9 @@ a.anchor {
     background-color: transparent;
 }
 
+.p5Canvas{
+    z-index: -1;
+}
 
 #resumecontent {
     padding-top: 75px;
@@ -131,6 +139,15 @@ a.anchor {
 
     h4 {
         font-size: 1.25rem;
+    }
+    .proj-name{
+        font-size: small;
+        left: 15px;
+        right: 15px;
+    }
+    .proj-thumb:hover .proj-name{
+        top: 20%;
+
     }
 }
 
