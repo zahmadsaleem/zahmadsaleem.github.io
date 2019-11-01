@@ -127,15 +127,15 @@ var projects = [
         "images": [],
         "links": ["https://github.com/zahmadsaleem/py-revit"]
     },
-    {
-        "projectid": "arch-models",
-        "projectName": "Model Making",
-        "Description": "Collection of models made during the course of my academic period",
-        "projectContext": "Physical Models",
-        "cover": "arch-models-1.jpg",
-        "images": ["arch-models-1.jpg","arch-models-2.jpg","arch-models-4.jpg","arch-models-5.jpg","arch-models-6.jpg","arch-models-7.jpg" ],
-        "links": []
-    },
+    // {
+    //     "projectid": "arch-models",
+    //     "projectName": "Model Making",
+    //     "Description": "Collection of models made during the course of my academic period",
+    //     "projectContext": "Physical Models",
+    //     "cover": "arch-models-1.jpg",
+    //     "images": ["arch-models-1.jpg","arch-models-2.jpg","arch-models-4.jpg","arch-models-5.jpg","arch-models-6.jpg","arch-models-7.jpg" ],
+    //     "links": []
+    // },
     {
         "projectid": "code-website",
         "projectName": "Portfolio Website",
