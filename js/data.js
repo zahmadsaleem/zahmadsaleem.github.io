@@ -259,7 +259,7 @@ var mydata = [
             },
             {
                 "subheading": "Programming Skills",
-                "content": "//Python //C#(Beginner) //RevitAPI-pyRevit-RPW-WPF-IronPython //RhinoAPI-GHPython  //WebAPIs(Extensively worked with Airtable API) //GIT //D3.js //Vue.js //Flask //HTML-CSS  "
+                "content": "//Python //Javascript //C#(Beginner) //RevitAPI-pyRevit //WPF //RhinoCommon-GHPython //HTML-CSS //GIT //D3.js //p5.js //Vue.js //Flask //Heroku  "
             },
             {
                 "subheading": "General",
