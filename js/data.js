@@ -124,7 +124,7 @@ var projects = [
         "Description": "Collection of code snippets used to automate/customize minor/major tasks in revit using python scripting.",
         "projectContext": "RevitAPI Exploration // Part of my initiatives @WeWork",
         "cover": "code-pyrevit-1.gif",
-        "images": [],
+        "images": ["code-pyrevit-6.gif", "code-pyrevit-1.gif","code-pyrevit-4.gif","code-pyrevit-5.gif","code-pyrevit-3.gif","code-pyrevit-2.gif"],
         "links": ["https://github.com/zahmadsaleem/py-revit"]
     },
     // {
