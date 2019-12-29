@@ -55,8 +55,12 @@
         <!-- cover -->
         <div id="cover-main" class="text-center cover-container d-flex mx-auto flex-column">
             <main role="main" class="inner cover my-auto">
-                <div class="justified-content-center mb-3"><p class="h1 d-inline px-5 py-1 bg-light">Portfolio</p></div>
-                <div class="justified-content-center"><p class="lead d-inline px-3 py-1 bg-light">Ahmad Saleem Z</p></div>
+                <div class="justified-content-center mb-3">
+                    <p class="h1 d-inline px-5 py-1 bg-light">Portfolio</p>
+                </div>
+                <div class="justified-content-center">
+                    <p class="lead d-inline px-3 py-1 bg-light">Ahmad Saleem Z</p>
+                </div>
             </main>
         </div>
 
@@ -94,7 +98,7 @@
                 <!-- image side -->
                 <div v-if="activeproject.images.length > 0" class="col-lg-8 ">
                     <b-carousel id="carousel-1" :interval="4000" controls indicators background="#ababab"
-                        img-width="1024" img-height="480" style="text-shadow: 1px 1px 2px #333;">
+                        img-width="960" img-height="640" style="text-shadow: 1px 1px 2px #333;">
                         <b-carousel-slide v-for="image in activeproject.images" :img-src="'img/bg-img/' + image">
                         </b-carousel-slide>
                     </b-carousel>
@@ -109,7 +113,8 @@
         <!-- gallery content -->
         <b-container fluid id="gallery" class="w-100 px-0 m-0 bg-dark">
             <div class="col-lg-8 row mx-auto mb-1 py-3">
-                <p class="w-100 h5 text-light pl-lg-4 pl-2 pb-3 pt-4 proj-section-head">Generative Art / Graphic Design</p>
+                <p class="w-100 h5 text-light pl-lg-4 pl-2 pb-3 pt-4 proj-section-head">Generative Art / Graphic Design
+                </p>
                 <b-col v-for="image in allimages" class="gallery-img col-4">
                     <b-img fluid center @click="showMsgBox(image)" :src="'img/thumb-img/' + image.url" class="p-2"
                         alt="gallery image" />

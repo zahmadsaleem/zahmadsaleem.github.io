@@ -5,7 +5,7 @@ var projects = [
         "Description": "Proposal for a space entitled to produce, manage, broadcast vareity of media content and fulfill the architectural challenges faced by Television media production and broadcasting centers.",
         "projectContext": "Thesis Project // Semester X",
         "cover": "arch-thesis-0.jpg",
-        "images": ["arch-thesis-0.jpg","arch-thesis-1.jpg","arch-thesis-2.jpg", "arch-thesis-3.jpg", "arch-thesis-4.jpg", "arch-thesis-5.jpg", "arch-thesis-6.jpg", "arch-thesis-7.jpg", "arch-thesis-8.jpg","arch-thesis-9.jpg","arch-thesis-10.jpg","arch-thesis-11.jpg"],
+        "images": ["arch-thesis-0.jpg", "arch-thesis-1.jpg", "arch-thesis-2.jpg", "arch-thesis-3.jpg", "arch-thesis-4.jpg", "arch-thesis-5.jpg", "arch-thesis-6.jpg", "arch-thesis-7.jpg", "arch-thesis-8.jpg", "arch-thesis-9.jpg", "arch-thesis-10.jpg", "arch-thesis-11.jpg"],
         "links": []
     },
     {
@@ -113,7 +113,7 @@ var projects = [
         "projectid": "computational-armprint",
         "projectName": "Arm Support Cast",
         "Description": "3D printable arm mesh generation for injured arm support, 3d scan of the injured arm is used as input. Factors like bone positions, screw positions considered while generating the cast",
-        "projectContext": " Data Visualisation // Fun",
+        "projectContext": "Freelance Project",
         "cover": "computational-armprint-1.jpg",
         "images": [],
         "links": []
@@ -124,7 +124,7 @@ var projects = [
         "Description": "Collection of code snippets used to automate/customize minor/major tasks in revit using python scripting.",
         "projectContext": "RevitAPI Exploration // Part of my initiatives @WeWork",
         "cover": "code-pyrevit-1.gif",
-        "images": ["code-pyrevit-6.gif", "code-pyrevit-1.gif","code-pyrevit-4.gif","code-pyrevit-5.gif","code-pyrevit-3.gif","code-pyrevit-2.gif"],
+        "images": ["code-pyrevit-6.gif", "code-pyrevit-1.gif", "code-pyrevit-4.gif", "code-pyrevit-5.gif", "code-pyrevit-3.gif", "code-pyrevit-2.gif"],
         "links": ["https://github.com/zahmadsaleem/py-revit"]
     },
     // {
@@ -168,49 +168,64 @@ var projects = [
 
 var images = [
     {
-        "url": "1.jpg"
+        "url": "1.jpg",
+        "caption": ""
     },
     {
-        "url": "10.jpg"
+        "url": "10.jpg",
+        "caption": ""
     },
     {
-        "url": "11.jpg"
+        "url": "11.jpg",
+        "caption": ""
     },
     {
-        "url": "12.gif"
+        "url": "12.gif",
+        "caption": ""
     },
     {
-        "url": "13.jpg"
+        "url": "13.jpg",
+        "caption": ""
     },
     {
-        "url": "14.jpg"
+        "url": "14.jpg",
+        "caption": ""
     },
     {
-        "url": "15.jpg"
+        "url": "15.jpg",
+        "caption": ""
     },
     {
-        "url": "16.gif"
+        "url": "16.gif",
+        "caption": ""
     },
     {
-        "url": "2.jpg"
+        "url": "2.jpg",
+        "caption": ""
     },
     {
-        "url": "4.jpg"
+        "url": "4.jpg",
+        "caption": ""
     },
     {
-        "url": "5.jpg"
+        "url": "5.jpg",
+        "caption": ""
     },
     {
-        "url": "6.jpg"
+        "url": "6.jpg",
+        "caption": ""
     },
     {
-        "url": "7.jpg"
+        "url": "7.jpg",
+        "caption": ""
     },
     {
-        "url": "17.gif"
+        "url": "17.gif",
+        "caption": ""
     },
     {
-        "url": "18.jpg"
+        "url": "18.jpg",
+        "caption": ""
     }]
 
 var mydata = [
