@@ -234,7 +234,7 @@ var mydata = [
         "content": [
             {
                 "subheading": "WeWork // Internship // June 2019 - Present",
-                "content": "//BIM Coordination and content management //Understanding Wework product development process and workflow improvements //Working on various Revit based automation projects using Python-pyRevit-RevitAPI //Revit-Airtable data workflow"
+                "content": "//BIM Coordination and content management //Understanding Wework product development process and workflow improvements //Revit based automation using RevitAPI //Custom UI workflows within revit //Revit-Airtable data workflow"
             },
             {
                 "subheading": "Larsen & Toubro // Internship // June - July 2018",
@@ -274,7 +274,7 @@ var mydata = [
             },
             {
                 "subheading": "Programming Skills",
-                "content": "//Python //Javascript //C#(Beginner) //RevitAPI-pyRevit //WPF //RhinoCommon-GHPython //HTML-CSS //GIT //D3.js //p5.js //Vue.js //Flask //Heroku  "
+                "content": "//Python //Javascript //C //C# //RevitAPI-pyRevit-C# //WPF-XAML //RhinoCommon-GHPython //HTML-CSS //GIT //D3.js //p5.js //Vue.js //Flask //Heroku  "
             },
             {
                 "subheading": "General",
