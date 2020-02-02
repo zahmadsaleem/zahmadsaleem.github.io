@@ -100,5 +100,5 @@ async function generateP5Cover() {
     }
 
 
-    let myp5 = await new p5(createp5sketch);
+    let myp5 = new p5(createp5sketch);
 }

@@ -33,7 +33,7 @@ var myapp = new Vue({
         activeproject: { "images": [] },
     },
     created: generateP5Cover,
-    mounted: function () {
+    mounted: async function () {
         let l = document.querySelectorAll('.drawerimg');
         for (let j of l){
             j.setAttribute('src', j.getAttribute('data-src'));
