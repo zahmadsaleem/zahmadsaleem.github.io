@@ -25,7 +25,7 @@
 
     const projectView = {
         template: `
-        <div class="w-100 m-0 p-0 bg-dark pt-3" id="project-drawer">
+        <div class="w-100 m-0 p-0 bg-dark pt-5" id="project-drawer">
             <div class="row m-0 justify-content-lg-center">
                 <drawer projectcategory="Architecture" categoryfilter="arch"></drawer>
                 <drawer projectcategory="Computational Design" categoryfilter="computational"></drawer>

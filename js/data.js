@@ -172,6 +172,15 @@ var projects = [
     //     "images": [],
     //     "links": []
     // },
+    // {
+    //     "projectid": "code-aspireplugin",
+    //     "projectName": "Revit CRM Communicator",
+    //     "Description": "Publish project details, schedules from revit to a CRM Rest API using wpf based custom interface",
+    //     "projectContext": "Freelance",
+    //     "cover": "code-aspireplugin.gif",
+    //     "images": [],
+    //     "links": []
+    // },
 
 ]
 
