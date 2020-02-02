@@ -163,6 +163,15 @@ var projects = [
         "images": [],
         "links": []
     },
+    // {
+    //     "projectid": "code-4d-gantt",
+    //     "projectName": "4D Gantt",
+    //     "Description": "Project Schedule vs status image interactive visualisation using d3.js",
+    //     "projectContext": "Wework // Self-Initiative",
+    //     "cover": "4d-gantt-1.gif",
+    //     "images": [],
+    //     "links": []
+    // },
 
 ]
 
