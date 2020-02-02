@@ -32,11 +32,12 @@ var myapp = new Vue({
         imgurl: '',
         activeproject: { "images": [] },
     },
-    beforeCreate: generateP5Cover,
+    created: generateP5Cover,
     mounted: function () {
         let l = document.querySelectorAll('.drawerimg');
         for (let j of l){
             j.setAttribute('src', j.getAttribute('data-src'));
+            j.removeAttribute('data-src');
         }
     },
     methods: {

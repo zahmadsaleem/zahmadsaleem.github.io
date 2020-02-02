@@ -116,7 +116,7 @@
                 <p class="w-100 h5 text-light pl-lg-4 pl-2 pb-3 pt-4 proj-section-head">Generative Art / Graphic Design
                 </p>
                 <b-col v-for="image in allimages" class="gallery-img col-4">
-                    <b-img fluid center @click="showMsgBox(image)" :src="'img/thumb-img/' + image.url" class="p-2"
+                    <b-img fluid center @click="showMsgBox(image)" :data-src="'img/thumb-img/' + image.url" class="p-2 drawerimg"
                         alt="gallery image" />
                 </b-col>
             </div>
