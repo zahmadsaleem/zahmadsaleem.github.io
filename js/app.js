@@ -33,11 +33,13 @@ var myapp = new Vue({
         activeproject: { "images": [] },
     },
     created: generateP5Cover,
-    mounted: async function () {
+    mounted: function () {
         let l = document.querySelectorAll('.drawerimg');
         for (let j of l){
-            j.setAttribute('src', j.getAttribute('data-src'));
-            j.removeAttribute('data-src');
+            (async function (){
+                j.setAttribute('src', j.getAttribute('data-src'));
+                j.removeAttribute('data-src');
+            })();
         }
     },
     methods: {
