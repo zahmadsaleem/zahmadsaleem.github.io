@@ -7,8 +7,9 @@
                     <div :id="categoryfilter" class="m-0 mt-2 p-0 row mb-5">
                         <div class="col-4 m-0 p-2 proj-thumb text-center" @click="vueRoot.showProject(project)" v-for="project in vueRoot.filterProjects(categoryfilter)">
                             <b-img fluid 
-                                :src="'img/thumb-img/' + vueRoot.getThumb(project)"
-                                :alt="project.projectName">
+                                :data-src="'img/thumb-img/' + vueRoot.getThumb(project)"
+                                :alt="project.projectName"
+                                class="drawerimg">
                             </b-img>
                             <span class=" proj-name text-light bg-dark">{{project.projectName}}</span>
                         </div>
@@ -30,6 +31,13 @@ var myapp = new Vue({
         resumedata: mydata,
         imgurl: '',
         activeproject: { "images": [] },
+    },
+    beforeCreate: generateP5Cover,
+    mounted: function () {
+        let l = document.querySelectorAll('.drawerimg');
+        for (let j of l){
+            j.setAttribute('src', j.getAttribute('data-src'));
+        }
     },
     methods: {
         showMsgBox: function (imgurl) {

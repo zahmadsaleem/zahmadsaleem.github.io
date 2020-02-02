@@ -1,4 +1,4 @@
-(async function () {
+async function generateP5Cover() {
     function createp5sketch(p) {
         let wwidth;
         let hheight;
@@ -88,7 +88,7 @@
                 p.fill(p.color('rgba(255,235,56,0.3)'));
                 p.rect(p.int(p.mouseX / spanX) * spanX, p.int(p.mouseY / spanY) * spanY, spanX, spanY);
                 p.noStroke();
-                p.rect(p.int(p.mouseX / spanX) * spanX - 5, int(p.mouseY / spanY) * spanY - 5, spanX + 10, spanY + 10);
+                p.rect(p.int(p.mouseX / spanX) * spanX - 5, p.int(p.mouseY / spanY) * spanY - 5, spanX + 10, spanY + 10);
             }
         }
 
@@ -101,4 +101,4 @@
 
 
     let myp5 = await new p5(createp5sketch);
-})();
+}
