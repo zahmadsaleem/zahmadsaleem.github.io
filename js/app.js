@@ -45,8 +45,6 @@
         template: `    
         <b-container fluid id="gallery" class="w-100 px-0 m-0 bg-dark">
             <div class="col-lg-8 row mx-auto mb-1 py-3">
-                <p class="w-100 h5 text-light pl-lg-4 pl-2 pb-3 pt-4 proj-section-head">Generative Art / Graphic Design
-                </p>
                 <b-col v-for="image in vueRoot.allimages" class="gallery-img col-4">
                 <b-img fluid center @click="vueRoot.showMsgBox(image)" :src="'img/thumb-img/' + image.url" class="p-2 drawerimg"
                     alt="gallery image" />

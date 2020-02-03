@@ -37,13 +37,12 @@
 
 <body>
     <!-- Vue application root element -->
-
     <div id="app" class="w-100 mx-auto px-0">
         <header class="w-100 p-2 center" id="main-nav">
             <b-navbar fixed="top" toggleable="lg" type="light" variant="light">
                 <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
                 <b-collapse id="nav-collapse" is-nav>
-                    <b-navbar-nav v-b-scrollspy class="mx-lg-auto pt-2 pt-lg-1">
+                    <b-navbar-nav class="mx-lg-auto pt-2 pt-lg-1">
                         <router-link to="/" class="nav-link">Home</router-link>
                         <router-link to="/projects" class="nav-link">Projects</router-link>
                         <router-link to="/gallery" class="nav-link">Gallery</router-link>
@@ -54,12 +53,12 @@
             </b-navbar>
         </header>
 
-        <!-- Views via vue -->
+        <!-- Views via vue router -->
         <router-view></router-view>
 
         <!-- modal project viewer -->
         <b-modal id="modal-project" hide-footer hide-header ref="pp-modal" centered class="bg-dark w-100 m-0">
-            <div class="row p-0">
+            <div class="row p-0"  v-on:keyup.stop.right="nextProject()" v-on:keyup.stop.left="previousProject()">
 
                 <!-- content side -->
                 <div class="col-lg-4">
@@ -95,7 +94,7 @@
 
         <!-- image popup -->
         <b-modal id="modal-center" hide-footer hide-header ref="mm-modal" centered class="bg-dark w-100 m-0">
-            <div class="w-100">
+            <div class="w-100" v-on:keyup.stop.right="nextImage()" v-on:keyup.stop.left="previousImage()">
                 <b-button @click="previousImage()">&lsaquo; Previous</b-button>
                 <b-button @click="nextImage()" class="float-right">Next &rsaquo; </b-button>
 
@@ -105,7 +104,7 @@
         </b-modal>
 
     </div>
-    <!-- Start running your app -->
+    <!-- vue app -->
     <script src="js/app.js"></script>
 </body>
 
