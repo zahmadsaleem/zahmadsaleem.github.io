@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <title>Ahmad Saleem Z - Portfolio</title>
+    <title>Saleem's Portfo.io</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!-- Required Stylesheets -->
@@ -81,7 +81,7 @@
                 <div v-if="activeproject.images.length > 0" class="col-lg-8 ">
                     <b-carousel id="carousel-1" :interval="4000" controls indicators background="#ababab"
                         img-width="960" img-height="640" style="text-shadow: 1px 1px 2px #333;">
-                        <b-carousel-slide v-for="image in activeproject.images" :img-src="'img/bg-img/' + image">
+                        <b-carousel-slide v-for="image in activeproject.images" :img-src="'img/bg-img/' + image.url">
                         </b-carousel-slide>
                     </b-carousel>
                 </div>
