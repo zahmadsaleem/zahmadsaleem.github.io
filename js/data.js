@@ -5,7 +5,20 @@ var projects = [
         "Description": "Proposal for a space entitled to produce, manage, broadcast vareity of media content and fulfill the architectural challenges faced by Television media production and broadcasting centers.",
         "projectContext": "Thesis Project // Semester X",
         "cover": "arch-thesis-0.jpg",
-        "images": ["arch-thesis-0.jpg", "arch-thesis-1.jpg", "arch-thesis-2.jpg", "arch-thesis-3.jpg", "arch-thesis-4.jpg", "arch-thesis-5.jpg", "arch-thesis-6.jpg", "arch-thesis-7.jpg", "arch-thesis-8.jpg", "arch-thesis-9.jpg", "arch-thesis-10.jpg", "arch-thesis-11.jpg"],
+        "images": [
+            { url: "arch-thesis-0.jpg", caption: "" },
+            { url: "arch-thesis-1.jpg", caption: "" },
+            { url: "arch-thesis-2.jpg", caption: "" },
+            { url: "arch-thesis-3.jpg", caption: "" },
+            { url: "arch-thesis-4.jpg", caption: "" },
+            { url: "arch-thesis-5.jpg", caption: "" },
+            { url: "arch-thesis-6.jpg", caption: "" },
+            { url: "arch-thesis-7.jpg", caption: "" },
+            { url: "arch-thesis-8.jpg", caption: "" },
+            { url: "arch-thesis-9.jpg", caption: "" },
+            { url: "arch-thesis-10.jpg", caption: "" },
+            { url: "arch-thesis-11.jpg", caption: "" }
+        ],
         "links": []
     },
     {
@@ -14,7 +27,11 @@ var projects = [
         "Description": "The brief was to design a residence for a family of 4 on a linear piece of land along the banks of river Kaveri",
         "projectContext": "Studio Project // Semester III",
         "cover": "arch-villa-1.jpg",
-        "images": ["arch-villa-1.jpg", "arch-villa-2.jpg", "arch-villa-3.jpg"],
+        "images": [
+            { url: "arch-villa-1.jpg", caption: "" },
+            { url: "arch-villa-2.jpg", caption: "" },
+            { url: "arch-villa-3.jpg", caption: "" }
+        ],
         "links": []
     },
     {
@@ -23,7 +40,11 @@ var projects = [
         "Description": "The design brief dictated the design of a highway restaurant which includes: restaurant, supermarket, pharmacy, souvenier shops and food joints //Concept : Swirl-Motion, relating to the primary activity on highway. The structure is visually and funtionally linear connecting different functions.",
         "projectContext": "Studio Project // Semester IV",
         "cover": "arch-restaurant-1.jpg",
-        "images": ["arch-restaurant-1.jpg", "arch-restaurant-2.jpg", "arch-restaurant-3.jpg"],
+        "images": [
+            { url: "arch-restaurant-1.jpg", caption: "" },
+            { url: "arch-restaurant-2.jpg", caption: "" },
+            { url: "arch-restaurant-3.jpg", caption: "" }
+        ],
         "links": []
     },
     {
@@ -32,7 +53,11 @@ var projects = [
         "Description": "Concept visualising multi storey farming, mass conservation of energy, resource optimisation for housing on a large scale. Project presented for Rethinking The Future Awards 2017",
         "projectContext": "Competition // @NUDES //2nd Position",
         "cover": "arch-rtf-1.jpg",
-        "images": ["arch-rtf-1.jpg", "arch-rtf-2.jpg", "arch-rtf-3.jpg"],
+        "images": [
+            { url: "arch-rtf-1.jpg", caption: "" },
+            { url: "arch-rtf-2.jpg", caption: "" },
+            { url: "arch-rtf-3.jpg", caption: "" }
+        ],
         "links": ["https://www.re-thinkingthefuture.com/rtfa2017-housing-concept/out-of-the-box-nudes/"]
     },
     {
@@ -41,7 +66,11 @@ var projects = [
         "Description": "Fabrication drawings, parametric modelling with precision",
         "projectContext": "Retail Interior, Facade // @NUDES",
         "cover": "arch-regal-3.jpg",
-        "images": ["arch-regal-3.jpg", "arch-regal-1.jpg", "arch-regal-2.jpg"],
+        "images": [
+            { url: "arch-regal-3.jpg", caption: "" },
+            { url: "arch-regal-1.jpg", caption: "" },
+            { url: "arch-regal-2.jpg", caption: "" }
+        ],
         "links": []
     },
     {
@@ -68,7 +97,11 @@ var projects = [
         "Description": "Generated a fabrication system and drawings for arbitarily  intersecting planes, tested on a voronoi cube.",
         "projectContext": " Geometry Exploration // @NUDES",
         "cover": "computational-auto-joinery-1.jpg",
-        "images": ["computational-auto-joinery-1.jpg", "computational-auto-joinery-2.jpg", "computational-auto-joinery-3.jpg"],
+        "images": [
+            { url: "computational-auto-joinery-1.jpg", caption: "" },
+            { url: "computational-auto-joinery-2.jpg", caption: "" },
+            { url: "computational-auto-joinery-3.jpg", caption: "" }
+        ],
         "links": ["https://issuu.com/_a52/docs/ghissuu"]
     },
     {
@@ -124,7 +157,14 @@ var projects = [
         "Description": "Collection of code snippets used to automate/customize minor/major tasks in revit using python scripting.",
         "projectContext": "RevitAPI Exploration // Part of my initiatives @WeWork",
         "cover": "code-pyrevit-1.gif",
-        "images": ["code-pyrevit-6.gif", "code-pyrevit-1.gif", "code-pyrevit-4.gif", "code-pyrevit-5.gif", "code-pyrevit-3.gif", "code-pyrevit-2.gif"],
+        "images": [
+            { url: "code-pyrevit-6.gif", caption: "" },
+            { url: "code-pyrevit-1.gif", caption: "" },
+            { url: "code-pyrevit-4.gif", caption: "" },
+            { url: "code-pyrevit-5.gif", caption: "" },
+            { url: "code-pyrevit-3.gif", caption: "" },
+            { url: "code-pyrevit-2.gif", caption: "" }
+        ],
         "links": ["https://github.com/zahmadsaleem/py-revit"]
     },
     // {
