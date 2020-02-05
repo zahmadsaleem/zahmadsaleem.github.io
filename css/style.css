@@ -47,7 +47,7 @@ a.anchor {
 }
 
 #project-drawer{
-    min-height:calc(100vh - 90px) !important;
+    min-height:calc(100vh - 50px) !important;
 }
 
 #project-browser{
