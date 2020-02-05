@@ -2,7 +2,8 @@
     "use strict";
     const drawer =  {
         props: ['categoryfilter', 'projectcategory'],
-        template: `<div class="px-3  col-lg-8 mb-1">
+        template: `<div class="max-auto px-3 text-center col-lg-4 mb-1">
+                    <!--
                     <p class="h5 text-light pl-lg-4 pl-2 py-3 proj-section-head">{{projectcategory}}</p>
                     <div :id="categoryfilter" class="m-0 mt-2 p-0 row mb-5">
                         <div class="col-4 m-0 p-2 proj-thumb text-center" @click="vueRoot.showProject(project)" v-for="project in vueRoot.filterProjects(categoryfilter)">
@@ -10,8 +11,16 @@
                                 :src="'img/thumb-img/' + vueRoot.getThumb(project)"
                                 :alt="project.projectName"
                                 class="drawerimg">
-                            </b-img>
+                            </b-img> 
+
                             <span class=" proj-name text-light bg-dark">{{project.projectName}}</span>
+                        </div>
+                    </div>
+                    -->
+                    <p class="h3 text-secondary pt-2 pb-1">{{projectcategory}}</p>
+                    <div :id="categoryfilter" class="m-0 mt-2 p-0">
+                        <div class="proj-thumb" @click="vueRoot.showProject(project)" v-for="project in vueRoot.filterProjects(categoryfilter)">
+                            <p class="text-light">{{project.projectName}}</p>
                         </div>
                     </div>
                 </div>`,
@@ -25,8 +34,8 @@
 
     const projectView = {
         template: `
-        <div class="w-100 m-0 p-0 bg-dark pt-5" id="project-drawer">
-            <div class="row m-0 justify-content-lg-center">
+        <div class="w-100 mt-5 mx-0 p-0 bg-dark pt-5" id="project-drawer">
+            <div class="row w-80 m-0 justify-content-lg-center">
                 <drawer projectcategory="Architecture" categoryfilter="arch"></drawer>
                 <drawer projectcategory="Computational Design" categoryfilter="computational"></drawer>
                 <drawer projectcategory="Code" categoryfilter="code"></drawer>

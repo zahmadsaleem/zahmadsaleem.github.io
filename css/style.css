@@ -58,26 +58,9 @@ a.anchor {
     overflow: hidden;
 }
 
-.proj-thumb:hover img{
-    opacity: 0.4;
-    transition: 0.3s;
-}
-
-.proj-thumb:hover .proj-name{
-    top: 40%;
-    transition: 0.3s;
-    transition-timing-function: ease-in-out;
-}
-
-.proj-name{
-    position: absolute;
-    top: 750px;
-    left: 20px;
-    right: 20px;
-    font-size: larger;
-    word-wrap: normal;
-    border-radius: 0.25rem;
-    padding: 2px;
+.proj-thumb:hover p{
+    opacity: 0.7;
+    cursor: pointer;
 }
 
 #project-drawer  .card {
