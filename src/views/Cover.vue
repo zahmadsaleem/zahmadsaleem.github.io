@@ -14,19 +14,11 @@
 <script>
 
 export default {
-  name: 'about',
-  data () {
-    return {
-      resources: [],
-      error: ''
-    }
-  },
-  methods: {
-  },
+  name: 'Cover',
   directives: {
     p5viewed: {
       // directive definition
-      inserted: function (el) {
+      inserted: function () {
           generateP5Cover();
       }
     }

@@ -4,16 +4,29 @@ import router from './router'
 import store from './store'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 
-import './filters'
-
 Vue.config.productionTip = false
 Vue.use(BootstrapVue)
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
-new Vue({
+router.push("/")
+
+var vm = new Vue({
   router,
   store,
-  render: h => h(App)
+  data() {
+    return {
+      name: "",
+      allprojects: projects,
+      allimages: images,
+      resumedata: mydata,
+      imgurl: "",
+      activeproject: { images: [] }
+    }
+  },
+  
+  render: h => h(App),
 }).$mount('#app')
+
+global.vm = vm; //Define you app variable globally
