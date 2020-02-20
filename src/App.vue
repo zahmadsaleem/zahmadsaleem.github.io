@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="w-100 mx-auto px-0">
     <header class="w-100 p-2 center" id="main-nav">
       <b-navbar fixed="top" toggleable="lg" type="light" variant="light">
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -24,13 +24,35 @@
 export default {
   // created: generateP5Cover,
 
-  methods: {
-    projectCollapse: function() {
-      return window.innerWidth >= 768 ? true : false;
-    }
-  }
+
 };
 </script>
 
 <style lang="scss">
+a,
+a:focus,
+a:hover {
+    color: #fff;
+}
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+    color: #333;
+    text-shadow: none;
+    background-color: #fff;
+    border: .05rem solid #fff;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: 20px;
+    visibility: hidden;
+}
+
+#main-nav{
+    border-bottom-color: #fff !important;
+    border-bottom-width: 2px !important;
+}
 </style>

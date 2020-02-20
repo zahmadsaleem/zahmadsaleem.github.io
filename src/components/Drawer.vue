@@ -21,7 +21,7 @@ export default {
     };
   },
   name: "drawer",
-  props: ["categoryfilter", "projectcategory", "projects"],
+  props: { categoryfilter: String, projectcategory: String, projects: Array },
   methods: {
     filterProjects: function(projectPrefix) {
       return this.allprojects.filter(i => i.projectid.includes(projectPrefix));
@@ -40,4 +40,11 @@ export default {
 </script>
 
 <style lang="scss">
+.proj-thumb{
+    overflow: hidden;
+  &:hover p{
+    opacity: 0.7;
+    cursor: pointer;
+  }
+}
 </style>

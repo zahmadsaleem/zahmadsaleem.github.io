@@ -25,4 +25,9 @@ export default {
 </script>
 
 <style lang="scss">
+#contact {
+    height: 100vh !important;
+    display: flex;
+    align-items: center;
+}
 </style>

@@ -25,5 +25,17 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+.cover {
+  padding: 0 1.5rem;
+  .btn-lg {
+    padding: 0.75rem 1.25rem;
+    font-weight: 700;
+    border-color: #333;
+  }
+}
+
+.cover-container {
+    height: 100vh !important;
+}
 </style>

@@ -1,11 +1,5 @@
 <template>
-  <div
-    id="modal-project"
-    hide-footer
-    hide-header
-    centered
-    class="bg-dark w-100 m-0"
-  >
+  <div id="modal-project" class="w-100">
     <div
       class="row p-0"
       v-on:keyup.stop.right="nextProject()"
@@ -13,10 +7,7 @@
     >
       <!-- content side -->
       <div class="col-lg-4">
-        <div class="w-100">
-          <b-button @click="previousProject()">&lsaquo; Previous</b-button>
-          <b-button @click="nextProject()" class="float-right">Next &rsaquo;</b-button>
-        </div>
+
         <b-card
           :title="activeproject.projectName"
           :sub-title="activeproject.projectContext"
@@ -45,7 +36,7 @@
         >
           <b-carousel-slide
             v-for="image in activeproject.images"
-            :img-src="'img/bg-img/' + image.url"
+            :img-src="require(`@/assets/img/bg-img/${image.url}`)"
           ></b-carousel-slide>
         </b-carousel>
       </div>
@@ -53,7 +44,7 @@
         <b-img-lazy
           center
           fluid
-          :src="'img/bg-img/' + activeproject.cover"
+          :src="require(`@/assets/img/bg-img/${activeproject.cover}`)"
           alt="project cover"
           class="m-1"
         />
@@ -65,7 +56,7 @@
 <script>
 export default {
   name: "SingleProject",
-  props: ["activeproject"],
+  props: { activeproject: Object },
   methods: {
     getThumb: function(project) {
       return project.thumb ? project.thumb : project.projectid + "-thumb.jpg";
@@ -74,5 +65,27 @@ export default {
 };
 </script>
 
+<style lang="scss" scoped>
+#modal-project {
+  margin-top: 50px;
+  .card {
+    border: 0px;
+    border-radius: 0px;
+  }
+}
+</style>
+
 <style lang="scss">
+.carousel-indicators li{
+    background-color: #f00;
+    width: 10px;
+    height: 10px;
+}
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill-opacity='0.8' fill='red' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e")
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill-opacity='0.8' fill='red' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
+}
 </style>

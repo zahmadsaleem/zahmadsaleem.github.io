@@ -6,7 +6,7 @@
           fluid
           center
           @click="showMsgBox(image)"
-          :src="'@/assets/img/thumb-img/' + image.url"
+          :src="require(`@/assets/img/thumb-img/${image.url}`)"
           class="p-2 drawerimg"
           alt="gallery image"
         />
@@ -38,5 +38,12 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+#gallery{
+    padding-top: 40px;
+  
+}
+.gallery-img {
+    padding: 0px;
+}
 </style>

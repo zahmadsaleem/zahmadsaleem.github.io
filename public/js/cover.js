@@ -8,7 +8,7 @@ async function generateP5Cover() {
         var cnv;
         var ratio;
 
-        img = p.loadImage('img/cover-bg.jpg');
+        img = p.loadImage('../src/assets/img/cover-bg.jpg');
 
         p.setup = function () {
             ratio = p.windowWidth / p.windowHeight;
