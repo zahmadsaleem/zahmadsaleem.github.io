@@ -1,5 +1,5 @@
 <template>
-  <div id="contact" class="m-0 p-5 bg-dark text-light text-center">
+  <div id="contact" class="m-0 p-5 bg-dark text-light text-center" v-once>
     <div class="w-100 mx-auto">
       <h3 class="font-heavy py-2">AHMAD SALEEM Z</h3>
       <b-card-text>

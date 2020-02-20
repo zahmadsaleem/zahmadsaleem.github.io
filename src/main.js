@@ -18,11 +18,6 @@ var vm = new Vue({
   data() {
     return {
       name: "",
-      allprojects: projects,
-      allimages: images,
-      resumedata: mydata,
-      imgurl: "",
-      activeproject: { images: [] }
     }
   },
   

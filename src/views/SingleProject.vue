@@ -1,5 +1,5 @@
 <template>
-  <b-modal
+  <div
     id="modal-project"
     hide-footer
     hide-header
@@ -59,31 +59,14 @@
         />
       </div>
     </div>
-  </b-modal>
+  </div>
 </template>
 
 <script>
 export default {
-  name: "Projects",
+  name: "SingleProject",
+  props: ["activeproject"],
   methods: {
-    nextProject: function() {
-      var filteredProjects = this.filterProjects(
-        this.activeproject.projectid.split("-")[0]
-      );
-      var currentIndex = filteredProjects.indexOf(this.activeproject);
-      if (currentIndex < filteredProjects.length - 1) {
-        this.activeproject = filteredProjects[currentIndex + 1];
-      }
-    },
-    previousProject: function() {
-      var filteredProjects = this.filterProjects(
-        this.activeproject.projectid.split("-")[0]
-      );
-      var currentIndex = filteredProjects.indexOf(this.activeproject);
-      if (currentIndex != 0) {
-        this.activeproject = filteredProjects[currentIndex - 1];
-      }
-    },
     getThumb: function(project) {
       return project.thumb ? project.thumb : project.projectid + "-thumb.jpg";
     }

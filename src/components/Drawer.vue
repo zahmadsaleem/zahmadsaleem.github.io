@@ -15,15 +15,25 @@
 
 <script>
 export default {
+  data() {
+    return {
+      allprojects: projects // from data.js
+    };
+  },
   name: "drawer",
-  props: ["categoryfilter", "projectcategory"],
+  props: ["categoryfilter", "projectcategory", "projects"],
   methods: {
-    filterProjects: function(projectPrefix){
-      return vm.$data.allprojects.filter(i => i.projectid.includes(projectPrefix));
+    filterProjects: function(projectPrefix) {
+      return this.allprojects.filter(i => i.projectid.includes(projectPrefix));
     },
     showProject: function(activeproject) {
-      vm.$data.activeproject = activeproject;
-      //vm.$refs["pp-modal"].show();
+      this.$router.push({
+        name: "proj",
+        params: {
+          activeproject: activeproject,
+          projectid: activeproject.projectid
+        }
+      });
     }
   }
 };

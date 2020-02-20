@@ -5,7 +5,9 @@
       <drawer projectcategory="Computational Design" categoryfilter="computational"></drawer>
       <drawer projectcategory="Code" categoryfilter="code"></drawer>
     </div>
+    <router-view name="project"></router-view>
   </div>
+  
 </template>
 
 <script>
@@ -14,15 +16,6 @@ import drawer from '@/components/Drawer.vue'
 
 export default {
   name: "Projects",
-  mounted: function() {
-    let l = document.querySelectorAll(".drawerimg");
-    for (let j of l) {
-      (async function() {
-        j.setAttribute("src", j.getAttribute("data-src"));
-        j.removeAttribute("data-src");
-      })();
-    }
-  },
   components: {
     drawer
   }
