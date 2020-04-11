@@ -1,0 +1,23 @@
+.p5Canvas{
+    z-index: -1;
+}
+
+
+
+@media(max-width: 576px) {
+    .card-text {
+        font-size: 0.85rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    h4 {
+        font-size: 1.25rem;
+    }
+}
