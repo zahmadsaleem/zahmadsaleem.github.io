@@ -1,13 +1,14 @@
 <template>
   <div class="max-auto px-3 text-center col-lg-4 mb-1">
-    <p class="h3 text-secondary pt-2 pb-1">{{projectcategory}}</p>
+    <p class="h3 text-secondary pt-2 pb-1">{{ projectcategory }}</p>
     <div :id="categoryfilter" class="m-0 mt-2 p-0">
       <div
         class="proj-thumb"
         @click="showProject(project)"
-        v-for="project in filterProjects(categoryfilter)"
+        v-for="(project,i) in filterProjects(categoryfilter)"
+        :key="i"
       >
-        <p class="text-light">{{project.projectName}}</p>
+        <p class="text-light">{{ project.projectName }}</p>
       </div>
     </div>
   </div>
@@ -40,9 +41,9 @@ export default {
 </script>
 
 <style lang="scss">
-.proj-thumb{
-    overflow: hidden;
-  &:hover p{
+.proj-thumb {
+  overflow: hidden;
+  &:hover p {
     opacity: 0.7;
     cursor: pointer;
   }

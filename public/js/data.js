@@ -287,6 +287,8 @@ var images = [
     }]
 
 var mydata = [
+    {"heading": "About Me",
+    "content": [{ "content" : "Hi!\r I'm Saleem. I am a Programmer, Computational Designer, passionate about design & technology, BIM workflows, with working experience in Revit/Dynamo/RevitAPI, Rhino/Grasshopper, Python and Nodejs based development."}]},
     {
         "heading": "Experience",
         "content": [
@@ -332,7 +334,7 @@ var mydata = [
             },
             {
                 "subheading": "Programming Skills",
-                "content": "//Python //Javascript //C //C# //RevitAPI-pyRevit-C# //WPF-XAML //RhinoCommon-GHPython //HTML-CSS //GIT //D3.js //p5.js //Vue.js //Flask //Heroku  "
+                "content": "//Python //Javascript //C //C# //RevitAPI-pyRevit-C# //WPF-XAML //RhinoCommon-GHPython //HTML-CSS //GIT //D3.js //p5.js //Vue.js // Electron //Nodejs //GraphQL //Heroku //Netlify"
             },
             {
                 "subheading": "General",

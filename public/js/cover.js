@@ -8,7 +8,7 @@ async function generateP5Cover() {
         var cnv;
         var ratio;
 
-        img = p.loadImage('../src/assets/img/cover-bg.jpg');
+        img = p.loadImage('../img/cover-bg.jpg');
 
         p.setup = function () {
             ratio = p.windowWidth / p.windowHeight;
@@ -26,14 +26,16 @@ async function generateP5Cover() {
         }
 
         function setCanvasSize() {
-            if (ratio < 1.4 && ratio > 0.6) { //if height almost equal to width
+            if (ratio < 1.4 && ratio > 0.6) { 
+                //if height almost equal to width
                 // console.log("almost square",ratio);
                 let smaller = p.windowWidth > p.windowHeight ? p.windowHeight - 50 : p.windowWidth - 50;
                 wwidth = smaller;
                 hheight = smaller;
                 divX = 6;
                 divY = 3;
-            } else if (ratio > 1.2) { //if width more than height
+            } else if (ratio > 1.2) {
+                 //if width more than height
                 // console.log("landscape",ratio);
                 wwidth = p.windowWidth - 50;
                 hheight = wwidth / 2;

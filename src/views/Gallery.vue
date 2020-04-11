@@ -1,7 +1,7 @@
 <template>
   <b-container id="gallery" class="w-100 mx-auto px-0 m-0 bg-dark" v-once>
     <div class="col-lg-8 row mx-auto mb-1 py-3">
-      <b-col v-for="image in allimages" class="gallery-img col-4">
+      <b-col v-for="(image, i) in allimages" :key="i" class="gallery-img col-4">
         <b-img
           fluid
           center
