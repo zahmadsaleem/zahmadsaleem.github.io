@@ -1,7 +1,7 @@
 <template>
-  <container id="resumecontent" class="col-xl-8 col-lg-10 px-lg-5" v-once>
+  <container id="resumecontent" v-once>
     <h2>RESUME</h2>
-    <div v-for="(headdata, index) in resumedata" :key="index" class="mb-4">
+    <div v-for="(headdata, index) in resumedata" :key="index">
       <p>{{ headdata.heading }}</p>
       <card
         v-for="(subdata, i) in headdata.content"

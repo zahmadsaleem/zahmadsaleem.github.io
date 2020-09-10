@@ -1,5 +1,5 @@
 <template>
-  <div id="modal-project" class="w-100">
+  <div id="modal-project"">
     <div>
       <!-- content side -->
       <div>
@@ -55,31 +55,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-#modal-project {
-  margin-top: 50px;
-
-  .card {
-    border: 0px;
-    border-radius: 0px;
-  }
-}
-</style>
-
-<style lang="scss">
-.carousel-indicators li {
-  background-color: #f00;
-  width: 10px;
-  height: 10px;
-}
-
-.carousel-item {
-  img {
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-    max-height: 600px;
-  }
-}
-</style>
+<style lang="scss" scoped></style>

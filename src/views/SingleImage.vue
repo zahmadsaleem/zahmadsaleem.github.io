@@ -1,5 +1,5 @@
 <template>
-  <div id="modal-center" class="w-100 m-0">
+  <div id="modal-center">
     <img :src="require(`@/assets/img/bg-img/${img.url}`)" />
     <div
       class="w-100"

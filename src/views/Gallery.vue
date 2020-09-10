@@ -1,7 +1,7 @@
 <template>
-  <container id="gallery" v-once>
+  <container v-once>
     <div>
-      <div v-for="(image, i) in allimages" :key="i" class="gallery-img col-4">
+      <div v-for="(image, i) in allimages" :key="i">
         <img
           @click="showMsgBox(image)"
           :src="require(`@/assets/img/thumb-img/${image.url}`)"
@@ -38,11 +38,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-#gallery {
-  padding-top: 40px;
-}
-.gallery-img {
-  padding: 0px;
-}
-</style>
+<style lang="scss" scoped></style>
