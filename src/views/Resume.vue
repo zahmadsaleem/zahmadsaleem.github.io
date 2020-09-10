@@ -1,44 +1,42 @@
 <template>
-  <b-container id="resumecontent" class="col-xl-8 col-lg-10 px-lg-5" v-once>
+  <container id="resumecontent" class="col-xl-8 col-lg-10 px-lg-5" v-once>
     <h2
       class="w-100 font-heavy mb-5 py-2 text-light bg-dark pl-3 col-5 col-md-3 ml-0"
     >
       RESUME
     </h2>
-    <div
-      v-for="(headdata, index) in resumedata"
-      v-bind:key="index"
-      class="mb-4"
-    >
+    <div v-for="(headdata, index) in resumedata" :key="index" class="mb-4">
       <p class="h5 text-primary pb-2 pl-4">{{ headdata.heading }}</p>
-      <b-card
+      <card
         v-for="(subdata, i) in headdata.content"
-        :sub-title="subdata.subheading"
+        :subtitle="subdata.subheading"
         :key="i"
         class="my-2"
       >
-        <b-card-text v-html="subdata.content"></b-card-text>
-      </b-card>
+        <p>{{ subdata.content }}</p>
+      </card>
     </div>
-  </b-container>
+  </container>
 </template>
 
 <script>
+import { resume_data } from "@/data/data";
+import Card from "@/components/Card";
+import Container from "@/components/Container";
+
 export default {
   name: "Resume",
+  components: { Container, Card },
   data() {
     return {
-      resumedata: mydata // from global var in data.js
+      resumedata: resume_data, // from global var in data.js
     };
-  }
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 #resumecontent {
-  padding-top: 75px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
+  padding: 75px 10px 10px;
 }
 </style>

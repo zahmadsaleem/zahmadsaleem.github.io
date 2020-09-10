@@ -16,6 +16,7 @@
 </template>
 
 <script>
+import { images } from "@/data/data";
 
 export default {
   name: "Gallery",
@@ -24,26 +25,25 @@ export default {
       allimages: images,
     };
   },
-  methods:{
-    showMsgBox: function(img) {
+  methods: {
+    showMsgBox: function (img) {
       this.$router.push({
-        name : "img",
-        params:{
-          url:img.url,
-          img:img
-        }
-      })
-    }
-  }
+        name: "img",
+        params: {
+          url: img.url,
+          img: img,
+        },
+      });
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-#gallery{
-    padding-top: 40px;
-  
+#gallery {
+  padding-top: 40px;
 }
 .gallery-img {
-    padding: 0px;
+  padding: 0px;
 }
 </style>

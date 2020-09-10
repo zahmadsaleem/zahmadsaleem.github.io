@@ -21,38 +21,34 @@
 </template>
 
 <script>
-export default {
-  // created: generateP5Cover,
-
-
-};
+export default {};
 </script>
 
 <style lang="scss">
 a,
 a:focus,
 a:hover {
-    color: #fff;
+  color: #fff;
 }
 
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
-    color: #333;
-    text-shadow: none;
-    background-color: #fff;
-    border: .05rem solid #fff;
+  color: #333;
+  text-shadow: none;
+  background-color: #fff;
+  border: 0.05rem solid #fff;
 }
 
 a.anchor {
-    display: block;
-    position: relative;
-    top: 20px;
-    visibility: hidden;
+  display: block;
+  position: relative;
+  top: 20px;
+  visibility: hidden;
 }
 
-#main-nav{
-    border-bottom-color: #fff !important;
-    border-bottom-width: 2px !important;
+#main-nav {
+  border-bottom-color: #fff !important;
+  border-bottom-width: 2px !important;
 }
 </style>
