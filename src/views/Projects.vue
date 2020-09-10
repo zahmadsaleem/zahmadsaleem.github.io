@@ -2,7 +2,10 @@
   <div class="w-100 mt-5 mx-0 p-0 bg-dark pt-5" id="project-drawer">
     <div class="row w-80 m-0 justify-content-lg-center">
       <drawer projectcategory="Architecture" categoryfilter="arch"></drawer>
-      <drawer projectcategory="Computational Design" categoryfilter="computational"></drawer>
+      <drawer
+        projectcategory="Computational Design"
+        categoryfilter="computational"
+      ></drawer>
       <drawer projectcategory="Code" categoryfilter="code"></drawer>
     </div>
     <router-view name="project"></router-view>

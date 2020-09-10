@@ -11,8 +11,8 @@ export default {
   name: "Card",
   props: {
     title: String,
-    subtitle: String,
-  },
+    subtitle: String
+  }
 };
 </script>
 

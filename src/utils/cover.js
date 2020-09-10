@@ -11,7 +11,7 @@ export async function generateP5Cover() {
 
     img = p.loadImage("../img/cover-bg.jpg");
 
-    p.setup = function () {
+    p.setup = function() {
       ratio = p.windowWidth / p.windowHeight;
       cnv = p.createCanvas();
       setCanvasSize();
@@ -56,7 +56,7 @@ export async function generateP5Cover() {
       p.resizeCanvas(wwidth, hheight);
     }
 
-    p.draw = function () {
+    p.draw = function() {
       let spanX = wwidth / divX;
       let spanY = hheight / divY;
       let bgcol = p.color("rgba(255,255,255,0)");
@@ -107,12 +107,12 @@ export async function generateP5Cover() {
       }
     };
 
-    p.windowResized = function () {
+    p.windowResized = function() {
       ratio = p.windowWidth / p.windowHeight;
       setCanvasSize();
       centerCanvas();
     };
   }
 
-  let myp5 = new p5(createp5sketch);
+  new p5(createp5sketch);
 }

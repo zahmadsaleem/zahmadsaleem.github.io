@@ -18,9 +18,9 @@ export const projects = [
       { url: "arch-thesis-8.jpg", caption: "" },
       { url: "arch-thesis-9.jpg", caption: "" },
       { url: "arch-thesis-10.jpg", caption: "" },
-      { url: "arch-thesis-11.jpg", caption: "" },
+      { url: "arch-thesis-11.jpg", caption: "" }
     ],
-    links: [],
+    links: []
   },
   {
     projectid: "arch-villa",
@@ -32,9 +32,9 @@ export const projects = [
     images: [
       { url: "arch-villa-1.jpg", caption: "" },
       { url: "arch-villa-2.jpg", caption: "" },
-      { url: "arch-villa-3.jpg", caption: "" },
+      { url: "arch-villa-3.jpg", caption: "" }
     ],
-    links: [],
+    links: []
   },
   {
     projectid: "arch-restaurant",
@@ -46,9 +46,9 @@ export const projects = [
     images: [
       { url: "arch-restaurant-1.jpg", caption: "" },
       { url: "arch-restaurant-2.jpg", caption: "" },
-      { url: "arch-restaurant-3.jpg", caption: "" },
+      { url: "arch-restaurant-3.jpg", caption: "" }
     ],
-    links: [],
+    links: []
   },
   {
     projectid: "arch-rtf",
@@ -60,11 +60,11 @@ export const projects = [
     images: [
       { url: "arch-rtf-1.jpg", caption: "" },
       { url: "arch-rtf-2.jpg", caption: "" },
-      { url: "arch-rtf-3.jpg", caption: "" },
+      { url: "arch-rtf-3.jpg", caption: "" }
     ],
     links: [
-      "https://www.re-thinkingthefuture.com/rtfa2017-housing-concept/out-of-the-box-nudes/",
-    ],
+      "https://www.re-thinkingthefuture.com/rtfa2017-housing-concept/out-of-the-box-nudes/"
+    ]
   },
   {
     projectid: "arch-retail-regal",
@@ -75,9 +75,9 @@ export const projects = [
     images: [
       { url: "arch-regal-3.jpg", caption: "" },
       { url: "arch-regal-1.jpg", caption: "" },
-      { url: "arch-regal-2.jpg", caption: "" },
+      { url: "arch-regal-2.jpg", caption: "" }
     ],
-    links: [],
+    links: []
   },
   {
     projectid: "arch-hudco",
@@ -88,8 +88,8 @@ export const projects = [
     cover: "arch-hudco-1.jpg",
     images: [],
     links: [
-      "https://nasaindia.co/index.php/winningentry?type=annual&trophyId=2&groupId=2&year=2016",
-    ],
+      "https://nasaindia.co/index.php/winningentry?type=annual&trophyId=2&groupId=2&year=2016"
+    ]
   },
   {
     projectid: "computational-sightline-analysis",
@@ -99,7 +99,7 @@ export const projects = [
     projectContext: "Larsen & Toubro // Internship Project",
     cover: "computational-sightline-analysis-1.jpg",
     images: [],
-    links: [],
+    links: []
   },
   {
     projectid: "computational-auto-joinery",
@@ -111,9 +111,9 @@ export const projects = [
     images: [
       { url: "computational-auto-joinery-1.jpg", caption: "" },
       { url: "computational-auto-joinery-2.jpg", caption: "" },
-      { url: "computational-auto-joinery-3.jpg", caption: "" },
+      { url: "computational-auto-joinery-3.jpg", caption: "" }
     ],
-    links: ["https://issuu.com/_a52/docs/ghissuu"],
+    links: ["https://issuu.com/_a52/docs/ghissuu"]
   },
   {
     projectid: "arch-facade",
@@ -123,7 +123,7 @@ export const projects = [
     projectContext: " Scripting /Fabrication Drawing // @NUDES",
     cover: "arch-facade-1.jpg",
     images: [],
-    links: [],
+    links: []
   },
   {
     projectid: "code-consolegame",
@@ -134,7 +134,7 @@ export const projects = [
     images: [],
     cover: "code-consolegame-1.gif",
     links: ["https://en.wikipedia.org/wiki/Bulls_and_Cows#The_word_version"],
-    thumb: "code-consolegame-thumb.gif",
+    thumb: "code-consolegame-thumb.gif"
   },
   {
     projectid: "code-browserhistory1",
@@ -145,7 +145,7 @@ export const projects = [
     cover: "code-browserhistory1-2.gif",
     images: [],
     links: [],
-    thumb: "code-browserhistory1-thumb.gif",
+    thumb: "code-browserhistory1-thumb.gif"
   },
   {
     projectid: "code-browserhistory2",
@@ -155,7 +155,7 @@ export const projects = [
     projectContext: " Data Visualisation // Fun",
     cover: "code-browserhistory2-1.jpg",
     images: [],
-    links: [],
+    links: []
   },
   {
     projectid: "computational-armprint",
@@ -165,7 +165,7 @@ export const projects = [
     projectContext: "Freelance Project",
     cover: "computational-armprint-1.jpg",
     images: [],
-    links: [],
+    links: []
   },
   {
     projectid: "code-pyrevit",
@@ -180,9 +180,9 @@ export const projects = [
       { url: "code-pyrevit-4.gif", caption: "" },
       { url: "code-pyrevit-5.gif", caption: "" },
       { url: "code-pyrevit-3.gif", caption: "" },
-      { url: "code-pyrevit-2.gif", caption: "" },
+      { url: "code-pyrevit-2.gif", caption: "" }
     ],
-    links: ["https://github.com/zahmadsaleem/py-revit"],
+    links: ["https://github.com/zahmadsaleem/py-revit"]
   },
   {
     projectid: "code-website",
@@ -192,7 +192,7 @@ export const projects = [
     projectContext: "Web Development",
     cover: "code-website-1.jpg",
     images: [],
-    links: ["https://github.com/zahmadsaleem/zahmadsaleem.github.io"],
+    links: ["https://github.com/zahmadsaleem/zahmadsaleem.github.io"]
   },
   {
     projectid: "computational-stadiumseating",
@@ -202,7 +202,7 @@ export const projects = [
     projectContext: "Academic // 5th Semester",
     cover: "computational-stadiumseating-1.jpg",
     images: [],
-    links: [],
+    links: []
   },
   {
     projectid: "code-4d-gantt",
@@ -212,71 +212,71 @@ export const projects = [
     projectContext: "Wework // Self-Initiative",
     cover: "4d-gantt-1.gif",
     images: [],
-    links: ["gantter.netlify.app"],
-  },
+    links: ["gantter.netlify.app"]
+  }
 ];
 
 export const images = [
   {
     url: "1.jpg",
-    caption: "",
+    caption: ""
   },
   {
     url: "10.jpg",
-    caption: "",
+    caption: ""
   },
   {
     url: "11.jpg",
-    caption: "",
+    caption: ""
   },
   {
     url: "12.gif",
-    caption: "",
+    caption: ""
   },
   {
     url: "13.jpg",
-    caption: "",
+    caption: ""
   },
   {
     url: "14.jpg",
-    caption: "",
+    caption: ""
   },
   {
     url: "15.jpg",
-    caption: "",
+    caption: ""
   },
   {
     url: "16.gif",
-    caption: "",
+    caption: ""
   },
   {
     url: "2.jpg",
-    caption: "",
+    caption: ""
   },
   {
     url: "4.jpg",
-    caption: "",
+    caption: ""
   },
   {
     url: "5.jpg",
-    caption: "",
+    caption: ""
   },
   {
     url: "6.jpg",
-    caption: "",
+    caption: ""
   },
   {
     url: "7.jpg",
-    caption: "",
+    caption: ""
   },
   {
     url: "17.gif",
-    caption: "",
+    caption: ""
   },
   {
     url: "18.jpg",
-    caption: "",
-  },
+    caption: ""
+  }
 ];
 
 export const resume_data = [
@@ -285,9 +285,9 @@ export const resume_data = [
     content: [
       {
         content:
-          "Hi!\r I'm Saleem. I am a Programmer, Computational Designer, passionate about design & technology, BIM workflows, with working experience in Revit/Dynamo/RevitAPI, Rhino/Grasshopper, Python and Nodejs based development.",
-      },
-    ],
+          "Hi!\r I'm Saleem. I am a Programmer, Computational Designer, passionate about design & technology, BIM workflows, with working experience in Revit/Dynamo/RevitAPI, Rhino/Grasshopper, Python and Nodejs based development."
+      }
+    ]
   },
   {
     heading: "Experience",
@@ -295,41 +295,41 @@ export const resume_data = [
       {
         subheading: "WeWork // Internship // June 2019 - Present",
         content:
-          "//BIM Coordination and content management //Understanding Wework product development process and workflow improvements //Revit based automation using RevitAPI //Custom UI workflows within revit //Revit-Airtable data workflow",
+          "//BIM Coordination and content management //Understanding Wework product development process and workflow improvements //Revit based automation using RevitAPI //Custom UI workflows within revit //Revit-Airtable data workflow"
       },
       {
         subheading: "Larsen & Toubro // Internship // June - July 2018",
         content:
-          "// Sightline Analysis and optimisation  for a large scale auditorium.// Modularisation and design strategy development for a  freeform structure.",
+          "// Sightline Analysis and optimisation  for a large scale auditorium.// Modularisation and design strategy development for a  freeform structure."
       },
       {
         subheading: "NUDES // Internship // June - Nov 2017",
         content:
-          "// Gained experience in architectural design, working drawing, parametric modeling, computational workflows digital fabrication //Explored workflow automations in a studio firm setup",
+          "// Gained experience in architectural design, working drawing, parametric modeling, computational workflows digital fabrication //Explored workflow automations in a studio firm setup"
       },
       {
         subheading: "Freelance Computational Designer // May 2018 - May 2019",
         content:
-          "// Worked on 30+ computational design, fabrication,projects for a variety of clients.",
-      },
-    ],
+          "// Worked on 30+ computational design, fabrication,projects for a variety of clients."
+      }
+    ]
   },
   {
     heading: "Education",
     content: [
       {
         subheading: "National Institute Of Techology, Tiruchirappalli",
-        content: "B.Arch 2014 - 2019",
+        content: "B.Arch 2014 - 2019"
       },
       {
         subheading: "Narayana Junior College, Vijayawada",
-        content: "Junior College 2012 - 2014",
+        content: "Junior College 2012 - 2014"
       },
       {
         subheading: "Bikaner Boys' School, Bikaner",
-        content: "High School 2010 - 2012",
-      },
-    ],
+        content: "High School 2010 - 2012"
+      }
+    ]
   },
   {
     heading: "Skills",
@@ -337,19 +337,19 @@ export const resume_data = [
       {
         subheading: "Software Skills",
         content:
-          "//Revit-Dynamo //AutoCAD //Rhinoceros-Grasshopper3D //Photoshop //InDesign //Illustrator //PowerBI ",
+          "//Revit-Dynamo //AutoCAD //Rhinoceros-Grasshopper3D //Photoshop //InDesign //Illustrator //PowerBI "
       },
       {
         subheading: "Programming Skills",
         content:
-          "//Python //Javascript //C //C# //RevitAPI-pyRevit-C# //WPF-XAML //RhinoCommon-GHPython //HTML-CSS //GIT //D3.js //p5.js //Vue.js // Electron //Nodejs //GraphQL //Heroku //Netlify",
+          "//Python //Javascript //C //C# //RevitAPI-pyRevit-C# //WPF-XAML //RhinoCommon-GHPython //HTML-CSS //GIT //D3.js //p5.js //Vue.js // Electron //Nodejs //GraphQL //Heroku //Netlify"
       },
       {
         subheading: "General",
         content:
-          "//Architectural-Design/Modelling/Drawings //BIM-Management //Computational-Design //Fabrication-Drawings //Team-Building/Leading //Graphic-Design",
-      },
-    ],
+          "//Architectural-Design/Modelling/Drawings //BIM-Management //Computational-Design //Fabrication-Drawings //Team-Building/Leading //Graphic-Design"
+      }
+    ]
   },
 
   {
@@ -358,23 +358,23 @@ export const resume_data = [
       {
         subheading: "NASA HUDCO 2017 // Special Mention",
         content:
-          "Urban Revival- 'Elphinstone Esplanande' proposal for HUDCO trophy.",
+          "Urban Revival- 'Elphinstone Esplanande' proposal for HUDCO trophy."
       },
       {
         subheading: "NASA HUDCO 2016 // Citation",
-        content: "Slum Redevelopment proposal for HUDCO trophy.",
+        content: "Slum Redevelopment proposal for HUDCO trophy."
       },
       {
         subheading: "Aakriti/Pragyan-16 // Runner - UP",
         content:
-          "Aakriti is an architectural design competition meant for Civil Engineering and Architecture Students.",
+          "Aakriti is an architectural design competition meant for Civil Engineering and Architecture Students."
       },
       {
         subheading: "Design Challenge/Pragyan-15 // Runner - UP",
         content:
-          "PDC is a core engineering event which is exclusively designed to cater to the students who are interested and prolific in CAD skills, involving various designing softwares and modelling packages.",
-      },
-    ],
+          "PDC is a core engineering event which is exclusively designed to cater to the students who are interested and prolific in CAD skills, involving various designing softwares and modelling packages."
+      }
+    ]
   },
   {
     heading: "Leadership & Activities",
@@ -383,28 +383,28 @@ export const resume_data = [
         subheading:
           "President // Association of Students of Architecture NIT-T",
         content:
-          "The Association of Students of Architecture(ASA) is a Non-Profit Student council of the Department of Architecture of NIT Trichy. Conducted variety of events ranging from workshops for skill sharing and skill development, to organizing guest lectures of well known professionals.",
+          "The Association of Students of Architecture(ASA) is a Non-Profit Student council of the Department of Architecture of NIT Trichy. Conducted variety of events ranging from workshops for skill sharing and skill development, to organizing guest lectures of well known professionals."
       },
       {
         subheading: "Design & Media Head // NITTFEST 2017",
         content:
-          "Produced and managed design and media content for inter department cultural fest of NIT Trichy - NITTFEST. Also volunteered to manage events during NITTFEST.",
+          "Produced and managed design and media content for inter department cultural fest of NIT Trichy - NITTFEST. Also volunteered to manage events during NITTFEST."
       },
       {
         subheading: "Team Leader // NASA HUDCO Trophy 2017",
         content:
-          "Lead a team of 15 to win the trophy. Conducted team building activities.",
+          "Lead a team of 15 to win the trophy. Conducted team building activities."
       },
       {
         subheading: "B-Certificate// National Cadet Corps(NCC) // 2014 - 2016",
         content:
-          "Obtained NCC B-Certificate with A grade under 3TN Air Squadron NCC.",
+          "Obtained NCC B-Certificate with A grade under 3TN Air Squadron NCC."
       },
       {
         subheading: "NCC Camp CATC-2  // December 2014",
         content:
-          "Participated in 10 day Camp - volunteered for various group activities and responsibilities.",
-      },
-    ],
-  },
+          "Participated in 10 day Camp - volunteered for various group activities and responsibilities."
+      }
+    ]
+  }
 ];

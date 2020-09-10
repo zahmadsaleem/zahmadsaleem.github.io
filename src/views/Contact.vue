@@ -28,14 +28,8 @@
 
 <script>
 export default {
-  name: "Contact",
+  name: "Contact"
 };
 </script>
 
-<style lang="scss">
-#contact {
-  height: 100vh !important;
-  display: flex;
-  align-items: center;
-}
-</style>
+<style lang="scss"></style>
