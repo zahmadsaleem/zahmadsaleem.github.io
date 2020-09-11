@@ -205,14 +205,14 @@ export const projects = [
     links: []
   },
   {
-    projectid: "code-4d-gantt",
+    projectid: "code-4dgantt",
     projectName: "4D Gantt",
     Description:
       "Project Schedule vs status image interactive visualisation using d3.js",
     projectContext: "Wework // Self-Initiative",
-    cover: "4d-gantt-1.gif",
+    cover: "code-4d-gantt-1.png",
     images: [],
-    links: ["gantter.netlify.app"]
+    links: ["https://gantter.netlify.app"]
   }
 ];
 
@@ -285,7 +285,7 @@ export const resume_data = [
     content: [
       {
         content:
-          "Hi!\r I'm Saleem. I am a Programmer, Computational Designer, passionate about design & technology, BIM workflows, with working experience in Revit/Dynamo/RevitAPI, Rhino/Grasshopper, Python and Nodejs based development."
+          "Hi! I'm Saleem. I am a Programmer, Computational Designer, passionate about design & technology, BIM workflows, with working experience in Revit/Dynamo/RevitAPI, Rhino/Grasshopper, Python and Nodejs based development."
       }
     ]
   },
@@ -293,24 +293,28 @@ export const resume_data = [
     heading: "Experience",
     content: [
       {
-        subheading: "WeWork // Internship // June 2019 - Present",
+        subheading: "WeWork - Intern",
+        details: "June 2019 - Feb 2020",
         content:
-          "//BIM Coordination and content management //Understanding Wework product development process and workflow improvements //Revit based automation using RevitAPI //Custom UI workflows within revit //Revit-Airtable data workflow"
+          "BIM Coordination and content management. Understanding Wework product development process and workflow improvements. Revit based automation using RevitAPI. Custom UI workflows within revit. Revit-Airtable data workflow"
       },
       {
-        subheading: "Larsen & Toubro // Internship // June - July 2018",
+        subheading: "Larsen & Toubro - Intern",
+        details: "June - July 2018",
         content:
-          "// Sightline Analysis and optimisation  for a large scale auditorium.// Modularisation and design strategy development for a  freeform structure."
+          "Sightline Analysis and optimisation  for a large scale auditorium. Modularisation and design strategy development for a  freeform structure."
       },
       {
-        subheading: "NUDES // Internship // June - Nov 2017",
+        subheading: "NUDES - Intern",
+        details: "June - Nov 2017",
         content:
-          "// Gained experience in architectural design, working drawing, parametric modeling, computational workflows digital fabrication //Explored workflow automations in a studio firm setup"
+          "Gained experience in architectural design, working drawing, parametric modeling, computational workflows digital fabrication. Explored workflow automations in a studio firm setup"
       },
       {
-        subheading: "Freelance Computational Designer // May 2018 - May 2019",
+        subheading: "Freelance Computational Designer",
+        details: "May 2018 - May 2019",
         content:
-          "// Worked on 30+ computational design, fabrication,projects for a variety of clients."
+          "Worked on 30+ computational design, fabrication,projects for a variety of clients."
       }
     ]
   },
@@ -336,18 +340,48 @@ export const resume_data = [
     content: [
       {
         subheading: "Software Skills",
-        content:
-          "//Revit-Dynamo //AutoCAD //Rhinoceros-Grasshopper3D //Photoshop //InDesign //Illustrator //PowerBI "
+        content: [
+          "Revit-Dynamo ",
+          "AutoCAD ",
+          "Rhinoceros-Grasshopper3D ",
+          "Photoshop ",
+          "InDesign ",
+          "Illustrator ",
+          "PowerBI "
+        ]
       },
       {
         subheading: "Programming Skills",
-        content:
-          "//Python //Javascript //C //C# //RevitAPI-pyRevit-C# //WPF-XAML //RhinoCommon-GHPython //HTML-CSS //GIT //D3.js //p5.js //Vue.js // Electron //Nodejs //GraphQL //Heroku //Netlify"
+        content: [
+          "Python",
+          "Javascript",
+          "C",
+          "C#",
+          "RevitAPI-pyRevit-C#",
+          "WPF-XAML",
+          "RhinoCommon-GHPython",
+          "HTML-CSS",
+          "GIT",
+          "D3.js",
+          "p5.js",
+          "Vue.js",
+          "Electron",
+          "Nodejs ",
+          "GraphQL",
+          "Heroku",
+          "Netlify"
+        ]
       },
       {
         subheading: "General",
-        content:
-          "//Architectural-Design/Modelling/Drawings //BIM-Management //Computational-Design //Fabrication-Drawings //Team-Building/Leading //Graphic-Design"
+        content: [
+          "Architectural-Design",
+          "Modelling",
+          "BIM-Management ",
+          "Computational-Design,Fabrication-Drawings ",
+          "Team-Building/Leading ",
+          "Graphic-Design"
+        ]
       }
     ]
   },
@@ -356,21 +390,25 @@ export const resume_data = [
     heading: "Achievements & Awards",
     content: [
       {
-        subheading: "NASA HUDCO 2017 // Special Mention",
+        subheading: "HUDCO Trophy - Special Mention",
+        details: "NASA 2017",
         content:
           "Urban Revival- 'Elphinstone Esplanande' proposal for HUDCO trophy."
       },
       {
-        subheading: "NASA HUDCO 2016 // Citation",
+        subheading: "HUDCO Trophy - Citation",
+        details: "NASA 2016",
         content: "Slum Redevelopment proposal for HUDCO trophy."
       },
       {
-        subheading: "Aakriti/Pragyan-16 // Runner - UP",
+        subheading: "Aakriti/Pragyan-16",
+        details: "Runner - UP",
         content:
           "Aakriti is an architectural design competition meant for Civil Engineering and Architecture Students."
       },
       {
-        subheading: "Design Challenge/Pragyan-15 // Runner - UP",
+        subheading: "Design Challenge - Pragyan-15",
+        details: "Runner - UP",
         content:
           "PDC is a core engineering event which is exclusively designed to cater to the students who are interested and prolific in CAD skills, involving various designing softwares and modelling packages."
       }
@@ -380,28 +418,32 @@ export const resume_data = [
     heading: "Leadership & Activities",
     content: [
       {
-        subheading:
-          "President // Association of Students of Architecture NIT-T",
+        subheading: "President of ASA- 2019",
+        details: "Association of Students of Architecture NIT-T",
         content:
           "The Association of Students of Architecture(ASA) is a Non-Profit Student council of the Department of Architecture of NIT Trichy. Conducted variety of events ranging from workshops for skill sharing and skill development, to organizing guest lectures of well known professionals."
       },
       {
-        subheading: "Design & Media Head // NITTFEST 2017",
+        subheading: "Design & Media Head",
+        details: "NITTFEST 2017",
         content:
           "Produced and managed design and media content for inter department cultural fest of NIT Trichy - NITTFEST. Also volunteered to manage events during NITTFEST."
       },
       {
-        subheading: "Team Leader // NASA HUDCO Trophy 2017",
+        subheading: "NASA HUDCO Trophy 2017",
+        details: "Team Leader, Team of 15",
         content:
           "Lead a team of 15 to win the trophy. Conducted team building activities."
       },
       {
-        subheading: "B-Certificate// National Cadet Corps(NCC) // 2014 - 2016",
+        subheading: "National Cadet Corps(NCC)",
+        details: "2014 - 2016",
         content:
           "Obtained NCC B-Certificate with A grade under 3TN Air Squadron NCC."
       },
       {
-        subheading: "NCC Camp CATC-2  // December 2014",
+        subheading: "NCC Camp CATC-2",
+        details: "December 2014",
         content:
           "Participated in 10 day Camp - volunteered for various group activities and responsibilities."
       }

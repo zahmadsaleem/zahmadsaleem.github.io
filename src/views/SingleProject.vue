@@ -8,7 +8,11 @@
           :sub-title="activeproject.projectContext"
         >
           <p v-html="activeproject.Description"></p>
-          <a v-for="(link, i) in activeproject.links" :key="i" :href="link"
+          <a
+            v-for="(link, i) in activeproject.links"
+            :key="i"
+            :href="link"
+            target="_blank"
             >Link</a
           >
         </card>
