@@ -1,5 +1,5 @@
 <template>
-  <div id="modal-project"">
+  <div id="modal-project">
     <div>
       <!-- content side -->
       <div>

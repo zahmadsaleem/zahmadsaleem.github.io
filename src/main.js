@@ -5,9 +5,7 @@ import "@/assets/styles/index.css";
 
 Vue.config.productionTip = false;
 
-let vm = new Vue({
+new Vue({
   router,
   render: h => h(App)
 }).$mount("#app");
-
-global.vm = vm; //Define you app variable globally
