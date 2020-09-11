@@ -1,6 +1,6 @@
 <template>
-  <container v-once>
-    <div>
+  <container v-once class="mx-auto lg:max-w-4xl">
+    <div class="grid lg:grid-cols-4 grid-cols-3 gap-4 my-auto">
       <div v-for="(image, i) in allimages" :key="i">
         <img
           @click="showMsgBox(image)"

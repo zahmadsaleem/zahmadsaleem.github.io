@@ -1,8 +1,13 @@
 <template>
-  <container id="resumecontent" v-once class="max-w-4xl mx-auto">
-    <h2>RESUME</h2>
-    <div v-for="(headdata, index) in resumedata" :key="index">
-      <p>{{ headdata.heading }}</p>
+  <container class="max-w-4xl mx-auto">
+    <card class="mt-4"
+      ><p class="w-1/2 p-3">{{ bio.content }}</p></card
+    >
+    <h2 class="text-2xl mt-16">RESUME</h2>
+    <div v-for="(headdata, index) in resume_data" :key="index">
+      <p class="mt-4 mb-2 ml-4 font-bold text-gray-800">
+        {{ headdata.heading }}
+      </p>
       <card
         v-for="(subdata, i) in headdata.content"
         :title="subdata.subheading"
@@ -24,7 +29,7 @@
 </template>
 
 <script>
-import { resume_data } from "@/data/data";
+import { resume_data, bio } from "@/data/data";
 import Card from "@/components/Card";
 import Container from "@/components/Container";
 import Chip from "@/components/Chip";
@@ -34,20 +39,11 @@ export default {
   components: { Chip, Container, Card },
   data() {
     return {
-      resumedata: resume_data
+      resume_data,
+      bio
     };
-  },
-  methods: {
-    content(subdata) {
-      let isArray = Array.isArray(subdata);
-      return isArray ? subdata : [subdata];
-    }
   }
 };
 </script>
 
-<style lang="scss" scoped>
-#resumecontent {
-  padding: 75px 10px 10px;
-}
-</style>
+<style lang="scss" scoped></style>

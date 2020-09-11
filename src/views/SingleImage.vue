@@ -23,8 +23,4 @@ export default {
 };
 </script>
 
-<style lang="scss">
-#modal-center {
-  margin-top: 50px;
-}
-</style>
+<style lang="scss"></style>

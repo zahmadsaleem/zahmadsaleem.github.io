@@ -279,16 +279,12 @@ export const images = [
   }
 ];
 
+export const bio = {
+  content:
+    "Hi! I'm Saleem. I am a polyglot developer and a computational designer. I love to hack things, create, wonder and learn."
+};
+
 export const resume_data = [
-  {
-    heading: "About Me",
-    content: [
-      {
-        content:
-          "Hi! I'm Saleem. I am a Programmer, Computational Designer, passionate about design & technology, BIM workflows, with working experience in Revit/Dynamo/RevitAPI, Rhino/Grasshopper, Python and Nodejs based development."
-      }
-    ]
-  },
   {
     heading: "Experience",
     content: [

@@ -1,11 +1,10 @@
 <template>
+  <!--  #cover-main referenced in generateP5Cover -->
   <div v-p5viewed id="cover-main">
     <div class="cover">
-      <div>
+      <div class="site-header">
         <p>portfo.io</p>
-      </div>
-      <div>
-        <p>Ahmad Saleem Z</p>
+        <p class="text-xl">Ahmad Saleem Z</p>
       </div>
     </div>
   </div>
@@ -27,15 +26,16 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="postcss">
 canvas {
   z-index: -100;
 }
+
 .cover {
-  padding: 0 1.5rem;
+  @apply mt-64 w-full mx-auto text-center absolute;
 }
 
-.cover-container {
-  height: 100vh !important;
+.site-header {
+  @apply py-4 mx-auto w-1/3 bg-black opacity-75 shadow-lg rounded text-white text-opacity-100;
 }
 </style>

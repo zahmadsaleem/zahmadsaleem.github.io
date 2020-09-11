@@ -26,13 +26,13 @@ export default {
 </script>
 <style lang="postcss" scoped>
 .nav-container {
-  @apply fixed;
+  @apply fixed h-16;
   @apply bg-black;
 }
 
 .navbar {
-  @apply my-2 pl-2;
-  @apply flex;
+  @apply mt-6 pl-2;
+  @apply flex items-stretch;
 }
 
 .nav-item {

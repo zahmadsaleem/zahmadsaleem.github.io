@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>{{ projectcategory }}</p>
+    <p class="mt-8 mb-4 text-bold">{{ projectcategory }}</p>
     <div :id="categoryfilter">
       <div
         class="proj-thumb"
@@ -8,7 +8,7 @@
         v-for="(project, i) in filterProjects(categoryfilter)"
         :key="i"
       >
-        <p>{{ project.projectName }}</p>
+        <p class="text-gray-700">{{ project.projectName }}</p>
       </div>
     </div>
   </div>

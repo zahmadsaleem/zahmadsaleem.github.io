@@ -1,5 +1,5 @@
 <template>
-  <div id="modal-project">
+  <container>
     <div>
       <!-- content side -->
       <div>
@@ -36,17 +36,18 @@
         />
       </div>
     </div>
-  </div>
+  </container>
 </template>
 
 <script>
 import Card from "@/components/Card";
 import Carousel from "@/components/Carousel";
 import CarouselSlide from "@/components/CarouselSlide";
+import Container from "@/components/Container";
 
 export default {
   name: "SingleProject",
-  components: { Card, Carousel, CarouselSlide },
+  components: { Container, Card, Carousel, CarouselSlide },
   props: { activeproject: Object },
   methods: {
     getThumb: function(project) {
