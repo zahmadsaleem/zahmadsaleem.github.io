@@ -11,7 +11,7 @@
         <router-link to="/gallery">Gallery</router-link>
       </li>
       <li class="nav-item">
-        <router-link to="/resume">Resume</router-link>
+        <router-link to="/about">About</router-link>
       </li>
     </ul>
   </div>

@@ -33,9 +33,9 @@ export default new Router({
       component: () => import("@/views/Cover.vue")
     },
     {
-      path: "/resume",
-      name: "Resume",
-      component: () => import("@/views/Resume.vue")
+      path: "/about",
+      name: "About",
+      component: () => import("@/views/About.vue")
     }
   ]
 });

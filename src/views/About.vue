@@ -37,7 +37,7 @@ import Chip from "@/components/Chip";
 import Contact from "@/components/Contact";
 
 export default {
-  name: "Resume",
+  name: "About",
   components: { Contact, Chip, Container, Card },
   data() {
     return {
