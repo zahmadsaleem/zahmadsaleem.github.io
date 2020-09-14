@@ -13,9 +13,6 @@
       <li class="nav-item">
         <router-link to="/resume">Resume</router-link>
       </li>
-      <li class="nav-item">
-        <router-link to="/contact">Contact</router-link>
-      </li>
     </ul>
   </div>
 </template>

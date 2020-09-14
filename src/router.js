@@ -4,7 +4,6 @@ import Router from "vue-router";
 Vue.use(Router);
 
 export default new Router({
-  mode: "history",
   routes: [
     {
       path: "/projects",
@@ -37,11 +36,6 @@ export default new Router({
       path: "/resume",
       name: "Resume",
       component: () => import("@/views/Resume.vue")
-    },
-    {
-      path: "/contact",
-      name: "Contact",
-      component: () => import("@/views/Contact.vue")
     }
   ]
 });
