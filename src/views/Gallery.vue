@@ -26,13 +26,7 @@ export default {
   },
   methods: {
     showMsgBox: function(img) {
-      this.$router.push({
-        name: "img",
-        params: {
-          url: img.url,
-          img: img
-        }
-      });
+      this.$router.push(`/img/${img.url}`);
     }
   }
 };

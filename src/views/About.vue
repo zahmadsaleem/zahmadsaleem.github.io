@@ -1,9 +1,13 @@
 <template>
   <container class="max-w-4xl mx-auto">
-    <card class="mt-4"
-      ><p class="w-1/2 p-3">{{ bio.content }}</p></card
-    >
-    <contact />
+    <div class="mt-4 md:grid md:grid-cols-2">
+      <card class="col-span-1 mr-2"
+        ><p class="p-3">{{ bio.content }}</p></card
+      >
+      <card class="col-span-1"
+        ><contact class="col-span-1 p-3 text-right"
+      /></card>
+    </div>
     <h2 class="text-2xl mt-16">RESUME</h2>
     <div v-for="(headdata, index) in resume_data" :key="index">
       <p class="mt-4 mb-2 ml-4 font-bold text-gray-800">

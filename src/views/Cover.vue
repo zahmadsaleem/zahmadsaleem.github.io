@@ -3,8 +3,8 @@
   <div v-p5viewed id="cover-main">
     <div class="cover">
       <div class="site-header">
-        <p>portfo.io</p>
-        <p class="text-xl">Ahmad Saleem Z</p>
+        <p class="text-xl">portfo.io</p>
+        <p>Ahmad Saleem Z</p>
       </div>
     </div>
   </div>
@@ -36,6 +36,6 @@ canvas {
 }
 
 .site-header {
-  @apply py-4 mx-auto w-1/3 bg-black opacity-75 shadow-lg rounded text-white text-opacity-100;
+  @apply py-4 mx-auto max-w-xs bg-black opacity-75 shadow-lg rounded text-white text-opacity-100;
 }
 </style>

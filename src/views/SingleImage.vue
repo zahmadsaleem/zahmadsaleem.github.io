@@ -1,41 +1,48 @@
 <template>
   <div id="modal-center">
     <img :src="require(`@/assets/img/bg-img/${img.url}`)" />
-    <div
-      class="prev-next-buttons"
-      v-on:keyup.stop.right="nextImage()"
-      v-on:keyup.stop.left="previousImage()"
-    >
-      <button @click="previousImage()" class="b-btn">
-        &lsaquo; Previous
-      </button>
-      <button @click="nextImage()" class="b-btn float-right">
-        Next &rsaquo;
-      </button>
-    </div>
+    <image-nav @next-image="nextImage()" @previous-image="previousImage()" />
   </div>
 </template>
 
 <script>
+import ImageNav from "@/components/ImageNav";
+import { images } from "@/data/data";
+
 export default {
   name: "SingleImage",
-  props: { img: Object },
+  components: { ImageNav },
+  data() {
+    return {
+      images,
+      imageIndex: 0
+    };
+  },
   methods: {
-    nextImage: function() {},
-    previousImage: function() {}
+    nextImage: function() {
+      if (this.imageIndex === images.length) {
+        this.imageIndex = 0;
+        return;
+      }
+      this.imageIndex++;
+    },
+    previousImage: function() {
+      if (this.imageIndex === 0) {
+        this.imageIndex = images.length;
+        return;
+      }
+      this.imageIndex--;
+    }
+  },
+  mounted() {
+    let i = this.images.findIndex(x => x.url === this.$route.params.url);
+    if (i > -1) this.imageIndex = i;
+    else this.imageIndex = 0;
+  },
+  computed: {
+    img() {
+      return this.images[this.imageIndex];
+    }
   }
 };
 </script>
-
-<style lang="postcss">
-.prev-next-buttons {
-  @apply fixed block w-full;
-  top: 50%;
-}
-.b-btn {
-  @apply mx-2 bg-black opacity-25 px-4 py-2 text-white  rounded;
-}
-.b-btn:hover {
-  @apply opacity-100;
-}
-</style>
