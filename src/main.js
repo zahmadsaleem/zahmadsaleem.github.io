@@ -1,27 +1,11 @@
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
-import store from './store'
-import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+import Vue from "vue";
+import App from "./App.vue";
+import router from "./router";
+import "@/assets/styles/index.css";
 
-Vue.config.productionTip = false
-Vue.use(BootstrapVue)
+Vue.config.productionTip = false;
 
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
-
-router.push("/")
-
-var vm = new Vue({
+new Vue({
   router,
-  store,
-  data() {
-    return {
-      name: "",
-    }
-  },
-  
-  render: h => h(App),
-}).$mount('#app')
-
-global.vm = vm; //Define you app variable globally
+  render: h => h(App)
+}).$mount("#app");

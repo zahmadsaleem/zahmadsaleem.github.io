@@ -1,49 +1,41 @@
 <template>
-  <b-container id="gallery" class="w-100 mx-auto px-0 m-0 bg-dark" v-once>
-    <div class="col-lg-8 row mx-auto mb-1 py-3">
-      <b-col v-for="(image, i) in allimages" :key="i" class="gallery-img col-4">
-        <b-img
-          fluid
-          center
+  <container v-once class="mx-auto lg:max-w-4xl">
+    <div class="grid lg:grid-cols-4 grid-cols-3 gap-4 my-auto">
+      <div v-for="(image, i) in allimages" :key="i">
+        <img
           @click="showMsgBox(image)"
           :src="require(`@/assets/img/thumb-img/${image.url}`)"
-          class="p-2 drawerimg"
           alt="gallery image"
         />
-      </b-col>
+      </div>
     </div>
-  </b-container>
+  </container>
 </template>
 
 <script>
+import { images } from "@/data/data";
+import Container from "@/components/Container";
 
 export default {
   name: "Gallery",
+  components: { Container },
   data() {
     return {
-      allimages: images,
+      allimages: images
     };
   },
-  methods:{
+  methods: {
     showMsgBox: function(img) {
       this.$router.push({
-        name : "img",
-        params:{
-          url:img.url,
-          img:img
+        name: "img",
+        params: {
+          url: img.url,
+          img: img
         }
-      })
+      });
     }
   }
 };
 </script>
 
-<style lang="scss" scoped>
-#gallery{
-    padding-top: 40px;
-  
-}
-.gallery-img {
-    padding: 0px;
-}
-</style>
+<style lang="scss" scoped></style>

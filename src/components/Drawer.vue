@@ -1,24 +1,26 @@
 <template>
-  <div class="max-auto px-3 text-center col-lg-4 mb-1">
-    <p class="h3 text-secondary pt-2 pb-1">{{ projectcategory }}</p>
-    <div :id="categoryfilter" class="m-0 mt-2 p-0">
+  <div>
+    <p class="mt-8 mb-4 text-bold">{{ projectcategory }}</p>
+    <div :id="categoryfilter">
       <div
         class="proj-thumb"
         @click="showProject(project)"
-        v-for="(project,i) in filterProjects(categoryfilter)"
+        v-for="(project, i) in filterProjects(categoryfilter)"
         :key="i"
       >
-        <p class="text-light">{{ project.projectName }}</p>
+        <p class="text-gray-700">{{ project.projectName }}</p>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import { projects } from "@/data/data";
+
 export default {
   data() {
     return {
-      allprojects: projects // from data.js
+      allprojects: projects
     };
   },
   name: "drawer",
@@ -43,6 +45,7 @@ export default {
 <style lang="scss">
 .proj-thumb {
   overflow: hidden;
+
   &:hover p {
     opacity: 0.7;
     cursor: pointer;

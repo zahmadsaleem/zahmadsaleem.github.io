@@ -1,17 +1,18 @@
 <template>
-  <div v-p5viewed id="cover-main" class="text-center cover-container d-flex mx-auto flex-column">
-    <main role="main" class="inner cover my-auto">
-      <div class="justified-content-center mb-3">
-        <p class="h1 d-inline px-5 py-1 bg-light">portfo.io</p>
+  <!--  #cover-main referenced in generateP5Cover -->
+  <div v-p5viewed id="cover-main">
+    <div class="cover">
+      <div class="site-header">
+        <p>portfo.io</p>
+        <p class="text-xl">Ahmad Saleem Z</p>
       </div>
-      <div class="justified-content-center">
-        <p class="lead d-inline px-3 py-1 bg-light">Ahmad Saleem Z</p>
-      </div>
-    </main>
+    </div>
   </div>
 </template>
 
 <script>
+import { generateP5Cover } from "@/utils/cover";
+
 export default {
   name: "Cover",
   directives: {
@@ -25,17 +26,16 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-.cover {
-  padding: 0 1.5rem;
-  .btn-lg {
-    padding: 0.75rem 1.25rem;
-    font-weight: 700;
-    border-color: #333;
-  }
+<style lang="postcss">
+canvas {
+  z-index: -100;
 }
 
-.cover-container {
-    height: 100vh !important;
+.cover {
+  @apply mt-64 w-full mx-auto text-center absolute;
+}
+
+.site-header {
+  @apply py-4 mx-auto w-1/3 bg-black opacity-75 shadow-lg rounded text-white text-opacity-100;
 }
 </style>
