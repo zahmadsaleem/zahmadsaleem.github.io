@@ -23,7 +23,7 @@ export default {
       allprojects: projects
     };
   },
-  name: "drawer",
+  name: "Drawer",
   props: { categoryfilter: String, projectcategory: String, projects: Array },
   methods: {
     filterProjects(projectPrefix) {

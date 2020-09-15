@@ -30,6 +30,8 @@
               :img-src="cover(image.url)"
               img-alt="image slot"
             />
+            <!--            todo -->
+            <buttons-next-previous v-if="false" />
           </carousel>
         </div>
         <div v-else>
@@ -51,11 +53,12 @@ import CarouselSlide from "@/components/CarouselSlide";
 import Container from "@/components/Container";
 import ImageLoaderMixin from "@/mixins/image-loader";
 import { projects } from "@/data/data";
+import ButtonsNextPrevious from "@/components/ButtonsNextPrevious";
 
 export default {
   name: "SingleProject",
   mixins: [ImageLoaderMixin],
-  components: { Container, Card, Carousel, CarouselSlide },
+  components: { ButtonsNextPrevious, Container, Card, Carousel, CarouselSlide },
   data() {
     return {
       projects,

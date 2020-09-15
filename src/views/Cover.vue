@@ -1,6 +1,6 @@
 <template>
   <!--  #cover-main referenced in generateP5Cover -->
-  <div v-p5viewed id="cover-main">
+  <div id="cover-main">
     <div class="cover">
       <div class="site-header">
         <p class="text-xl">portfo.io</p>
@@ -15,13 +15,8 @@ import { generateP5Cover } from "@/utils/cover";
 
 export default {
   name: "Cover",
-  directives: {
-    p5viewed: {
-      // directive definition
-      inserted: function() {
-        generateP5Cover();
-      }
-    }
+  mounted() {
+    generateP5Cover();
   }
 };
 </script>
