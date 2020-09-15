@@ -1,12 +1,16 @@
 <template>
   <div>
-    <slot></slot>
+    <img :src="imgSrc" :alt="imgAlt" />
   </div>
 </template>
 
 <script>
 export default {
-  name: "CarouselSlide"
+  name: "CarouselSlide",
+  props: {
+    imgSrc: String,
+    imgAlt: String
+  }
 };
 </script>
 

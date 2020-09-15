@@ -4,7 +4,7 @@
     <div :id="categoryfilter">
       <div
         class="proj-thumb"
-        @click="showProject(project)"
+        @click="() => showProject(project)"
         v-for="(project, i) in filterProjects(categoryfilter)"
         :key="i"
       >
@@ -26,17 +26,11 @@ export default {
   name: "drawer",
   props: { categoryfilter: String, projectcategory: String, projects: Array },
   methods: {
-    filterProjects: function(projectPrefix) {
+    filterProjects(projectPrefix) {
       return this.allprojects.filter(i => i.projectid.includes(projectPrefix));
     },
-    showProject: function(activeproject) {
-      this.$router.push({
-        name: "proj",
-        params: {
-          activeproject: activeproject,
-          projectid: activeproject.projectid
-        }
-      });
+    showProject(activeproject) {
+      this.$router.push(`project/${activeproject.projectid}`);
     }
   }
 };

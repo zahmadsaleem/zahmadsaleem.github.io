@@ -14,6 +14,7 @@
             :key="i"
             :href="link"
             target="_blank"
+            class="text-blue-600"
             >Link</a
           >
         </card>
@@ -22,10 +23,13 @@
       <!-- image side -->
       <div class="lg:col-span-2">
         <div v-if="activeproject.images.length > 0">
-          <carousel id="carousel-1" style="text-shadow: 1px 1px 2px #333;">
-            <carousel-slide v-for="(image, i) in activeproject.images" :key="i">
-              <img :src="cover(image.url)" alt="image slot" />
-            </carousel-slide>
+          <carousel>
+            <carousel-slide
+              v-for="(image, i) in activeproject.images"
+              :key="i"
+              :img-src="cover(image.url)"
+              img-alt="image slot"
+            />
           </carousel>
         </div>
         <div v-else>
@@ -45,17 +49,29 @@ import Card from "@/components/Card";
 import Carousel from "@/components/Carousel";
 import CarouselSlide from "@/components/CarouselSlide";
 import Container from "@/components/Container";
+import ImageLoaderMixin from "@/mixins/image-loader";
+import { projects } from "@/data/data";
 
 export default {
   name: "SingleProject",
+  mixins: [ImageLoaderMixin],
   components: { Container, Card, Carousel, CarouselSlide },
-  props: { activeproject: Object },
-  methods: {
-    getThumb: function(project) {
-      return project.thumb ? project.thumb : project.projectid + "-thumb.jpg";
-    },
-    cover(fname) {
-      return require(`@/assets/img/bg-img/${fname}`);
+  data() {
+    return {
+      projects,
+      projectIndex: 0
+    };
+  },
+  mounted() {
+    let i = projects.findIndex(
+      x => x.projectid === this.$route.params.projectid
+    );
+    if (i > -1) this.projectIndex = i;
+    else this.projectIndex = 0;
+  },
+  computed: {
+    activeproject() {
+      return this.projects[this.projectIndex];
     }
   }
 };

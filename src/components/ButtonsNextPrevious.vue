@@ -10,7 +10,7 @@
 </template>
 <script>
 export default {
-  name: "image-nav"
+  name: "ButtonsNextPrevious"
 };
 </script>
 <style lang="postcss">

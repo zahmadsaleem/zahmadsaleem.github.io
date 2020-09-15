@@ -1,17 +1,22 @@
 <template>
-  <div id="modal-center">
-    <img :src="require(`@/assets/img/bg-img/${img.url}`)" />
-    <image-nav @next-image="nextImage()" @previous-image="previousImage()" />
+  <div class="max-h-screen">
+    <img :src="cover(img.url)" class="my-auto" alt="gallery image" />
+    <buttons-next-previous
+      @next-image="nextImage()"
+      @previous-image="previousImage()"
+    />
   </div>
 </template>
 
 <script>
-import ImageNav from "@/components/ImageNav";
+import ButtonsNextPrevious from "@/components/ButtonsNextPrevious";
+import ImageLoaderMixin from "@/mixins/image-loader";
 import { images } from "@/data/data";
 
 export default {
   name: "SingleImage",
-  components: { ImageNav },
+  components: { ButtonsNextPrevious },
+  mixins: [ImageLoaderMixin],
   data() {
     return {
       images,
@@ -19,19 +24,13 @@ export default {
     };
   },
   methods: {
-    nextImage: function() {
-      if (this.imageIndex === images.length) {
-        this.imageIndex = 0;
-        return;
-      }
-      this.imageIndex++;
+    nextImage() {
+      if (this.imageIndex === images.length - 1) this.imageIndex = 0;
+      else this.imageIndex++;
     },
-    previousImage: function() {
-      if (this.imageIndex === 0) {
-        this.imageIndex = images.length;
-        return;
-      }
-      this.imageIndex--;
+    previousImage() {
+      if (this.imageIndex === 0) this.imageIndex = images.length - 1;
+      else this.imageIndex--;
     }
   },
   mounted() {
