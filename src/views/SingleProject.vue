@@ -6,7 +6,7 @@
         <card
           :title="activeproject.projectName"
           :sub-title="activeproject.projectContext"
-          class="m-2 h-64 max-w-3xl"
+          class="m-2 max-w-3xl"
         >
           <p v-html="activeproject.Description"></p>
           <a
@@ -22,23 +22,34 @@
 
       <!-- image side -->
       <div class="lg:col-span-2">
-        <div v-if="activeproject.images.length > 0">
-          <carousel>
-            <carousel-slide
+        <div v-if="activeproject.images.length > 0" class="banner-height">
+          <div class="bg-white height-80p">
+            <img
+              :src="currentImage"
+              alt="large image"
+              class="object-contain w-full h-full"
+            />
+          </div>
+          <div class="flex justify-center">
+            <div
               v-for="(image, i) in activeproject.images"
               :key="i"
-              :img-src="cover(image.url)"
-              img-alt="image slot"
-            />
-            <!--            todo -->
-            <buttons-next-previous v-if="false" />
-          </carousel>
+              class="bg-white thumb-image"
+            >
+              <img
+                class="object-cover object-center h-full w-full p-1"
+                :src="cover(image.url)"
+                alt="image slot"
+                @click="currentImage = cover(image.url)"
+              />
+            </div>
+          </div>
         </div>
         <div v-else>
           <img
             :src="cover(activeproject.cover)"
             alt="project cover"
-            class="m-1"
+            class="mx-auto lg:pr-2"
           />
         </div>
       </div>
@@ -48,21 +59,19 @@
 
 <script>
 import Card from "@/components/Card";
-import Carousel from "@/components/Carousel";
-import CarouselSlide from "@/components/CarouselSlide";
 import Container from "@/components/Container";
 import ImageLoaderMixin from "@/mixins/image-loader";
 import { projects } from "@/data/data";
-import ButtonsNextPrevious from "@/components/ButtonsNextPrevious";
 
 export default {
   name: "SingleProject",
   mixins: [ImageLoaderMixin],
-  components: { ButtonsNextPrevious, Container, Card, Carousel, CarouselSlide },
+  components: { Container, Card },
   data() {
     return {
       projects,
-      projectIndex: 0
+      projectIndex: 0,
+      currentImage: ""
     };
   },
   mounted() {
@@ -70,7 +79,12 @@ export default {
       x => x.projectid === this.$route.params.projectid
     );
     if (i > -1) this.projectIndex = i;
-    else this.projectIndex = 0;
+    else {
+      this.projectIndex = 0;
+    }
+    this.currentImage = this.cover(
+      this.projects[this.projectIndex].images[0].url
+    );
   },
   computed: {
     activeproject() {
@@ -80,4 +94,16 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.banner-height {
+  height: 80vh;
+}
+.height-80p {
+  height: 80%;
+}
+.thumb-image {
+  height: 80px;
+  display: inline-block;
+  width: 80px;
+}
+</style>
