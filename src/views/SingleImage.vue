@@ -2,7 +2,7 @@
   <div style="height: 90vh;">
     <img
       :src="cover(img.url)"
-      class="object-contain object-center w-full h-full p-2"
+      class="object-contain object-center w-full h-full px-2 mt-6"
       alt="gallery image"
     />
     <buttons-next-previous
@@ -31,10 +31,12 @@ export default {
     nextImage() {
       if (this.imageIndex === images.length - 1) this.imageIndex = 0;
       else this.imageIndex++;
+      this.$router.push(this.img.url);
     },
     previousImage() {
       if (this.imageIndex === 0) this.imageIndex = images.length - 1;
       else this.imageIndex--;
+      this.$router.push(this.img.url);
     }
   },
   mounted() {
