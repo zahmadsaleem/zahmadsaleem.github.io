@@ -1,6 +1,10 @@
 <template>
-  <div class="max-h-screen">
-    <img :src="cover(img.url)" class="my-auto" alt="gallery image" />
+  <div style="height: 90vh;">
+    <img
+      :src="cover(img.url)"
+      class="object-contain object-center w-full h-full p-2"
+      alt="gallery image"
+    />
     <buttons-next-previous
       @next-image="nextImage()"
       @previous-image="previousImage()"
