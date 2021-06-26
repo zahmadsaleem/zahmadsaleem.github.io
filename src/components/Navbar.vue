@@ -29,11 +29,11 @@ export default {
 
 .navbar {
   @apply mt-6 pl-2;
-  @apply flex items-stretch;
+  @apply flex max-w-md mx-auto;
 }
 
 .nav-item {
   @apply mr-6;
-  @apply text-gray-100 text-center;
+  @apply text-gray-100 text-center flex-grow;
 }
 </style>

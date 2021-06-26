@@ -4,7 +4,7 @@
       <div v-for="(image, i) in allimages" :key="i">
         <img
           @click="showMsgBox(image)"
-          :src="require(`@/assets/img/thumb-img/${image.url}`)"
+          :src="thumb(image.url)"
           alt="gallery image"
         />
       </div>
@@ -15,10 +15,12 @@
 <script>
 import { images } from "@/data/data";
 import Container from "@/components/Container";
+import ImageLoaderMixin from "@/mixins/image-loader";
 
 export default {
   name: "Gallery",
   components: { Container },
+  mixins: [ImageLoaderMixin],
   data() {
     return {
       allimages: images
@@ -26,12 +28,7 @@ export default {
   },
   methods: {
     showMsgBox: function(img) {
-      this.$router.push({
-        name: "img",
-        params: {
-          url: img.url,
-        }
-      });
+      this.$router.push(`/img/${img.url}`);
     }
   }
 };

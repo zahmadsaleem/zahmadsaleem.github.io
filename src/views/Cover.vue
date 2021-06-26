@@ -1,10 +1,10 @@
 <template>
   <!--  #cover-main referenced in generateP5Cover -->
-  <div v-p5viewed id="cover-main">
+  <div id="cover-main">
     <div class="cover">
       <div class="site-header">
-        <p>portfo.io</p>
-        <p class="text-xl">Ahmad Saleem Z</p>
+        <p class="text-xl">portfo.io</p>
+        <p>Ahmad Saleem Z</p>
       </div>
     </div>
   </div>
@@ -15,13 +15,8 @@ import { generateP5Cover } from "@/utils/cover";
 
 export default {
   name: "Cover",
-  directives: {
-    p5viewed: {
-      // directive definition
-      mounted: function() {
-        generateP5Cover();
-      }
-    }
+  mounted() {
+    generateP5Cover();
   }
 };
 </script>
@@ -36,6 +31,6 @@ canvas {
 }
 
 .site-header {
-  @apply py-4 mx-auto w-1/3 bg-black opacity-75 shadow-lg rounded text-white text-opacity-100;
+  @apply py-4 mx-auto max-w-xs bg-black opacity-75 shadow-lg rounded text-white text-opacity-100;
 }
 </style>
