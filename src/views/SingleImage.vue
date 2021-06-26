@@ -3,13 +3,13 @@
     <img :src="require(`@/assets/img/bg-img/${img.url}`)" />
     <div
       class="prev-next-buttons"
-      v-on:keyup.stop.right="nextImage()"
-      v-on:keyup.stop.left="previousImage()"
+      v-on:keyup.stop.right="nextImage"
+      v-on:keyup.stop.left="previousImage"
     >
-      <button @click="previousImage()" class="b-btn">
+      <button @click="previousImage" class="b-btn">
         &lsaquo; Previous
       </button>
-      <button @click="nextImage()" class="b-btn float-right">
+      <button @click="nextImage" class="b-btn float-right">
         Next &rsaquo;
       </button>
     </div>
@@ -17,12 +17,17 @@
 </template>
 
 <script>
+import { images } from "@/data/data";
 export default {
   name: "SingleImage",
-  props: { img: Object },
+  computed: {
+    img() {
+      return images.find(x=> x.url === this.$route.params.url);
+    }
+  },
   methods: {
-    nextImage: function() {},
-    previousImage: function() {}
+    nextImage() {},
+    previousImage() {}
   }
 };
 </script>

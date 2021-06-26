@@ -18,7 +18,7 @@ export default {
   directives: {
     p5viewed: {
       // directive definition
-      inserted: function() {
+      mounted: function() {
         generateP5Cover();
       }
     }

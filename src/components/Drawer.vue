@@ -1,11 +1,11 @@
 <template>
   <div>
-    <p class="mt-8 mb-4 text-bold">{{ projectcategory }}</p>
-    <div :id="categoryfilter">
+    <p class="mt-8 mb-4 text-bold">{{ projectCategory }}</p>
+    <div :id="categoryFilter">
       <div
         class="proj-thumb"
+        v-for="(project, i) in filterProjects(categoryFilter)"
         @click="showProject(project)"
-        v-for="(project, i) in filterProjects(categoryfilter)"
         :key="i"
       >
         <p class="text-gray-700">{{ project.projectName }}</p>
@@ -15,26 +15,19 @@
 </template>
 
 <script>
-import { projects } from "@/data/data";
+import {filterProjects} from "@/utils/projects";
 
 export default {
-  data() {
-    return {
-      allprojects: projects
-    };
-  },
   name: "drawer",
-  props: { categoryfilter: String, projectcategory: String, projects: Array },
+  props: { categoryFilter: String, projectCategory: String, projects: Array },
+  emits: ['wtf'],
   methods: {
-    filterProjects: function(projectPrefix) {
-      return this.allprojects.filter(i => i.projectid.includes(projectPrefix));
-    },
-    showProject: function(activeproject) {
+    filterProjects,
+    showProject(activeProject) {
       this.$router.push({
         name: "proj",
         params: {
-          activeproject: activeproject,
-          projectid: activeproject.projectid
+          projectid: activeProject.projectid
         }
       });
     }
@@ -42,13 +35,13 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style>
 .proj-thumb {
   overflow: hidden;
+}
 
-  &:hover p {
-    opacity: 0.7;
-    cursor: pointer;
-  }
+.proj-thumb:hover p {
+  opacity: 0.7;
+  cursor: pointer;
 }
 </style>

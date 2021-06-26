@@ -30,7 +30,6 @@ export default {
         name: "img",
         params: {
           url: img.url,
-          img: img
         }
       });
     }
@@ -38,4 +37,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped></style>

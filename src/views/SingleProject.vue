@@ -45,13 +45,18 @@ import Card from "@/components/Card";
 import Carousel from "@/components/Carousel";
 import CarouselSlide from "@/components/CarouselSlide";
 import Container from "@/components/Container";
+import {projectById} from "@/utils/projects";
 
 export default {
   name: "SingleProject",
   components: { Container, Card, Carousel, CarouselSlide },
-  props: { activeproject: Object },
+  computed: {
+    activeproject() {
+      return projectById(this.$route.params.projectid);
+    }
+  },
   methods: {
-    getThumb: function(project) {
+    getThumb(project) {
       return project.thumb ? project.thumb : project.projectid + "-thumb.jpg";
     },
     cover(fname) {
@@ -61,4 +66,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style  scoped></style>
