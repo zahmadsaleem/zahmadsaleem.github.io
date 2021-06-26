@@ -1,14 +1,14 @@
 <template>
   <div class="max-w-4xl mx-auto">
     <div class="grid md:grid-cols-3 gap-4 text-center">
-      <drawer projectcategory="Architecture" categoryfilter="arch" />
+      <drawer projectCategory="Architecture" categoryFilter="arch" />
       <drawer
-        projectcategory="Computational Design"
-        categoryfilter="computational"
+          projectCategory="Computational Design"
+        categoryFilter="computational"
       />
-      <drawer projectcategory="Code" categoryfilter="code" />
+      <drawer projectCategory="Code" categoryFilter="code"/>
     </div>
-    <router-view name="project"></router-view>
+    <router-view name="project"/>
   </div>
 </template>
 
@@ -23,4 +23,4 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style ></style>
