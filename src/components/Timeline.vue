@@ -1,7 +1,9 @@
 <template>
   <svg height="300px" width="100%" class="mt-2" xmlns="http://www.w3.org/2000/svg" @wheel="setRectWidth"
        @dblclick="reset" @mousedown="pan">
-    <rect v-for="(rect,i) in rectangles" v-bind="rect" :key="i" class="animate-size"></rect>
+    <g :transform="`translate(${panX},0)`">
+      <rect v-for="(rect,i) in rectangles" v-bind="rect" :key="i" class="animate-size"></rect>
+    </g>
   </svg>
 </template>
 
@@ -10,10 +12,9 @@ export default {
   name: "Timeline",
   data() {
     return {
-      width_: 1,
-      width: 1,
       strength: 0.1,
       panStrength: 0.3,
+      panX: 0,
       rectangles_: [],
       rectangles: []
     }
@@ -30,16 +31,10 @@ export default {
     this.rectangles = rectangles;
     this.rectangles_ = rectangles;
   },
-  computed: {
-    currentScale() {
-      return this.width / this.width_;
-    },
-  },
   methods: {
     setRectWidth(e) {
       e.preventDefault()
       const direction = e.wheelDelta / Math.abs(e.wheelDelta)
-      this.width = this.width * (1 + this.strength * direction)
       this.zoomRectangles(e.offsetX, direction);
     },
     zoom({x, y, width, height}, mouseX, direction) {
@@ -81,7 +76,7 @@ export default {
         }
         // console.log("panning")
         currentX = currentX + delta;
-        this.rectangles = this.rectangles.map((rect) => this.move(rect, delta))
+        this.panX = this.panX + delta;
       }
 
       // console.log("adding listener")
