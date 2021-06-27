@@ -1,8 +1,7 @@
 <template>
-  <svg height="300px" width="100%" class="mt-2" xmlns="http://www.w3.org/2000/svg" @wheel="setRectWidth">
+  <svg height="300px" width="100%" class="mt-2" xmlns="http://www.w3.org/2000/svg" @wheel="setRectWidth"
+       @dblclick="reset">
     <rect v-for="(rect,i) in rectangles" v-bind="rect" :key="i" class="animate-size"></rect>
-    <rect :x="startOffset" :width="`${width}px`" height="100px" class="animate-size" fill="none" stroke="red"
-          stroke-width="4px"></rect>
   </svg>
 </template>
 
@@ -11,19 +10,24 @@ export default {
   name: "Timeline",
   data() {
     return {
-      width_: 1200,
-      width: 1200,
-      scaleFactor: 0.1,
-      zoomFactor: 0,
-      mouseX: 0,
-      mousePositionRatio: 0,
-      startOffset: 0,
-      rectangles: [
-        {x: 10, y: 0, width: 500, height: 95},
-        {x: 0, y: 100, width: 200, height: 95},
-        {x: 50, y: 200, width: 750, height: 95},
-      ]
+      width_: 1,
+      width: 1,
+      strength: 0.1,
+      rectangles_: [],
+      rectangles: []
     }
+  },
+  mounted() {
+    const rectangles = new Array(30)
+      .fill(0)
+      .map((_, i) => ({
+        x: Math.trunc(Math.random() * 500),
+        y: i * 10,
+        width: Math.trunc(Math.random() * 1000),
+        height: 9
+      }));
+    this.rectangles = rectangles;
+    this.rectangles_ = rectangles;
   },
   computed: {
     currentScale() {
@@ -33,25 +37,26 @@ export default {
   methods: {
     setRectWidth(e) {
       e.preventDefault()
-      this.mouseX = e.offsetX;
-      this.zoomFactor = this.scaleFactor * e.wheelDelta / Math.abs(e.wheelDelta)
-      const ratio = (this.mouseX - this.startOffset) / (this.startOffset + this.width - this.mouseX);
-      this.width = this.width * (1 + this.zoomFactor)
-      this.startOffset = this.mouseX - (ratio * this.width / (1 + ratio))
-      this.transformRectangles();
+      const direction = e.wheelDelta / Math.abs(e.wheelDelta)
+      this.width = this.width * (1 + this.strength * direction)
+      this.transformRectangles(e.offsetX,direction);
     },
-    transform({x, y, width, height}) {
-      const ratio = (this.mouseX - x) / (x + width - this.mouseX);
-      width = width * (1 + this.zoomFactor)
+    transform({x, y, width, height}, mouseX, direction) {
+      const ratio = (mouseX - x) / (x + width - mouseX);
+      width = width * (1 + this.strength* direction)
       return {
-        x: this.mouseX - (ratio * width / (1 + ratio)),
+        x: mouseX - (ratio * width / (1 + ratio)),
         y,
         width,
         height
       }
     },
-    transformRectangles(){
-      this.rectangles =  this.rectangles.map(this.transform)
+    transformRectangles(mouseX, direction) {
+      this.rectangles = this.rectangles.map((rect) => this.transform(rect, mouseX, direction))
+    },
+    reset() {
+      this.rectangles = this.rectangles_
+      this.width = this.width_
     }
   },
 }
