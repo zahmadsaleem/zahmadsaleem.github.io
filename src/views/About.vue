@@ -1,5 +1,6 @@
 <template>
   <container class="max-w-4xl mx-auto">
+    <timeline/>
     <div class="mt-4 md:grid md:grid-cols-2">
       <card class="col-span-1 mr-2"
         ><p class="p-3">{{ bio.content }}</p></card
@@ -39,10 +40,11 @@ import Card from "@/components/Card";
 import Container from "@/components/Container";
 import Chip from "@/components/Chip";
 import Contact from "@/components/Contact";
+import Timeline from "@/components/Timeline";
 
 export default {
   name: "About",
-  components: { Contact, Chip, Container, Card },
+  components: {Timeline, Contact, Chip, Container, Card },
   data() {
     return {
       resume_data,
