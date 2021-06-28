@@ -3,11 +3,33 @@
        @dblclick="reset" @mousedown="pan">
     <g :transform="`translate(${panX},0)`">
       <rect v-for="(rect,i) in rectangles" v-bind="rect" :key="i" class="animate-size"></rect>
+      <text
+        v-for="(rect,i) in rectangles"
+        :x="rect.x + rect.width/2"
+        :y="rect.y +rectangleHeight/2"
+        :key="i + '-text'"
+        class="animate-size"
+        selectable="false"
+      >
+        {{ texts[i].subheading }}
+      </text>
     </g>
   </svg>
 </template>
 
 <script>
+import {resume_data} from "@/data/data";
+import {differenceInCalendarDays} from "date-fns"
+
+const timelineStart = new Date("2011")
+const timelineEnd = new Date()
+const pixelsPerDay = (window.innerWidth - 100) / differenceInCalendarDays(timelineEnd, timelineStart);
+const experiences = resume_data.reduce((acc, item) => acc.concat(item.content), []).filter(x => !!x.start).map(x => {
+  x.start = new Date(x.start);
+  x.end = x.end ? new Date(x.end) : new Date();
+  return x
+}).sort((a, b) => a.start - b.start);
+
 export default {
   name: "Timeline",
   data() {
@@ -15,19 +37,16 @@ export default {
       strength: 0.1,
       panStrength: 0.3,
       panX: 0,
+      rectangleHeight: 30,
       rectangles_: [],
-      rectangles: []
+      rectangles: [],
+      texts_: [],
+      texts: experiences,
+      pixelsPerDay
     }
   },
   mounted() {
-    const rectangles = new Array(30)
-      .fill(0)
-      .map((_, i) => ({
-        x: Math.trunc(Math.random() * 500),
-        y: i * 10,
-        width: Math.trunc(Math.random() * 1000),
-        height: 9
-      }));
+    const rectangles = experiences.map((item, i) => experienceToRectangle(item, i * this.rectangleHeight, this.rectangleHeight))
     this.rectangles = rectangles;
     this.rectangles_ = rectangles;
   },
@@ -42,14 +61,6 @@ export default {
       width = width * (1 + this.strength * direction)
       return {
         x: mouseX - (ratio * width / (1 + ratio)) - this.panX,
-        y,
-        width,
-        height
-      }
-    },
-    move({x, y, width, height}, delta) {
-      return {
-        x: x + delta,
         y,
         width,
         height
@@ -85,13 +96,22 @@ export default {
   },
 }
 
+function experienceToRectangle({start, end}, y, height) {
+  const width = pixelsPerDay * differenceInCalendarDays(end, start)
+  const x = pixelsPerDay * differenceInCalendarDays(start, timelineStart)
+  return {x, y, width, height}
+}
 
 </script>
 
 <style scoped>
 .animate-size {
-  transition: all 0.4s ease;
+  transition: all 0.2s ease;
 }
 
-
+svg text {
+  font-size: 12px;
+  fill: crimson;
+  font-family: Calibri;
+}
 </style>

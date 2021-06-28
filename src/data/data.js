@@ -289,26 +289,49 @@ export const resume_data = [
     heading: "Experience",
     content: [
       {
-        subheading: "WeWork - Intern",
-        details: "June 2019 - Feb 2020",
+        subheading: "Reope",
+        details: "March 2021 - Present",
+        start: "2021/03/01",
         content:
           "BIM Coordination and content management. Understanding Wework product development process and workflow improvements. Revit based automation using RevitAPI. Custom UI workflows within revit. Revit-Airtable data workflow"
       },
       {
-        subheading: "Larsen & Toubro - Intern",
+        subheading: "Gensler",
+        details: "March 2020 - Feb 2021",
+        start: "2020/03/01",
+        end: "2021/01/31",
+        content:
+          "BIM Coordination and content management. Understanding Wework product development process and workflow improvements. Revit based automation using RevitAPI. Custom UI workflows within revit. Revit-Airtable data workflow"
+      },
+      {
+        subheading: "WeWork",
+        details: "June 2019 - Feb 2020",
+        start: "2019/06/01",
+        end: "2020/02/28",
+        content:
+          "BIM Coordination and content management. Understanding Wework product development process and workflow improvements. Revit based automation using RevitAPI. Custom UI workflows within revit. Revit-Airtable data workflow"
+      },
+      {
+        subheading: "Larsen & Toubro",
         details: "June - July 2018",
+        start: "2018/06/01",
+        end: "2018/06/30",
         content:
           "Sightline Analysis and optimisation  for a large scale auditorium. Modularisation and design strategy development for a  freeform structure."
       },
       {
-        subheading: "NUDES - Intern",
+        subheading: "NUDES",
         details: "June - Nov 2017",
+        start: "2017/06/01",
+        end: "2017/11/30",
         content:
           "Gained experience in architectural design, working drawing, parametric modeling, computational workflows digital fabrication. Explored workflow automations in a studio firm setup"
       },
       {
-        subheading: "Freelance Computational Designer",
+        subheading: "Freelancer",
         details: "May 2018 - May 2019",
+        start: "2018/05/01",
+        end: "2019/05/31",
         content:
           "Worked on 30+ computational design, fabrication,projects for a variety of clients."
       }
@@ -319,15 +342,21 @@ export const resume_data = [
     content: [
       {
         subheading: "National Institute Of Techology, Tiruchirappalli",
-        content: "B.Arch 2014 - 2019"
+        content: "B.Arch 2014 - 2019",
+        start: "2014/07/01",
+        end: "2019/05/01"
       },
       {
         subheading: "Narayana Junior College, Vijayawada",
-        content: "Junior College 2012 - 2014"
+        content: "Junior College 2012 - 2014",
+        start: "2012/04/01",
+        end: "2014/03/01"
       },
       {
         subheading: "Bikaner Boys' School, Bikaner",
-        content: "High School 2010 - 2012"
+        content: "High School 2010 - 2012",
+        start: "2010/06/01",
+        end: "2012/03/01"
       }
     ]
   },
