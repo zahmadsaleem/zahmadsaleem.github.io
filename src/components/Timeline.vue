@@ -5,11 +5,10 @@
       <rect v-for="(rect,i) in rectangles" v-bind="rect" :key="i" class="animate-size"></rect>
       <text
         v-for="(rect,i) in rectangles"
-        :x="rect.x + rect.width/2"
+        x="0"
+        :transform="`translate(${rect.x + rect.width/2},0)`"
         :y="rect.y +rectangleHeight/2"
         :key="i + '-text'"
-        class="animate-size"
-        selectable="false"
       >
         {{ texts[i].subheading }}
       </text>
@@ -113,5 +112,7 @@ svg text {
   font-size: 12px;
   fill: crimson;
   font-family: Calibri;
+  user-select: none;
+  transition: all 0.3s ease;
 }
 </style>
