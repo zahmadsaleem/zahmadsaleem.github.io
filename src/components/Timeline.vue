@@ -38,10 +38,10 @@ export default {
       this.zoomRectangles(e.offsetX, direction);
     },
     zoom({x, y, width, height}, mouseX, direction) {
-      const ratio = (mouseX - x) / (x + width - mouseX);
+      const ratio = (mouseX - x-this.panX) / (x + this.panX+ width - mouseX);
       width = width * (1 + this.strength * direction)
       return {
-        x: mouseX - (ratio * width / (1 + ratio)),
+        x: mouseX - (ratio * width / (1 + ratio)) - this.panX,
         y,
         width,
         height
@@ -60,7 +60,7 @@ export default {
     },
     reset() {
       this.rectangles = this.rectangles_
-      this.width = this.width_
+      this.panX = 0;
     },
     pan(e) {
       // starting x
@@ -90,7 +90,7 @@ export default {
 
 <style scoped>
 .animate-size {
-  transition: all 0.25s ease;
+  transition: all 0.4s ease;
 }
 
 
