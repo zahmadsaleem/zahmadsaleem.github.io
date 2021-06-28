@@ -38,7 +38,7 @@ export default {
       this.zoomRectangles(e.offsetX, direction);
     },
     zoom({x, y, width, height}, mouseX, direction) {
-      const ratio = (mouseX - x-this.panX) / (x + this.panX+ width - mouseX);
+      const ratio = (mouseX - x - this.panX) / (x + this.panX + width - mouseX);
       width = width * (1 + this.strength * direction)
       return {
         x: mouseX - (ratio * width / (1 + ratio)) - this.panX,
