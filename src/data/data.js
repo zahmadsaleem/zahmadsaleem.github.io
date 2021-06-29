@@ -415,23 +415,31 @@ export const resume_data = [
       {
         subheading: "HUDCO Trophy - Special Mention",
         details: "NASA 2017",
+        start: "2016/12/01",
+        end: "2017/02/01",
         content:
           "Urban Revival- 'Elphinstone Esplanande' proposal for HUDCO trophy."
       },
       {
         subheading: "HUDCO Trophy - Citation",
         details: "NASA 2016",
+        start: "2015/12/01",
+        end: "2016/02/01",
         content: "Slum Redevelopment proposal for HUDCO trophy."
       },
       {
         subheading: "Aakriti/Pragyan-16",
         details: "Runner - UP",
+        start: "2016/03/01",
+        end: "2016/03/15",
         content:
           "Aakriti is an architectural design competition meant for Civil Engineering and Architecture Students."
       },
       {
         subheading: "Design Challenge - Pragyan-15",
         details: "Runner - UP",
+        start: "2015/03/01",
+        end: "2015/03/15",
         content:
           "PDC is a core engineering event which is exclusively designed to cater to the students who are interested and prolific in CAD skills, involving various designing softwares and modelling packages."
       }
