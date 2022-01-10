@@ -289,6 +289,21 @@ export const resume_data = [
     heading: "Experience",
     content: [
       {
+        subheading: "Reope",
+        details: "March 2021 - ",
+        content:
+          "A lot of cool shit"
+      },      {
+        subheading: "Gensler",
+        details: "March 2020 - February 2021",
+        content:
+          "- Ideated and developed web based solutions to address architecture/design workflow related issues." +
+          "- Created and maintained DevOps pipelines for full stack apps using Docker, Linux VM, Gitlab CI." +
+          "- Created data collection methodologies for applications used & developed at Gensler, set-up telemetry server and visualised the same. " +
+          "- Developed applications and automations using AEC based application APIs (Autodesk Revit, McNeel Rhinoceros)." +
+          "- Resolved troubleshooting issues for design technology related applications."
+      },
+      {
         subheading: "WeWork - Intern",
         details: "June 2019 - Feb 2020",
         content:
