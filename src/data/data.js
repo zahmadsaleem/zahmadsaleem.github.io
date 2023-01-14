@@ -185,16 +185,6 @@ export const projects = [
     links: ["https://github.com/zahmadsaleem/py-revit"]
   },
   {
-    projectid: "code-website",
-    projectName: "Portfolio Website",
-    Description:
-      "(This) Website built dynamically using Vue.js and bootstrap-Vue. Follow the link for source code. ",
-    projectContext: "Web Development",
-    cover: "code-website-1.jpg",
-    images: [],
-    links: ["https://github.com/zahmadsaleem/zahmadsaleem.github.io"]
-  },
-  {
     projectid: "computational-stadiumseating",
     projectName: "Stadium Seating Generator",
     Description:

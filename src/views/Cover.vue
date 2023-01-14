@@ -3,7 +3,6 @@
   <div id="cover-main">
     <div class="cover">
       <div class="site-header">
-        <p class="text-xl">portfo.io</p>
         <p>Ahmad Saleem Z</p>
       </div>
     </div>

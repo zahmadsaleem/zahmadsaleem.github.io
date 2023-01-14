@@ -14,13 +14,17 @@
 
 <script>
 import ButtonsNextPrevious from "@/components/ButtonsNextPrevious";
-import ImageLoaderMixin from "@/mixins/image-loader";
+import  {cover, thumb} from "@/utils/image-loader";
 import { images } from "@/data/data";
 
 export default {
   name: "SingleImage",
   components: { ButtonsNextPrevious },
-  mixins: [ImageLoaderMixin],
+  setup(){
+    return {
+      cover, thumb
+    }
+  },
   data() {
     return {
       images,

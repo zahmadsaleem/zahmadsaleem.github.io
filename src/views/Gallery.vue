@@ -15,12 +15,16 @@
 <script>
 import { images } from "@/data/data";
 import Container from "@/components/Container";
-import ImageLoaderMixin from "@/mixins/image-loader";
+import  {cover, thumb} from "@/utils/image-loader";
 
 export default {
   name: "Gallery",
   components: { Container },
-  mixins: [ImageLoaderMixin],
+  setup(){
+    return {
+      cover, thumb
+    }
+  },
   data() {
     return {
       allimages: images

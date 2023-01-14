@@ -60,13 +60,17 @@
 <script>
 import Card from "@/components/Card";
 import Container from "@/components/Container";
-import ImageLoaderMixin from "@/mixins/image-loader";
 import { projects } from "@/data/data";
+import {cover, thumb} from "@/utils/image-loader";
 
 export default {
   name: "SingleProject",
-  mixins: [ImageLoaderMixin],
   components: { Container, Card },
+  setup(){
+    return {
+      cover, thumb
+    }
+  },
   data() {
     return {
       projects,
@@ -82,9 +86,12 @@ export default {
     else {
       this.projectIndex = 0;
     }
-    this.currentImage = this.cover(
-      this.projects[this.projectIndex].images[0].url
-    );
+    if(this.projects[this.projectIndex].images.length){
+      this.currentImage = cover(
+        this.projects[this.projectIndex].images[0].url
+      );
+    }
+
   },
   computed: {
     activeproject() {
