@@ -4,27 +4,6 @@
    is crawlable with JavaScript disabled.
    ============================================================ */
 
-/* ---------- <site-nav> ----------
-   Usage: <site-nav><a href="/">Home</a> ...</site-nav>
-   Marks the link matching the current URL with aria-current. */
-class SiteNav extends HTMLElement {
-  connectedCallback() {
-    const path = location.pathname;
-    const list = document.createElement("ul");
-    for (const a of this.querySelectorAll("a")) {
-      const li = document.createElement("li");
-      const href = a.getAttribute("href");
-      if (href === "/" ? path === "/" : path.startsWith(href)) {
-        a.setAttribute("aria-current", "page");
-      }
-      li.append(a);
-      list.append(li);
-    }
-    this.replaceChildren(list);
-  }
-}
-customElements.define("site-nav", SiteNav);
-
 /* ---------- <project-media> ----------
    Usage:
    <project-media>

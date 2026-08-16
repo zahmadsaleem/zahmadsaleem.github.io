@@ -8,27 +8,30 @@ serves it as-is.
 
 ```
 index.html            cover page (interactive grid, pure CSS/JS)
-projects/index.html   project list
-projects/<id>/        one folder per project, plain HTML
-gallery/index.html    photo grid + lightbox
 about/index.html      bio, contact, resume
+archive/index.html    archive landing page
+archive/projects/     project list + one folder per project, plain HTML
+archive/gallery/      photo grid + lightbox
 assets/css/main.css   all styles (theme variables at the top)
-assets/js/components.js  web components: <site-nav>, <project-media>, <gallery-lightbox>
+assets/js/components.js  web components: <project-media>, <gallery-lightbox>
 assets/js/cover.js    <cover-grid> home page animation
 assets/img/full/      full-size images
 assets/img/thumb/     gallery thumbnails
 sitemap.xml, robots.txt, CNAME, favicon.ico
 ```
 
+There is no top nav — navigation lives in the `.site-footer` block at the
+bottom of each page (About · Archive).
+
 ## Editing
 
 - **Text content** (bio, resume, project descriptions): edit the HTML files
   directly. Everything is plain markup.
-- **Add a project**: copy an existing `projects/<id>/` folder, rename it,
-  edit `index.html`, then add a link in `projects/index.html` and an entry
-  in `sitemap.xml`.
+- **Add a project**: copy an existing `archive/projects/<id>/` folder,
+  rename it, edit `index.html`, then add a link in
+  `archive/projects/index.html` and an entry in `sitemap.xml`.
 - **Gallery**: add images to `assets/img/full/` + `assets/img/thumb/` and a
-  matching `<a><img></a>` line in `gallery/index.html`.
+  matching `<a><img></a>` line in `archive/gallery/index.html`.
 - **Theme**: colors/spacing live in `:root` at the top of
   `assets/css/main.css`.
 

@@ -6,92 +6,97 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://madsolame.com/projects/</loc>
-    <lastmod>2026-08-16</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://madsolame.com/projects/arch-thesis/</loc>
+    <loc>https://madsolame.com/archive/</loc>
     <lastmod>2026-08-16</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://madsolame.com/projects/arch-villa/</loc>
+    <loc>https://madsolame.com/archive/projects/</loc>
     <lastmod>2026-08-16</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://madsolame.com/projects/arch-restaurant/</loc>
+    <loc>https://madsolame.com/archive/projects/arch-thesis/</loc>
     <lastmod>2026-08-16</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://madsolame.com/projects/arch-rtf/</loc>
+    <loc>https://madsolame.com/archive/projects/arch-villa/</loc>
     <lastmod>2026-08-16</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://madsolame.com/projects/arch-retail-regal/</loc>
+    <loc>https://madsolame.com/archive/projects/arch-restaurant/</loc>
     <lastmod>2026-08-16</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://madsolame.com/projects/arch-hudco/</loc>
+    <loc>https://madsolame.com/archive/projects/arch-rtf/</loc>
     <lastmod>2026-08-16</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://madsolame.com/projects/computational-sightline-analysis/</loc>
+    <loc>https://madsolame.com/archive/projects/arch-retail-regal/</loc>
     <lastmod>2026-08-16</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://madsolame.com/projects/computational-auto-joinery/</loc>
+    <loc>https://madsolame.com/archive/projects/arch-hudco/</loc>
     <lastmod>2026-08-16</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://madsolame.com/projects/arch-facade/</loc>
+    <loc>https://madsolame.com/archive/projects/computational-sightline-analysis/</loc>
     <lastmod>2026-08-16</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://madsolame.com/projects/code-consolegame/</loc>
+    <loc>https://madsolame.com/archive/projects/computational-auto-joinery/</loc>
     <lastmod>2026-08-16</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://madsolame.com/projects/code-browserhistory1/</loc>
+    <loc>https://madsolame.com/archive/projects/arch-facade/</loc>
     <lastmod>2026-08-16</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://madsolame.com/projects/code-browserhistory2/</loc>
+    <loc>https://madsolame.com/archive/projects/code-consolegame/</loc>
     <lastmod>2026-08-16</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://madsolame.com/projects/computational-armprint/</loc>
+    <loc>https://madsolame.com/archive/projects/code-browserhistory1/</loc>
     <lastmod>2026-08-16</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://madsolame.com/projects/code-pyrevit/</loc>
+    <loc>https://madsolame.com/archive/projects/code-browserhistory2/</loc>
     <lastmod>2026-08-16</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://madsolame.com/projects/computational-stadiumseating/</loc>
+    <loc>https://madsolame.com/archive/projects/computational-armprint/</loc>
     <lastmod>2026-08-16</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://madsolame.com/projects/code-4dgantt/</loc>
+    <loc>https://madsolame.com/archive/projects/code-pyrevit/</loc>
     <lastmod>2026-08-16</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://madsolame.com/gallery/</loc>
+    <loc>https://madsolame.com/archive/projects/computational-stadiumseating/</loc>
+    <lastmod>2026-08-16</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://madsolame.com/archive/projects/code-4dgantt/</loc>
+    <lastmod>2026-08-16</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://madsolame.com/archive/gallery/</loc>
     <lastmod>2026-08-16</lastmod>
     <priority>0.6</priority>
   </url>
